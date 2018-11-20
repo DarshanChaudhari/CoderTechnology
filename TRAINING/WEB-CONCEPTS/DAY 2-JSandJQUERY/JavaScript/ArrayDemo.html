@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            ArrayDemo
+        </title>
+    </head>
+
+
+    <body>
+        <script type="text/javascript">
+            var myname = "Darshan";
+            var strslice = myname.slice(2,1);
+            document.write(strslice);
+            var arr = new Array("darshan","nipun","shiva");
+            document.write("The Length of Array is :" + arr.length + "<br>");
+            document.write("*********************************************");
+            var arrjoin=arr.join(", ");
+            document.write("<br>" + arrjoin + "<br>");
+            document.write("*********************************************");
+            //document.write(arrjoin);
+            arrslice=arr.slice(0,2)
+            document.write("<br>" + "Slice "  + arr.slice(0,1)+ "<br>");// arrslice=arr.slice(0,2);
+            document.write("*********************************************");
+            var arrcon = arr.concat(arrslice);
+            document.write("<br>" + arrcon + "<br>");
+            document.write("*********************************************");
+
+            var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+            var myBest = fruits.slice(-5, -1);
+            document.write(myBest);
+            
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+
+
+
+Build a simple HRMS Application
+1. Add new joinee
+2. find employee by ID [single result]
+3. Search employee by name [Multiple results]
+4. List all employees
+
+4 different java CLASSES
+
+1. Employee class - 4 properties and max 8 properties
+
+
+Every time application starts, it should try loading existing employees from a file.
+
+Once loading is completed, display a menu with choices for above 4 functionalities 
+ plus option to quit.
+
+depending upon user choice, perform the task.
+
+
+when user select "quit" option, first save all employees to the data file and then close application.

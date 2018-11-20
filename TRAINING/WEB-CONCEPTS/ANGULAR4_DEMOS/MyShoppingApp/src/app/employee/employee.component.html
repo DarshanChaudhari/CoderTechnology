@@ -1,0 +1,84 @@
+<h1>{{name}}</h1>
+<h5> Full Name = {{myConcat()}}</h5>
+
+<body>
+    <tr>
+        <th>FirstName</th>
+        <td>{{FirstName}}</td>
+    </tr>
+    <tr>
+        <th>LastName</th>
+        <td>{{LastName}}</td>
+    </tr>
+    <tr>
+        <th>Gender</th>
+        <td>{{Gender}}</td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td>{{Age}}</td>
+    </tr>
+
+    <span *ngIf="ShowFaculty">Faculty: {{Faculty}}</span>
+
+    <p>Subjects : <span *ngFor="let s of Subjects;">
+            {{s}}</span></p>
+
+    <p>Employee Name : {{emp.name}}</p>
+    <p>Employee Id : {{emp.id}}</p>
+    {{emp|json}}
+    <!-- Its shows full employee object by json pipe -->
+</body>
+
+<!-- Array in Angular 4 -->
+<table>
+    <thead>
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>AnnualSalary</th>
+            <th>DateofBirth</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of employees;">
+            <td>{{e.Code|uppercase}}</td>
+            <td>{{e.Name|emp:e.Gender}}</td> <!-- Customized pipe defined in emp.pipe.ts in pipe folder-->
+            <td>{{e.Gender}}</td>
+            <td>{{e.AnnualSalary}}</td>
+            <td>{{e.DateofBirth | date:'MM/d/yyyy'}}</td>
+            <!--In built date pipe -->
+        </tr>
+        <tr *ngIf="!employees || employees.length==0">
+            <td colspan="5"> No employees</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<!-- ENUM in Angular 4 -->
+
+<table>
+    <tr>
+        <th>Selected</th>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Type</th>
+    </tr>
+    <tr *ngFor="let emp of enumEmployees">
+        <td><span *ngIf="emp == selectedEmployee">----></span></td>
+        <td>{{emp.id}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.salary}}</td>
+        <td> <span [ngSwitch]="emp.type">
+             <span *ngSwitchCase="0">Daily</span>              
+             <span *ngSwitchCase="1">Permanent</span>
+             <span *ngSwitchCase="2">Contract</span>
+             <span *ngSwitchCase="3">Retired</span> 
+             <span *ngSwitchDefault>Other</span>
+            </span>
+        <td>
+    </tr>
+</table>

@@ -1,0 +1,8 @@
+are Static methods are synchorized by default
+what are the mehtods to avoid deadlocks in java
+two classes in object class
+what is SOLID
+DIFFERENCE BETWEEN UDC AND TCP
+WHICH CLASS IS MAPP TO IP PROTOCOL
+WHICH CLASS IS MAPP TO TCP PROTOCOL
+html DOM V/S XML DOM

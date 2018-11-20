@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Layout Demo</title>
+    <style>
+        body{
+            margin:auto;            
+            background-color: cadetblue;
+            align-content: center;                      
+        }
+        
+        
+        table{            
+            height: 600px;
+            width: 500px;
+            color: grey;
+            border: 5pt solid black;
+            background-color: aquamarine;
+            margin :auto;
+            margin-top: 20px;
+            padding: 20px;                        
+        }
+        th{
+            text-align:left;
+            height:"10px";
+        }        
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function moduleSelect() {
+            if (document.forms["myform"].Domain.value == "JEE") {
+                document.getElementById("Core Java").style.display = "block";
+                document.getElementById("Servlet-JSP").style.display = "block";
+                document.getElementById("Spring").style.display = "block";
+                document.getElementById("C #").style.display = "none";
+            }
+            else if (document.forms["myform"].Domain.value == ".NET") {
+                document.getElementById("Core Java").style.display = "none";
+                document.getElementById("Servlet-JSP").style.display = "none";
+                document.getElementById("Spring").style.display = "none";
+                document.getElementById("C #").style.display = "block";
+            }
+
+        }
+
+        function validate() {
+            if (document.forms["myform"].EmpNumber.value == "" || document.forms["myform"].EmpName.value == "" || document.forms["myform"].MPT.value == "" || document.forms["myform"].MTT.value == "" || document.forms["myform"].Assignment.value == "") {
+                alert("Please filled all the values");
+            }
+
+            if (document.forms["myform"].Domain.value != "JEE") {
+
+                alert("Please select the Domain");
+            }
+            
+            if (document.forms["myform"].Module.value == "-----------SELECT MODULE----------") {
+
+                alert("Please select the Module");
+                }
+
+
+            var mptmarks = parseInt(document.getElementById("MPT").value);            
+            var mttmarks = parseInt(document.getElementById("MTT").value);            
+            var assignmentmarks = parseInt(document.getElementById("Assignment").value);          
+            var score = ((mptmarks * 0.15) + (mttmarks * 0.15) + (assignmentmarks * 0.7));
+            alert("Score" + score);
+        }
+
+
+
+    </script>
+    <table>
+        <td class="contentPanel">
+            <form method="GET" name="myform">
+                <tr>
+                    <th >Enter Employee Number : </th>
+                    <td><input type="text" name="EmpNumber" pattern="[0-9]" maxlength="6" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Enter Employee Name : </th>
+                    <td><input type="text" name="EmpName" pattern="[A-Za-z]{3}" maxlength="30" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Choose Domain : </th>
+                    <td><select name="Domain" onchange="moduleSelect()" required>
+                        <option id="sel" selected>-----------SELECT DOMAIN----------</option>
+                        <option id="jee">JEE</option>
+                        <option id="net">.NET</option>
+                    </td>
+                    </select>
+                </tr>
+                <tr>
+                <th>Choose Module : </th>
+                <td><select name="Module">
+                    <option id="sel" selected>-----------SELECT MODULE----------</option>
+                    <option id="Core Java">Core Java</option>
+                    <option id="Servlet-JSP">Servlet-JSP</option>
+                    <option id="Spring">Spring</option>
+                    <option id="C #">C #</option>
+                </td>
+                </select> 
+                </tr>
+                <tr>
+                    <th>Enter MPT Marks : </th>
+                    <td><input id="MPT" name="MPT"></td>
+                </tr>
+                <tr>
+                    <th>Enter MTT Marks : </th>
+                    <td><input id="MTT" name="MTT"></td>
+                </tr>
+                <tr>
+                    <th>Enter Assignment Marks : </th>
+                    <td><input id="Assignment" name="Assignment"></td>
+                </tr> 
+                <tr>   
+                    <td><input type="button" value="Calculate Module Score" onclick="validate()" />
+                </tr>
+            </form>
+        </td>
+        </tr>
+    </table>
+</body>
+
+</html>

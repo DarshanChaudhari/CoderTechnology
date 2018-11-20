@@ -1,0 +1,53 @@
+<html>
+	<head>
+		
+		<script type = "text/javascript">
+		
+			function calculator() 
+			{
+					//para1=document.getElementById("firstnumber").value;
+					value1 = parseInt(document.getElementById("firstnumber").value);
+					value2=parseInt(document.getElementById("secondnumber").value);																		
+
+					var operation = document.getElementById("operation").value;
+					
+					if (operation == "+") 
+					{
+						var final = value1 + value2;											
+					}
+
+						if (operation == "-") 
+					{
+						var final = value1 - value2;											
+					}
+
+						if (operation == "*") 
+					{
+						var final = value1 * value2;											
+					}
+					
+					if (operation == "/") 
+					{
+						var final = value1 / value2;					
+						
+					}
+
+				document.getElementById("calc").value = final;
+					
+			}		
+		</script>	
+	</head>	
+	<body>
+		First Number 	:    <input id="firstnumber"/>
+		Second Number   :    <input id="secondnumber"/>
+		<select id="operation">
+			<option id="add">+</option>
+			<option id="sub">-</option>
+			<option id="mul">*</option>
+			<option id="div">/</option>
+		</select>	
+	<input type="button" value="Calculator" onClick="calculator()"/>
+	<input id="calc"/>			
+</select>
+	</body>
+</html>

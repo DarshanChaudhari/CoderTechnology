@@ -1,0 +1,63 @@
+
+
+
+Local Variable : 	Accessible only to parent method
+	     		Created when method is called and destroyed when mehtod ends
+
+
+Instance Variable : 	Accessible to entirice object/instance
+		    	All methods in current object
+		   	Created with Object creation (Constructor)
+		    	Destroyed along with Object
+
+Class Variable : 	Declare as STATIC
+			Accessible to ALL objects AND ALL methods in every object
+			Created when Class is loaded in memory [Just before creating First object] 
+			Destroyed when class in Unloaded from memory (Usually when JVM ends)
+	
+
+
+
+
+
+
+Note :  		BOTH INSTANCE VARIABLES AND CLASS VARIABLES ARE MEMBER OF CLASS. [DECLARED INSIDE A CLASS BUT OUTSIDE ANY METHOD]
+			BOTH INSTANCE VARIABLE AND CLASS VARIABLES CAN BE ASSIGN ACCESS MODIFIERS
+
+
+
+
+
+QUESTION : HOW JVM STORE CLASS VARIABLE SEPERATE 
+
+
+==============================================================================================================================================================================================================================
+
+BOXING : 	PUT PRIMITIVE IN WRAPPER OBJECT
+		Integer n = new Integer(100);
+		
+		OR
+		
+		Integer n = Integer.valueOf(100);
+
+
+
+
+UNBOXING : 	EXTRACT PRIMITIVE FROM WRAPPER OBJECT
+		int k = n.intValue();
+
+
+AUTOBOXING   :	Integer n =100;
+
+AUTOUNBOXING :  int k =n; //Provided n is Integer object		
+
+==============================================================================================================================================================================================================================
+
+	/ IMPLICIT : WHEN SOURCE INHERITS FROM TARGET
+
+	target = source
+
+	/ EXPLICIT : when target inherits from source
+	source = (Source) target		
+
+==============================================================================================================================================================================================================================

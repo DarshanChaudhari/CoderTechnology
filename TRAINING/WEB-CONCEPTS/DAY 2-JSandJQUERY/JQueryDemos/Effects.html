@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>JQUERYDEMOS</title>
+    <script src="scripts/jquery-1.4.4.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <br><br>
+    <h1 id="Header" align="center"><strong>This heading can be applied jQuery effects</strong></h1> 
+    <h2 align="center">Click the buttons and see the effects</h2>
+
+    <button id="Hide">Hide</button>
+    <button id="Show">Show</button>
+    <button id="Toggle">Toggle Show/Hide</button>
+    <button id="SlideUp">Slide Up</button> <br><br>
+    <button id="SlideDown">Slide Down</button>
+    <button id="SlideToggle">Slide Toggle</button>
+    <button id="FadeIn">Fade In</button>
+    <button id="FadeOut">Fade Out</button><br><br>
+    <button id="FadeToggle">Fade Toggle</button>
+    <button id="Animate">Animate</button>
+
+
+
+    <script type="text/javascript">
+        // JQuery object to be used to manipulate the DOM
+        $(document).ready(function () {
+            $("#Hide").click(function () {
+                $("#Header").hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $("#Show").click(function () {
+                $("#Header").show();
+
+            });
+        });
+
+        $(document).ready(function () {
+            $("#Toggle").click(function () {
+                $("#Header").toggle();
+
+            });
+        });
+
+        $(document).ready(function () {
+            $("#SlideUp").click(function () {
+                $("#Header").slideUp();
+
+            });
+        });
+
+        $(document).ready(function () {
+            $("#SlideDown").click(function () {
+                $("#Header").slideDown();
+
+            });
+        });
+
+        $(document).ready(function () {
+            $("#SlideToggle").click(function () {
+                $("#Header").slideToggle();
+
+            });
+        });
+
+        $(document).ready(function () {
+            $("#FadeIn").click(function () {
+                $("#Header").fadeIn();
+            });
+        });
+
+        $(document).ready(function () {
+            $("#FadeOut").click(function () {
+                $("#Header").fadeOut();
+            });
+        });
+
+        $(document).ready(function () {
+            $("#FadeToggle").click(function () {
+                $("#Header").fadeToggle();
+            });
+        });
+
+        $(document).ready(function () {
+            $("#Animate").click(function () {
+                $("#Header").animate({
+                    width: "100", opacity: 1.0, marginLeft: "0in", fontSize: "100%", borderWidth: "1px"
+                }, 1500);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
