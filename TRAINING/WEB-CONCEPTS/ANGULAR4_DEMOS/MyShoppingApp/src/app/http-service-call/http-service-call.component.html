@@ -1,145 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="container">
 
-<head>
-  <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-  <title>Add Item</title>
-</head>
-
-<body> 
-
-  <form action="">
-    <h3 align="center">Add Item</h3>
-    <!-- First Name : <input name="firstname" type="text"><br><br>
-    Last Name : <input name="firstname" type="text"><br><br> -->
-    <div class="container">
-      <div class="jumbotron">
-        <form #frm="ngForm" (ngSubmit)="addItems(frm)" *ngIf="!toggleForm">
-          <div class="form-group">
-            <label for="id">
-              ID:
-            </label>
-            <!-- This banana binding is [(ngModel)] = "varbind" and this is defined and declared in .ts file . Use of this is to display default text -->
-            <!-- If normal ngModel you have entered after name its just to activate disabled button -->
-            <input type="text" name="ID" #NameControl="ngModel" pattern="[1-9]{1}" [(ngModel)]="varbind" required
-              class="form-control">
-
-            <div *ngIf="NameControl?.touched && NameControl?.invalid" class="alert alert-danger">
-              <div *ngIf="NameControl.errors?.pattern">Please Valid Enter ID</div>
-              <div *ngIf="NameControl.errors?.required">ID is required.</div>
-            </div>
-
-          </div>
-          <div class="form-group">
-            <label for="title">
-              Title:
-            </label>
-            <input type="text" name="title" #ContactControl="ngModel" pattern="[a-zA-Z][a-zA-Z]+" (ngModel)="title"
-              required class="form-control">
-          </div>
-
-          <div *ngIf="ContactControl?.touched && ContactControl?.invalid" class="alert alert-danger">
-            <div *ngIf="ContactControl.errors?.required">Title is required</div>
-            <div *ngIf="ContactControl.errors?.pattern">Enter valid Title</div>
-          </div>
-
-          <div class="form-group">
-            <label for="author">
-              Author:
-            </label>
-            <input type="text" name="author" #ContactControl="ngModel" pattern="[a-zA-Z][a-zA-Z]+" (ngModel)="title"
-              required class="form-control">
-          </div>
-
-          <div *ngIf="ContactControl?.touched && ContactControl?.invalid" class="alert alert-danger">
-            <div *ngIf="ContactControl.errors?.required">Author is required</div>
-            <div *ngIf="ContactControl.errors?.pattern">Enter valid author</div>
-          </div>
-
-          <button type="submit" name="button" class="btn btn-success" [disabled]="frm.invalid">Add Item</button>
-          <!-- <button type="submit" name="button" class="btn btn-success"disabled>Add User</button> -->
-        </form>
+  <div class="jumbotron">
+    <form #frm="ngForm" (ngSubmit)="SavePosts(frm)" ngNativeValidate *ngIf="!toggleForm">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Add Posts</h3>
+        </div>
       </div>
-    </div>
-    <!--The below line is used to displayed instead of console. it displayed all the values -key value pair  -->
-    <!-- {frm.value | json}} -->
+      <div class="form-group">
+        <label for="id">
+          ID:
+        </label>
+        <input type="text" name="id" [(ngModel)]="defId" #idControl="ngModel" required class="form-control">
+        <div *ngIf="idControl?.touched && idControl?.invalid" class="alert alert-danger">
+          <div *ngIf="idControl.errors?.required">ID is required</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="title">
+          Title:
+        </label>
+        <input type="text" name="title" [(ngModel)]="defTitle" #titleControl="ngModel" required class="form-control">
+        <div *ngIf="titleControl?.touched && titleControl?.invalid" class="alert alert-danger">
+          <div *ngIf="titleControl.errors?.required">Title is required</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="author">
+          Author:
+        </label>
+        <input type="text" name="author" [(ngModel)]="defAuthor" #authorControl="ngModel" required class="form-control">
+        <div *ngIf="authorControl?.touched && authorControl?.invalid" class="alert alert-danger">
+          <div *ngIf="authorControl.errors?.required">Email is required</div>
+        </div>
+      </div>
+      <button type="submit" name="button" class="btn btn-success" [disabled]="frm.invalid">Add Post</button>
+    </form>
 
-  </form>
-
-  <h4><strong>List of Posts</strong></h4>
-  <form #editfrm="ngForm" (ngSubmit)="editForm(editfrm)" *ngIf="toggleForm">"
-    <h2>Edit Item</h2>
-    <div class="form-group">
+    <form #editfrm="ngForm" (ngSubmit)="EditPost(editfrm)" ngNativeValidate *ngIf="toggleForm">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Edit Post</h3>
+        </div>
+      </div>
+      <div class="form-group">
         <label for="">
           ID:
         </label>
-        <input type="text" class="form-control" name="I=Id" value="" [ngModel]="selectedItem.Id">
+        <input type="text" name="id" [(ngModel)]="selectedPost.id" #idControl="ngModel"
+         required class="form-control">
+        <div *ngIf="idControl?.touched && idControl?.invalid" class="alert alert-danger">
+          <div *ngIf="idControl.errors?.required">ID is required</div>
+        </div>
       </div>
-
-    <div class="form-group">
-      <label for="">
-        Title:
-      </label>
-      <input type="text" class="form-control" name="title" value="" [ngModel]="selectedItem.title">
-    </div>
-    
-
-    <div class="form-group">
+      <div class="form-group">
+        <label for="">
+          Title:
+        </label>
+        <input type="text" name="title" [(ngModel)]="selectedPost.title" #titleEditControl="ngModel"
+         required class="form-control">
+        <div *ngIf="titleEditControl?.touched && titleEditControl?.invalid" class="alert alert-danger">
+          <div *ngIf="titleEditControl.errors?.required">Title is required</div>
+        </div>
+      </div>
+      <div class="form-group">
         <label for="">
           Author:
         </label>
-        <input type="text" class="form-control" name="author" value="" [ngModel]="selectedItem.author">
-      </div>
-      </form>
-  
- 
-
-</body>
-
-</html>
-
-
-<table>
-  <thead>
-    <tr>
-      <div class="col-md-2">
-        ID
-      </div>
-      <div class="col-md-2">
-        Title
-      </div>
-      <div class="col-md-2">
-        Author
-      </div>
-    </tr>
-  </thead>
-  <tbody>
-
-    <tr *ngFor="let e of items;">
-      <div class="col-md-2">
-        {{e.id}}
-      </div>
-      <div class="col-md-2">
-        {{e.title}}
-      </div> <!-- Customized pipe defined in emp.pipe.ts in pipe folder-->
-      <div class="col-md-2">
-        {{e.author}}
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <button type="button" name="button" class="btn btn-primary" (click)='showEditform(items)' [disabled]='toggleForm'>Edit</button>
-        </div>
-        <div class="col-md-3">
-          <button type="button" name="button" class="btn btn-danger" (click)='deleteItem(items._id)'>Delete</button>
+        <input type="text" name="author" [(ngModel)]="selectedPost.author" #authorEditControl="ngModel" required class="form-control">
+        <div *ngIf="authorEditControl?.touched && authorEditControl?.invalid" class="alert alert-danger">
+          <div *ngIf="authorEditControl.errors?.required">Author is required</div>
         </div>
       </div>
+      <button type="submit" name="button" class="btn btn-success" [disabled]="editfrm.invalid">Save</button>
+    </form>
+  </div>
+</div>
 
-      <!--In built date pipe -->
-    </tr>
-    <tr *ngIf="!items || items.length==0">
-      <td colspan="5"> No records to display</td>
-    </tr>
-  </tbody>
-</table>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">List of Posts</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table-bordered table-hover">
+      <thead>
+        <tr>
+
+          <th>ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th></th>
+          <th></th>
+          <th></th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of posts;">
+
+          <td>{{p.id}}</td>
+          <td>{{p.title }}</td>
+          <td>{{p.author }}</td>
+          <td><button type="button" name="button" class="btn btn-primary" (click)='showEditform(p)' [disabled]='toggleForm'>Edit</button></td>
+          <td><button type="button" name="button" class="btn btn-danger" (click)='deleteItem(p.id)'>Delete</button></td>
+          <td><button type="button" name="button" class="btn" (click)='showAddForm()'>Cancel</button></td>
+        </tr>
+        <tr *ngIf="!posts || posts.length==0">
+          <td colspan="3">No Records to display</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

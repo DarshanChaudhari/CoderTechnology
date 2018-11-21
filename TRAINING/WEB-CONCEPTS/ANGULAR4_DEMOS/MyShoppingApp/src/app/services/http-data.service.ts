@@ -19,11 +19,11 @@ export class HttpDataService {
     return this.http.post('http://localhost:3000/posts',addItem);
   }
 
-  updateShoppingItems(newItem) {
-    return this.http.put('http://localhost:3000/posts',newItem);
+  updateShoppingItems(newitem) {
+    return this.http.put('http://localhost:3000/posts/'+ newitem.id,newitem);
   }
 
-  deleteShoppingItems() {
-    
+  deleteShoppingItems(id) {
+    return this.http.delete('http://localhost:3000/posts/'+ id)
   }
 }
