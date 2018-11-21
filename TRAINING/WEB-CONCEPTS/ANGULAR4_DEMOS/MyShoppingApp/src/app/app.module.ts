@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,7 +12,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingSModule } from './app-routing-s/app-routing-s.module';
 import { EmpDataService } from './services/emp-data.service';
+import {FormsModule} from '@angular/forms';
 import { EmployeeListServiceComponent } from './employee-list-service/employee-list-service.component';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { HttpServiceCallComponent } from './http-service-call/http-service-call.component';
 
 
 
@@ -30,11 +33,19 @@ import { EmployeeListServiceComponent } from './employee-list-service/employee-l
     AppComponent,
     HomeComponent,
     EmployeeComponent,    
-    ContactUsComponent, EmpPipe, EmployeeInfoComponent, PageNotFoundComponent, EmployeeListServiceComponent, EmployeeListServiceComponent
+    ContactUsComponent,
+    EmpPipe,
+    EmployeeInfoComponent,
+    PageNotFoundComponent,
+    EmployeeListServiceComponent,
+    CreateEmployeeComponent,
+    HttpServiceCallComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    HttpClientModule
     //AppRoutingSModule
     // RouterModule.forRoot(appRouters)  for self app.module.ts uncomment this and comment uncomment line
   ],
