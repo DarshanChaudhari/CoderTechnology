@@ -2,27 +2,26 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "C",
+      "author": "Kanitkaring"
     },
     {
-      "id": 2,
-      "title": "json1-server",
-      "author": "typicode2"
+      "title": "C++",
+      "author": "Kanitkar",
+      "id": 2
     },
     {
-      "title": "names",
-      "author": "Manoj",
+      "title": "Java",
+      "author": "Sierra",
       "id": 3
-    }  
-  ],
-  "comments": [
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "Python",
+      "author": "Plural",
+      "id": 4
     }
   ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }
