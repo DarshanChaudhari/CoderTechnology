@@ -1,9 +1,9 @@
 {
   "posts": [
-    {
-      "id": 1,
+    {      
       "title": "C",
-      "author": "Kanitkaring"
+      "author": "Kanitkaring",
+	  "id": 1
     },
     {
       "title": "C++",
