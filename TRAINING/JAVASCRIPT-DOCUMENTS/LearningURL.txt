@@ -1,5 +1,0 @@
-JSON -->
-https://github.com/typicode/json-server
-
-AJAX-->
-https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/open
