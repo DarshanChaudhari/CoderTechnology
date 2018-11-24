@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpDataService } from '../services/http-data.service';
 import { Item } from '../model/Item';
-import { from } from 'rxjs';
 import { NgForm } from '@angular/forms';
 
 @Component({

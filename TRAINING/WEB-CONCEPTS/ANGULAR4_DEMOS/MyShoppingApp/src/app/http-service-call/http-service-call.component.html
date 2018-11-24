@@ -1,7 +1,7 @@
 <div class="container">
 
   <div class="jumbotron">
-    <form #frm="ngForm" (ngSubmit)="SavePosts(frm)" ngNativeValidate *ngIf="!toggleForm">
+    <form #frm="ngForm" (ngSubmit)="addItems(frm)" ngNativeValidate *ngIf="!toggleForm">
       <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">Add Posts</h3>
@@ -37,7 +37,7 @@
       <button type="submit" name="button" class="btn btn-success" [disabled]="frm.invalid">Add Post</button>
     </form>
 
-    <form #editfrm="ngForm" (ngSubmit)="EditPost(editfrm)" ngNativeValidate *ngIf="toggleForm">
+    <form #editfrm="ngForm" (ngSubmit)="editItems(editfrm)" ngNativeValidate *ngIf="toggleForm">
       <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">Edit Post</h3>
@@ -47,7 +47,7 @@
         <label for="">
           ID:
         </label>
-        <input type="text" name="id" [(ngModel)]="selectedPost.id" #idControl="ngModel"
+        <input type="text" name="id" [(ngModel)]="selectedItem.id" #idControl="ngModel"
          required class="form-control">
         <div *ngIf="idControl?.touched && idControl?.invalid" class="alert alert-danger">
           <div *ngIf="idControl.errors?.required">ID is required</div>
@@ -57,7 +57,7 @@
         <label for="">
           Title:
         </label>
-        <input type="text" name="title" [(ngModel)]="selectedPost.title" #titleEditControl="ngModel"
+        <input type="text" name="title" [(ngModel)]="selectedItem.title" #titleEditControl="ngModel"
          required class="form-control">
         <div *ngIf="titleEditControl?.touched && titleEditControl?.invalid" class="alert alert-danger">
           <div *ngIf="titleEditControl.errors?.required">Title is required</div>
@@ -67,7 +67,7 @@
         <label for="">
           Author:
         </label>
-        <input type="text" name="author" [(ngModel)]="selectedPost.author" #authorEditControl="ngModel" required class="form-control">
+        <input type="text" name="author" [(ngModel)]="selectedItem.author" #authorEditControl="ngModel" required class="form-control">
         <div *ngIf="authorEditControl?.touched && authorEditControl?.invalid" class="alert alert-danger">
           <div *ngIf="authorEditControl.errors?.required">Author is required</div>
         </div>
@@ -97,7 +97,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let p of posts;">
+        <tr *ngFor="let p of items;">
 
           <td>{{p.id}}</td>
           <td>{{p.title }}</td>
@@ -106,7 +106,7 @@
           <td><button type="button" name="button" class="btn btn-danger" (click)='deleteItem(p.id)'>Delete</button></td>
           <td><button type="button" name="button" class="btn" (click)='showAddForm()'>Cancel</button></td>
         </tr>
-        <tr *ngIf="!posts || posts.length==0">
+        <tr *ngIf="!items || items.length==0">
           <td colspan="3">No Records to display</td>
         </tr>
       </tbody>
