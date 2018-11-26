@@ -14,7 +14,15 @@ public class ServletLifeCycle extends HttpServlet {
      * Default constructor. 
      */
     public ServletLifeCycle() {
-        // TODO Auto-generated constructor stub
+       System.out.println("In the Constructor");
     }
+    
+//    public init(SystemConfig config) {
+//    	
+//    }
+//    
+//   public init() {
+//    	
+//    }
 
 }

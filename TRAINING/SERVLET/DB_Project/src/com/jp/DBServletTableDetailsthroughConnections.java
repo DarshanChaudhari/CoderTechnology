@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class DBServletTableDetailsthroughConnections
  */
-@WebServlet("/DBServletTableDetailsthroughConnections")
+@WebServlet("/DBServletTableDetails")
 public class DBServletTableDetailsthroughConnections extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -43,11 +43,12 @@ public class DBServletTableDetailsthroughConnections extends HttpServlet {
 			 ResultSet rs = conUtil.getTableNames(tableName);
              ResultSetMetaData rsmd =rs.getMetaData();
              int ColCount = rsmd.getColumnCount();
+             
              out.println("<TR>");
              for (int i=1;i<=ColCount;i++)
              {  
             	out.println("<TD>"); 
-				out.println(colNames.add(rsmd.getColumnName(i)));
+				out.println(rsmd.getColumnName(i));
 				out.println("</TD>");
              }
              out.println("</TR>");
