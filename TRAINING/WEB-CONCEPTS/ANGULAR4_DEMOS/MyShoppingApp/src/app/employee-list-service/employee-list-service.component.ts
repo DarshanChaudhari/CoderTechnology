@@ -9,13 +9,13 @@ import { EmpDataService } from '../services/emp-data.service';
 export class EmployeeListServiceComponent implements OnInit {
   employees :any[];
 
-  constructor(private _employeeService: EmpDataService) { }
+  constructor(private employeeService: EmpDataService) { }
   
   ngOnInit() {
     this.getEmployeesfromEmpDataService();
   }
 
   getEmployeesfromEmpDataService(): void {
-    this.employees = this._employeeService.getEmployees();
+    this.employees = this.employeeService.getEmployees();
   }
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<button type="button" onclick="sendDoc()">Send data</button>
+
+<p id="demo"></p>
+
+
+<script>
+function loadDoc() {
+  let xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };   xhttp.open("GET","myfile.txt", true);
+  
+  xhttp.send();
+}
+
+function sendDoc() {
+  let xhttp = newXMLHttpRequest();
+  xhttp.onreadystatechange =function(){
+
+   };  xhttp.open("POST","myfile.txt", true);
+
+  xhttp.send();
+}
+
+
+
+</script>
+
+</body>
+</html>

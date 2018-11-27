@@ -1,5 +1,6 @@
 {
   "posts": [
+<<<<<<< HEAD
     {
       "id": 1,
       "title": "json-server",
@@ -23,6 +24,26 @@
       "postId": 1
     }
   ],
+=======
+    {      
+      "Name": "Nokia 5280",      
+	  "id": 1
+    },
+    {
+      "Name": "iPhone 5s",      
+	  "id": 1
+    },
+    {
+      "Name": "Motorola 420",      
+	  "id": 1
+    },
+    {
+       "Name": "Samsung s8",      
+	  "id": 1
+    }
+  ],
+  "comments": [],
+>>>>>>> 54f204a9c9bf33d75330f6cb6e8a3913848452cf
   "profile": {
     "name": "typicode"
   }

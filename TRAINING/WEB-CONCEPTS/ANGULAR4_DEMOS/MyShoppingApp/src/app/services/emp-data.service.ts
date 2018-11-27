@@ -10,12 +10,7 @@ export class EmpDataService {
   getEmployees(): any[] {
     return [
       {
-        Code: 'emp101',
-        Name: "Rashmi",
-        Gender: 'Female',
-        AnnualSalary: 5500,
-        DateofBirth: '9/6/1985'
-      },
+        Code: 'emp101',        Name: "Rashmi",        Gender: 'Female',        AnnualSalary: 5500,        DateofBirth: '9/6/1985'      },
       {
         Code: 'emp102',
         Name: "Anushka",

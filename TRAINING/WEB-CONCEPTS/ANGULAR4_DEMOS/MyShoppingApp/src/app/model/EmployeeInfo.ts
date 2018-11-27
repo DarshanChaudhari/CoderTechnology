@@ -10,4 +10,4 @@ export class empInfo {
     isActive:boolean;
     photoPath?:string;
 
-}
+}   

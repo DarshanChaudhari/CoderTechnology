@@ -41,10 +41,11 @@ export class HttpServiceCallComponent implements OnInit {
 
   editItems(editfrm){
      let newitem: Item = {
-     id:this.selectedItem.Id,
+     id:this.selectedItem.id,
      title:editfrm.value.title,
      author:editfrm.value.author   
     }
+    console.log(newitem);
     this.HttpDataService.updateShoppingItems(newitem)  
         .subscribe(result => {
           console.log('original item to be updated with old values' + result);
@@ -56,7 +57,25 @@ export class HttpServiceCallComponent implements OnInit {
 
   showEditform(Item) {
     this.selectedItem = Item;
-    this.toggleForm = !this.toggleForm;
+    this.toggleForm = true;
+  }
+
+  showAddForm() {
+    this.toggleForm=false;
+  }
+
+
+  deleteItem(id) {
+    this.HttpDataService.deleteShoppingItems(id)
+      .subscribe(result => {
+        console.log(result);
+        
+          for (var i = 0; i < this.items.length; i++) {
+            if (id == this.items[i].id) {
+              this.items.splice(i, 1);
+            }            
+        }
+      })
   }
 
 }

@@ -1,0 +1,44 @@
+==> For ANGULAR INSTALLATION
+
+	npm  install @angular/cli -g -- you can do it in cmd
+
+==> CREATING THE ANGULAR PROJECT
+
+	ng new myprojectname
+
+==> OPEN IT IN VISUAL CODE
+	got to src/app
+	
+	1. COMPONENT ==> ng g c home --->  ng = angular, g = generate, c= component, home directories
+	2. SERVICES  ==> ng g s Employeedata ---> s = services
+	3. INTERFACE ==> ng g i Employeedate ---> i = interface
+	4. MODULES   ==> ng g m Employeedate ---> m = Module
+	5. PIPES     ==> ng g p Employeedate ---> p = PIPES
+
+==> TO START -- npm start or ng serve
+
+
+==> FOR BOOTSTRAP INSTALLATION
+	npm install bootstrap@3 --save
+AFTER INSTALLATION, COPY THE PATH OF CSS AND PLACE IT IN angular.json file in style:
+"node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+
+
+
+==> FOR JSON INSTALLATION
+	npm install -g json-server
+
+==> TO START JSON SERVER
+	json-server --watch db.json
+
+
+
+==> NOTE: IF YOU WANT TO CHANGE THE PORT NUMBER : IN package.json -- add "start": "ng serve" --port 4500
+
+
+
+
+
+
+		

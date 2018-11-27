@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {      
+      "Name": "Nokia 5280",      
+	  "id": 1
+    },
+    {
+      "Name": "iPhone 5s",      
+	  "id": 1
+    },
+    {
+      "Name": "Motorola 420",      
+	  "id": 1
+    },
+    {
+       "Name": "Samsung s8",      
+	  "id": 1
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
