@@ -217,3 +217,7 @@ Servlet Context v/s Servlet Config
 				
 				
 		<#> If you want to put data on jsp then you have put to data on request, dispatcher is only to give control
+		
+		
+ASSIGNMENT : 1. CREATE TABLE FOR THE BELOW CREATE PRODUCT ID , PRODUCT NAME , PRODUT CATEGORY AND PRICE,
+			 2. ADD 6 RECORDS INSIDE IT AND DO THE SAME WHICH WE HAVE DONE IN THE FOR DATABASE.	
