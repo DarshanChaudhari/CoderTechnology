@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.sql.Array;
 import java.util.ArrayList;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,7 +35,10 @@ public class FrontController extends HttpServlet {
 			switch(command) {		
 				case "empList" :{
 					ArrayList<Employee> empList = services.getEmpList();
-					System.out.println(empList);				
+					System.out.println(empList);			
+					request.setAttribute("empList", empList);
+					RequestDispatcher dispatch = request.getRequestDispatcher("/WEB-INF/jsps/EmpList.jsp");
+					dispatch.forward(request, response);
 				}
 			}
 		} catch (HrException e) {

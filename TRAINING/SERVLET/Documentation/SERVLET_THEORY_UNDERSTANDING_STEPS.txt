@@ -212,4 +212,8 @@ Servlet Context v/s Servlet Config
 			6. ServiceEmployeeImpl [IMPLEMENTATION]					package com.jp.hr.services;
 			7. Create Servlet Class									package com.jp.hr.servlets;
 			
-				Create Object of DAO in Servlet 
+				Create Object of DAO in Servlet by initialising init() method because if you create objecti in doGet and doPost then i will create object again agian due to doGet and doPost method called multiple times.
+				DAO is the stateless object it need created only once.	
+				
+				
+		<#> If you want to put data on jsp then you have put to data on request, dispatcher is only to give control

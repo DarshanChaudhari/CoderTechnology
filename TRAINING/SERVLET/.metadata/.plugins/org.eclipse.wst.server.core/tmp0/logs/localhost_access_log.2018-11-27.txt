@@ -99,3 +99,13 @@
 0:0:0:0:0:0:0:1 - - [27/Nov/2018:15:32:18 +0530] "GET /JPM_050_Layer_DAO_Service/subract.do HTTP/1.1" 200 -
 0:0:0:0:0:0:0:1 - - [27/Nov/2018:15:32:36 +0530] "GET /JPM_050_Layer_DAO_Service/abc.do HTTP/1.1" 200 -
 0:0:0:0:0:0:0:1 - - [27/Nov/2018:15:54:55 +0530] "GET /JPM_050_Layer_DAO_Service/a.do HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2018:16:21:12 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [27/Nov/2018:16:21:13 +0530] "GET /JPM_050_Layer_DAO_Service/WEB-INF/classes/com/jp/hr/daos/DaoEmployeeImpl.java HTTP/1.1" 404 1047
+127.0.0.1 - - [27/Nov/2018:16:22:01 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [27/Nov/2018:16:22:24 +0530] "GET /JPM_050_Layer_DAO_Service/*.do HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [27/Nov/2018:16:22:33 +0530] "GET /JPM_050_Layer_DAO_Service/empList.do HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [27/Nov/2018:16:25:26 +0530] "GET /JPM_050_Layer_DAO_Service/*.do HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [27/Nov/2018:16:25:35 +0530] "GET /JPM_050_Layer_DAO_Service/emplist.do HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2018:16:52:22 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [27/Nov/2018:16:52:23 +0530] "GET /JPM_050_Layer_DAO_Service/*.do HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [27/Nov/2018:16:52:31 +0530] "GET /JPM_050_Layer_DAO_Service/empList.do HTTP/1.1" 200 6378
