@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>JPM_040_Config</display-name>
+  <context-param>
+    <param-name>CompanyName</param-name>
+    <param-value>J P Morgan Chase</param-value>
+    
+  </context-param>
+  
+  <servlet>
+  	<servlet-name>p2</servlet-name>
+  	<servlet-class>com.jp.config.servlets.Process2</servlet-class>
+  	<init-param>
+  		<param-name>PageHead</param-name>
+  		<param-value>Employee List</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>p2</servlet-name>
+  	<url-pattern>/process2</url-pattern>
+  </servlet-mapping>
+  
+  <!-- This Entire is for Process1 servlet -->
+  <!-- <servlet>
+    <servlet-name>p1</servlet-name>
+    <servlet-class>com.jp.config.servlets.Process1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>p1</servlet-name>
+    <url-pattern>/process1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>p1</servlet-name>
+    <url-pattern>/process2</url-pattern>
+  </servlet-mapping>
+   -->
+  
+</web-app>

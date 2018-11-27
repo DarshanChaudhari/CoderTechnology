@@ -1,0 +1,24 @@
+package com.jp.hr.entities;
+
+public class Employee {
+	private int empId;
+	private String firstName;
+	private String LastName;
+	
+	
+	public Employee(int empId, String firstName, String lastName) {
+		super();
+		this.empId = empId;
+		this.firstName = firstName;
+		this.LastName = lastName;
+	}
+
+
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+}
