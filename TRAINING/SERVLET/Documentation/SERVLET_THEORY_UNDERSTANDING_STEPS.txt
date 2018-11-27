@@ -1,0 +1,215 @@
+==SERVLET==
+FORWARD DISPATCHING IN JSP
+	-RequestDispatcher dispatch = request.getRequestDispatcher("/process2");
+    	dispatch.forward(request, response); 
+
+
+INCLUDE DISPATCHING IN JSP
+	-In welcome.jsp we have to add the <jsp:include page="/jsps/Head.jsp"></jsp:include> and comment or cut <h1>Welcome to the jp morgan</h1>. Here we can dispatched multiple jsps.
+	- For this, we have to create Head.jsp and PageHead.jsp and put <h1>Welcome to the jp morgan</h1> tag in Head.jsp and in PageHead.jsp put <h3>Welcome to the site</h3>
+	
+Note: 1.Include Dispatching response are not wipe out, but in forward dispatching its wipe out.
+	  2.Include Dispatching can be used in Servlet also.  	
+	  
+
+CONFIGURATION ON SERVLET - xml approach
+		- Dont used constructor in Servlet, if you want to used to initialise used init method.
+		- In Servlet server create an object if you dont used constructor over here server will create compiler will create an no arg constructor.
+		- Use only doGet method
+		- comment annotation - examples - //@WebServlet("/process1")
+		- open web.xml remove all welcome-file-file tag.
+		- <servlet-name> - Canonical name. This xm uses this name internally to mapp with servlet mapping tags. The servlet-name of servlet-mapping must be same as servlet-name of servlet tag. please check the below tags
+	=====================================================================================================================================		
+				<servlet>
+					<servlet-name>p1</servlet-name>
+					<servlet-class>com.jp.config.servlets.Process1</servlet-class> 
+				</servlet>
+			 
+				<servlet-mapping>
+					<servlet-name>p1</servlet-name>
+					<url-pattern>/process1</url-pattern>
+				</servlet-mapping>
+	=====================================================================================================================================
+		- Add the servlet into server and Restart the server.
+		- Run it.
+		
+		- Now uncomment the annotation and start the server and execute it, it will throw error with tomcat encountered problem.
+		- change the annotation process2 and do the same. it will work fine. and once you give process2 instead process1 in the url, you will get two urls are same server.
+	Adding multiple URLs in xml
+		- You can add one more servlet mapping tags and change url pattern process2 , now you can get two urls on same server.	Below are the examples
+			
+				<servlet-mapping>
+					<servlet-name>p1</servlet-name>
+					<url-pattern>/process1</url-pattern>
+				</servlet-mapping>		 
+		 
+				<servlet-mapping>
+					<servlet-name>p1</servlet-name>
+					<url-pattern>/process2</url-pattern>
+				</servlet-mapping>
+	Adding multiple URLs in annotations
+		- you can add multiple url in annotation - by simply writing  @WebServlet(urlPatterns={"/process2", "/process1","/process3"})
+		- Comment the xml servlet mapping tags
+		
+=====================================================================================================================================
+		CONTEXT PARAMTERS IN SERVLET :
+			-Add the below path in web.xml
+				<context-param>
+					<param-name>CompanyName</param-name>
+					<param-value>J P Morgan Chase</param-value> 	
+				</context-param>
+			- add the below code in servlet in doGet method
+				ServletContext ctx = super.getServletContext();		
+				System.out.println(ctx.getInitParameter("CompanyName"));
+				
+				
+	Note: Declaring context parameters through Annotations. They are to be declared on the listener or Filter.	
+	Note : Declaring config paramters : They are private to the servlets . They are not accesible to another servlets
+=====================================================================================================================================		
+		
+		CONTEXT PARAMTERS IN JSP : using xml
+			-Add the below path in web.xml
+				<context-param>
+					<param-name>CompanyName</param-name>
+					<param-value>J P Morgan Chase</param-value> 	
+				</context-param>
+			
+			- Create jsps folder WEB-INF and create new jsp file. For jsp to run dont keep jsp file under WEB-INF folder. keep outside
+			- add the below code in servlet in doGet method
+				ServletContext ctx = super.getServletContext();		
+				System.out.println(ctx.getInitParameter("CompanyName"));
+				
+=====================================================================================================================================
+	Declaring config paramters : They are private to the servlets . They are not accesible to another servlets
+	
+	-- Config in Servlets
+	
+	@WebServlet(urlPatterns={"/process2", "/process1"}, 
+	initParams={@WebInitParam(name="pageHead",value="Employee List"), @WebInitParam(name="FootHead",value="Contact Details")})
+		To access please use 
+			// Accessing Config
+		ServletConfig cfg = super.getServletConfig();
+		System.out.println(cfg.getInitParameter("pageHead"));
+		System.out.println(cfg.getInitParameter("footHead"));
+	
+	Note : for the config parameters you have keep xml mapping tag comments if still you want to run then url- pattern must be different
+	
+=====================================================================================================================================
+
+	-- Config in XMLs
+			
+			 <servlet>
+				<servlet-name>p2</servlet-name>
+				<servlet-class>com.jp.config.servlets.Process2</servlet-class>
+				<init-param>
+					<param-name>PageHead</param-name>
+					<param-value>Employee List</param-value>
+				</init-param>
+		  </servlet>
+		  
+		  Add the below code in doGet method
+			ServletConfig cfg = super.getServletConfig();
+			System.out.println(cfg.getInitParameter("PageHead"));
+
+=====================================================================================================================================
+Servlet Context v/s Servlet Config
+	1. Servlet Context holds configuration data Servlet config holds private data
+	2. Servlet Context provides access to server side resources/services. [eg : Servlet Context can provide access to the file . you can read that pdf file and provide parameters to other servlet method.]
+	3. Servlet Context can also provide public storage area.
+	4. It can get list of other servlet methods.	
+=====================================================================================================================================	
+	===> LOAD ON STARTUP
+
+
+=====================================================================================================================================
+	===> COOKIES
+		- Cookies is the storage in the user machine.
+		- This storage is controlled by Browser.
+		- Servlet also can creat the cookie and send those cookie along with the response to the browser and Browser will store those cookies.
+		- And within next request from browser those cookie will added and come back to the server.
+		- Cookie will work with pair between request -response.
+		- Cookie is the class given in the servlet where this information you can put and hold this class can only text information. 
+		- Cookie can hold text only.
+		- Per Cookie can hold max. 4 MB of text information.
+		- Cookie cannot hold virus, becuase virus hold executable information and cookie can hold information.
+		- For one website max. 20 cookies browser can maintain.
+		- Overall maximum 300 cookies a browser can maintain.
+	
+	<#> TWO TYPE OF COOKIES
+		--> Persistant Cookies 
+		- The Cookies for whom age is set.
+		- Those cookies are set on the disk(Client Side).
+		- If you abrupdtly close the browser it will still store on the disk
+		
+		--> Session Cookies
+		- The Cookies for whom age is not set.
+		- Those cookies are store in the RAM.
+		- If you abrupdtly close the browser the cookie will get lost the data.
+		
+=====================================================================================================================================
+												DAO - CONCEPTS
+=====================================================================================================================================
+	WHY WE USE DAO:
+		- DAO brings the data from database.
+		- Servlets needs processed data. 
+		- DAO doesnot provides processed data. [DAO is dependent on DB] 
+		- There might be multiple DAO classes.
+		- Business layer will provide process data. [Business layer have a reference of DAO Class] 
+		- There might multiple Business layer classes.
+		- Service layer has single class which have a reference of Business Layers. 
+		- Client have reference of Servvice layer and call leave method. 
+		- All client will refer to one Service class and service class will call different methods in Business layer
+		- Here servlet is the Client assuming.
+
+=====================================================================================================================================	
+								CREATING DAO CLASS CONCEPTS WITH SERVICE LAYER
+=====================================================================================================================================	
+		SERVLET - CLIENT FOR YOUR CORE
+		package : com.jp.hr.daos
+		DaoEmployee - Note : None of this method will raised SQLException. None of the method will return resultset
+			Java object class
+			
+		package : com.jp.hr.entities
+		JAVA/ entity class - Employee
+			- defined  private int empId, private string firstName, private lastName;
+			- define construtor both
+			- Getter Setter
+			- toString() - To tell the content of the object
+		
+		Exception Class
+			- package - com.jp.hr.exceptions
+			-SuperClass - java.lang.Exception
+			- Call constructor with parameter and 
+			
+		- Now go to DAO class and create arraysList of Employee class and get HrException in it
+		
+		- Implementation Class
+			package : com.jp.hr.daos
+			IMPLEMENTATION -DaoEmployeeImpl Class 
+				Methods
+					-- Write Connection method in this .
+						Note : The ClassNotException, SQLException must not come of DAO Class . If you call the connection inside DAO, then you can add throws class inside of try catch
+						
+				Exception chaining : you have add e parameter when you throw new hrexception class
+				
+		Implementation class ready by writing Connection, clossing connection and calling method
+		
+		
+		INTERFACE for Service Class - ServiceEmployee
+			package : - com.jp.hr.services;
+			Service layer have to call method on DAO
+			We have to create the object of DAO inside the construtor, beucase constructor will executed once and that dao object will create once .
+			As you cannot create object of DAO (DaoEmployee) as DAO is an Interface so we have to create the object of Implemented class (DaoEmployeeImpl);
+			
+			
+			
+																			PACKAGE
+			1. DaoEmployee [INTERFACE]       						package com.jp.hr.daos;
+			2. Employee  [OBJECT CLASS / ENTITY]					package com.jp.hr.entities; 	
+			3. HrException [EXCEPTION CLASS] 						package com.jp.hr.exceptions;
+			4. DaoEmployeeImpl [IMPLEMENTATION OF INTERFACE]		package com.jp.hr.daos;
+			5. ServiceEmployee [INTERFACE]							package com.jp.hr.services;
+			6. ServiceEmployeeImpl [IMPLEMENTATION]					package com.jp.hr.services;
+			7. Create Servlet Class									package com.jp.hr.servlets;
+			
+				Create Object of DAO in Servlet 

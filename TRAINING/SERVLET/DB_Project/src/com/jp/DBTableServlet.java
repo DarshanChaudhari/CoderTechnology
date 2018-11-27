@@ -40,8 +40,8 @@ public class DBTableServlet extends HttpServlet {
 		Iterator<String> displayIT = displays.iterator();		
 		while (displayIT.hasNext()) {			
 			String str = displayIT.next();
-			out.write("<a href = 'DBServletTableDetails?tableName=" +str +"'>"+str + "</a><br>");
-			out.write("<a href = 'DBServletTableDetailsthroughConnections?tableName=" +str +"'>"+str + "</a><br>");		
+//			out.write("<a href = 'DBServletTableDetails?tableName=" +str +"'>"+str + "</a><br>");
+			out.write("<a href = 'DBServletTables?tableName=" +str +"'>"+str + "</a><br>");		
 		}
 		
 	}

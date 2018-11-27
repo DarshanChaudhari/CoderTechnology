@@ -1,0 +1,6 @@
+package com.jp.hr.services;
+
+public interface ServiceEmployee {
+	
+	public ArrayList<Employee> getEmpList() throws HrException; 
+}

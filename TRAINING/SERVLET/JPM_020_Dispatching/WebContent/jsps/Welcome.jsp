@@ -7,6 +7,8 @@
 <title>Welcome</title>
 </head>
 <body>
-	<h1>Welcome to JP Morgan</h1>
-	${ param.param1 } <%@expresssion language %> 
+	<!-- <h1>Welcome to JP Morgan</h1>  ===This is to comment to show to Include dispatching --> 
+	<jsp:include page="/jsps/Head.jsp"></jsp:include>	
+	<jsp:include page="/jsps/PageHead.jsp"></jsp:include>	
+	${ param.param1 } <!--expresssion language --%>  --> 
 </html>

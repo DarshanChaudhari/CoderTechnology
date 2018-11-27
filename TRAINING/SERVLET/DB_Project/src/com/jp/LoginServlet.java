@@ -47,7 +47,7 @@ public class LoginServlet extends HttpServlet {
 		boolean blnResult = conUtil.checkIfUserExists(userName,password);
 		
 		if(blnResult) {
-			response.sendRedirect("/DBServletTableDetails");
+			response.sendRedirect("/DBServlet");
 		}
 		else {
 			out.write("<h1>Invalid User</h1>");
