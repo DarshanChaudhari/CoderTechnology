@@ -1,0 +1,369 @@
+==SERVLET==
+FORWARD DISPATCHING IN JSP
+	-RequestDispatcher dispatch = request.getRequestDispatcher("/process2");
+    	dispatch.forward(request, response); 
+
+
+INCLUDE DISPATCHING IN JSP
+	-In welcome.jsp we have to add the <jsp:include page="/jsps/Head.jsp"></jsp:include> and comment or cut <h1>Welcome to the jp morgan</h1>. Here we can dispatched multiple jsps.
+	- For this, we have to create Head.jsp and PageHead.jsp and put <h1>Welcome to the jp morgan</h1> tag in Head.jsp and in PageHead.jsp put <h3>Welcome to the site</h3>
+	
+Note: 1.Include Dispatching response are not wipe out, but in forward dispatching its wipe out.
+	  2.Include Dispatching can be used in Servlet also.  	
+	  
+
+CONFIGURATION ON SERVLET - xml approach
+		- Dont used constructor in Servlet, if you want to used to initialise used init method.
+		- In Servlet server create an object if you dont used constructor over here server will create compiler will create an no arg constructor.
+		- Use only doGet method
+		- comment annotation - examples - //@WebServlet("/process1")
+		- open web.xml remove all welcome-file-file tag.
+		- <servlet-name> - Canonical name. This xm uses this name internally to mapp with servlet mapping tags. The servlet-name of servlet-mapping must be same as servlet-name of servlet tag. please check the below tags
+	=====================================================================================================================================		
+				<servlet>
+					<servlet-name>p1</servlet-name>
+					<servlet-class>com.jp.config.servlets.Process1</servlet-class> 
+				</servlet>
+			 
+				<servlet-mapping>
+					<servlet-name>p1</servlet-name>
+					<url-pattern>/process1</url-pattern>
+				</servlet-mapping>
+	=====================================================================================================================================
+		- Add the servlet into server and Restart the server.
+		- Run it.
+		
+		- Now uncomment the annotation and start the server and execute it, it will throw error with tomcat encountered problem.
+		- change the annotation process2 and do the same. it will work fine. and once you give process2 instead process1 in the url, you will get two urls are same server.
+	Adding multiple URLs in xml
+		- You can add one more servlet mapping tags and change url pattern process2 , now you can get two urls on same server.	Below are the examples
+			
+				<servlet-mapping>
+					<servlet-name>p1</servlet-name>
+					<url-pattern>/process1</url-pattern>
+				</servlet-mapping>		 
+		 
+				<servlet-mapping>
+					<servlet-name>p1</servlet-name>
+					<url-pattern>/process2</url-pattern>
+				</servlet-mapping>
+	Adding multiple URLs in annotations
+		- you can add multiple url in annotation - by simply writing  @WebServlet(urlPatterns={"/process2", "/process1","/process3"})
+		- Comment the xml servlet mapping tags
+		
+=====================================================================================================================================
+		CONTEXT PARAMTERS IN SERVLET :
+			-Add the below path in web.xml
+				<context-param>
+					<param-name>CompanyName</param-name>
+					<param-value>J P Morgan Chase</param-value> 	
+				</context-param>
+			- add the below code in servlet in doGet method
+				ServletContext ctx = super.getServletContext();		
+				System.out.println(ctx.getInitParameter("CompanyName"));
+				
+				
+	Note: Declaring context parameters through Annotations. They are to be declared on the listener or Filter.	
+	Note : Declaring config paramters : They are private to the servlets . They are not accesible to another servlets
+=====================================================================================================================================		
+		
+		CONTEXT PARAMTERS IN JSP : using xml
+			-Add the below path in web.xml
+				<context-param>
+					<param-name>CompanyName</param-name>
+					<param-value>J P Morgan Chase</param-value> 	
+				</context-param>
+			
+			- Create jsps folder WEB-INF and create new jsp file. For jsp to run dont keep jsp file under WEB-INF folder. keep outside
+			- add the below code in servlet in doGet method
+				ServletContext ctx = super.getServletContext();		
+				System.out.println(ctx.getInitParameter("CompanyName"));
+				
+=====================================================================================================================================
+	Declaring config paramters : They are private to the servlets . They are not accesible to another servlets
+	
+	-- Config in Servlets
+	
+	@WebServlet(urlPatterns={"/process2", "/process1"}, 
+	initParams={@WebInitParam(name="pageHead",value="Employee List"), @WebInitParam(name="FootHead",value="Contact Details")})
+		To access please use 
+			// Accessing Config
+		ServletConfig cfg = super.getServletConfig();
+		System.out.println(cfg.getInitParameter("pageHead"));
+		System.out.println(cfg.getInitParameter("footHead"));
+	
+	Note : for the config parameters you have keep xml mapping tag comments if still you want to run then url- pattern must be different
+	
+=====================================================================================================================================
+
+	-- Config in XMLs
+			
+			 <servlet>
+				<servlet-name>p2</servlet-name>
+				<servlet-class>com.jp.config.servlets.Process2</servlet-class>
+				<init-param>
+					<param-name>PageHead</param-name>
+					<param-value>Employee List</param-value>
+				</init-param>
+		  </servlet>
+		  
+		  Add the below code in doGet method
+			ServletConfig cfg = super.getServletConfig();
+			System.out.println(cfg.getInitParameter("PageHead"));
+
+=====================================================================================================================================
+Servlet Context v/s Servlet Config
+	1. Servlet Context holds configuration data Servlet config holds private data
+	2. Servlet Context provides access to server side resources/services. [eg : Servlet Context can provide access to the file . you can read that pdf file and provide parameters to other servlet method.]
+	3. Servlet Context can also provide public storage area.
+	4. It can get list of other servlet methods.	
+=====================================================================================================================================	
+	===> LOAD ON STARTUP
+
+
+=====================================================================================================================================
+	===> COOKIES
+		- Cookies is the storage in the user machine.
+		- This storage is controlled by Browser.
+		- Servlet also can creat the cookie and send those cookie along with the response to the browser and Browser will store those cookies.
+		- And within next request from browser those cookie will added and come back to the server.
+		- Cookie will work with pair between request -response.
+		- Cookie is the class given in the servlet where this information you can put and hold this class can only text information. 
+		- Cookie can hold text only.
+		- Per Cookie can hold max. 4 MB of text information.
+		- Cookie cannot hold virus, becuase virus hold executable information and cookie can hold information.
+		- For one website max. 20 cookies browser can maintain.
+		- Overall maximum 300 cookies a browser can maintain.
+	
+	<#> TWO TYPE OF COOKIES
+		--> Persistant Cookies 
+		- The Cookies for whom age is set.
+		- Those cookies are set on the disk(Client Side).
+		- If you abrupdtly close the browser it will still store on the disk
+		
+		--> Session Cookies
+		- The Cookies for whom age is not set.
+		- Those cookies are store in the RAM.
+		- If you abrupdtly close the browser the cookie will get lost the data.
+		
+=====================================================================================================================================
+												DAO - CONCEPTS
+=====================================================================================================================================
+	WHY WE USE DAO:
+		- DAO brings the data from database.
+		- Servlets needs processed data. 
+		- DAO doesnot provides processed data. [DAO is dependent on DB] 
+		- There might be multiple DAO classes.
+		- Business layer will provide process data. [Business layer have a reference of DAO Class] 
+		- There might multiple Business layer classes.
+		- Service layer has single class which have a reference of Business Layers. 
+		- Client have reference of Servvice layer and call leave method. 
+		- All client will refer to one Service class and service class will call different methods in Business layer
+		- Here servlet is the Client assuming.
+
+=====================================================================================================================================	
+								CREATING DAO CLASS CONCEPTS WITH SERVICE LAYER
+=====================================================================================================================================	
+		SERVLET - CLIENT FOR YOUR CORE
+		package : com.jp.hr.daos
+		DaoEmployee - Note : None of this method will raised SQLException. None of the method will return resultset
+			Java object class
+			
+		package : com.jp.hr.entities
+		JAVA/ entity class - Employee
+			- defined  private int empId, private string firstName, private lastName;
+			- define construtor both
+			- Getter Setter
+			- toString() - To tell the content of the object
+		
+		Exception Class
+			- package - com.jp.hr.exceptions
+			-SuperClass - java.lang.Exception
+			- Call constructor with parameter and 
+			
+		- Now go to DAO class and create arraysList of Employee class and get HrException in it
+		
+		- Implementation Class
+			package : com.jp.hr.daos
+			IMPLEMENTATION -DaoEmployeeImpl Class 
+				Methods
+					-- Write Connection method in this .
+						Note : The ClassNotException, SQLException must not come of DAO Class . If you call the connection inside DAO, then you can add throws class inside of try catch
+						
+				Exception chaining : you have add e parameter when you throw new hrexception class
+				
+		Implementation class ready by writing Connection, clossing connection and calling method
+		
+		
+		INTERFACE for Service Class - ServiceEmployee
+			package : - com.jp.hr.services;
+			Service layer have to call method on DAO
+			We have to create the object of DAO inside the construtor, beucase constructor will executed once and that dao object will create once .
+			As you cannot create object of DAO (DaoEmployee) as DAO is an Interface so we have to create the object of Implemented class (DaoEmployeeImpl);
+			
+			
+			
+																			PACKAGE
+			1. DaoEmployee [INTERFACE]       						package com.jp.hr.daos;
+			2. Employee  [OBJECT CLASS / ENTITY]					package com.jp.hr.entities; 	
+			3. HrException [EXCEPTION CLASS] 						package com.jp.hr.exceptions;
+			4. DaoEmployeeImpl [IMPLEMENTATION OF INTERFACE]		package com.jp.hr.daos;
+			5. ServiceEmployee [INTERFACE]							package com.jp.hr.services;
+			6. ServiceEmployeeImpl [IMPLEMENTATION]					package com.jp.hr.services;
+			7. Create Servlet Class									package com.jp.hr.servlets;
+			
+				Create Object of DAO in Servlet by initialising init() method because if you create objecti in doGet and doPost then i will create object again agian due to doGet and doPost method called multiple times.
+				DAO is the stateless object it need created only once.	
+				
+				
+		<#> If you want to put data on jsp then you have put to data on request, dispatcher is only to give control
+		
+		
+ASSIGNMENT : 1. CREATE TABLE FOR THE BELOW CREATE PRODUCT ID , PRODUCT NAME , PRODUT CATEGORY AND PRICE,
+			 2. ADD 6 RECORDS INSIDE IT AND DO THE SAME WHICH WE HAVE DONE IN THE FOR DATABASE.	
+===============================================================================================================================================================
+				<#><#><#><#> RULES AND REGULATION FOR DAO <#><#><#>
+===============================================================================================================================================================
+		* The ClassNotException, SQLException must not come of DAO Class
+		* The database specific entities must not come out of the class(Like Exception)
+		* Each and every resource (Connection, Statement , Resultset) must be closed properly
+		* Always prefer statement over PreparedStament for non-interactive queries. [eg .select * from employees is the non -interactive query]
+		* Fetch the data page wise.
+		* Prefer mentioning column names instead of column position in getXXX() methods.
+		
+===============================================================================================================================================================		
+===============================================================================================================================================================
+				<#><#><#><#> RULES AND REGULATION FOR SERVICES LAYER <#><#><#>
+===============================================================================================================================================================
+		*	One layer refers to another layer through interface only.
+		*	Implementation of the business rule should be done here in absence of BL layer.
+		*	This layer will also ensures only custom exception to come out
+
+		Features of Services layer: 	
+			* Only one gateway with preserving privacy of all inner classes.
+			* One point for implementing security, transaction managemetn, caching.
+			* Multiple interfaces per client to give restricted view of all services.
+			* Facade pattern(GoF pattern - Gang of Four).
+			* DAO is a JEE pattern.
+			* Implemented singleton by creating single object of outermost class.
+			* Delegates and controls Cross Cutting Concerns.
+===============================================================================================================================================================
+				<#><#><#><#> RULES AND REGULATION FOR FRONT CONTROLLER LAYER <#><#><#>
+===============================================================================================================================================================
+		* Front Controller is A JEE design pattern.
+		* Command pattern (GoF pattern).
+		
+		
+===============================================================================================================================================================
+													INTRODUCTION TO JSP
+===============================================================================================================================================================
+		* You cannot override method start with _methodname().
+		* You can write JAVA code in JSP. HTML can executed in client side, but JSP can executed in server. 
+		* JSP is java embedded in HTML. Why we need this - to Dynamism. 
+			-- Client side dynamism by JavaScript.
+			-- Server side dynamism by JAVA.
+			-- JSP can go with : JavaScript, JQuery, Sprite.
+			
+	<#> COMPONENTS:
+			
+			* HTML : html template
+			
+			* Scriptlet : <% java code embedded inside this comment %> goes into service method of Servlet in the order of thier mention(procedurely). 
+			
+			* DIRECTIVES :There are three directives :-> PAGE, INCLUDE, TAGLIB.
+				page directives : Submit the metadata for the page. <%@ page directives mentioned under this symbol %> . We will attribute such as Session , isErrorPage, errorPage, extends.
+				include directives : Pre-compiled inclusion of JSP Code.
+				taglib directives : to define URL for Library.
+			
+			* Expresssion Language : $ {}
+			
+			* Standard tag Library :	
+					* Library of java code with methods.
+					* Methods are called through Markup Language syntax 
+						
+			
+			* DECLARATIONS : <%! Instance fields, overide, init()/destroy(), define custom methods %>
+			
+			* EXPRESSION : <%=Math expression/method returning a value %>
+			
+			* JSP elements : <jsp:xxx/> include
+	===============================================================================================================================================================
+			-- SHOWING EMPLOYEE DETAILS ON VIEW LINK
+	===============================================================================================================================================================
+		Steps :
+			1. create getEmployeeDetails by passing int empId in interface
+			2. create the implementation of this
+			3. Copy the Dao interface and copy in the service interface
+			4. implment the method by writing the return .
+			5. In front controller add the switch case empDetials 	
+			6. Fabiricate the url dymanically. [ empDetails.do?id=x]
+			 
+			
+	JSPs steps to follow while doing practice : 
+	In Emplist.jsp
+		1 : Please uncommnet and use
+
+		<!-- 1. This is the first thing you have to comment up part  --> 
+		 <%-- 	<%	for (Employee emp :(ArrayList<Employee>)request.getAttribute("empList")) {
+		 		
+		 	
+		 	%>
+		 <tr>
+		 	<td><%=emp.getEmpId()%></td>
+		 	<td><%=emp.getFirstName()%></td>
+		 	<td><%=emp.getLastName()%></td>		 	
+		 </tr>
+		 <%}%> --%>
+====================================================================================================================================================		 
+		 
+		2. By using JSTL 
+
+	<!--This give jstl for employee mentioned below  -->
+	<!--  	<tr>
+	 		<th>Employee Id</th>
+	 		<th>First Name</th>
+	 		<th>Last Name</th>
+		 </tr> -->
+		<%--  <c:forEach items="${ requestScope.empList}" var="emp">
+		 	<tr>
+		 	 	<td>${emp.empId}</td>  <!-- this property empId will call getEmpId -->
+		 		<td>${emp.firstName}</td>
+		 		<td>${emp.lastName}</td>
+		 	</tr>	
+		 </c:forEach> --%>		
+====================================================================================================================================================
+	3. You will employee id and clicking on employee id you will get the details
+	
+	<!--This give jstl for employee details link below  this shows once you click on the view details link you will get the output -->
+ 
+			 	<tr>
+			 		<th>Employee Id</th>
+			 		<th>View Details</th>			 		
+			 	</tr>
+			 	
+			 	<c:forEach items="${ requestScope.empList}" var="emp">
+		 	<tr>
+		 	 	<td>${emp.empId}</td>  <!-- this property empId will call getEmpId -->
+		 		<td><a href=""></a></td>  == Here in this href tag you have to use 6 steps fabricated for example : empDetails.do?id=x but intead of x enter empId
+		 		
+		 	</tr>	
+		 </c:forEach>
+====================================================================================================================================================
+
+	===============================================================================================================================================================
+			-- INSERTING RECORDS INTO EMPLOYEE - DML OPERATION
+	===============================================================================================================================================================
+	
+	1. Add one more method in DAO INTERFACE -- public boolean insertNewRecord(Employee emp) throws HrException;
+	2. Implement the DAO Interface -- Implement the above method . Before that create one Emp_details table.
+	3. Add one more method in SERvice interface -- give some understandable name as client can understand -- public boolean addNewEmployee(Employee emp) throws HrException;
+	4. Implemnent the Service interface
+	5. In frontcontroller add more switch newJoining
+	6. Create NewJoinee.jsp and create a form to submit employee.
+	7. Implemnet the logic of form in frontcontroller  in switch case
+	8. If it sucessfull, then show the message in NewJoinee.jsp
+	
+	To show two hyperlinks in jsp add new jsp main menu and add hyperlinks
+	
+	9. Add switch case in frontcontroller mainMenu which show both link add new employee and view employee details.
+	10 Add this tag in web.xml --> <welcome-file>/mainMain.do</welcome-file> remove all welcome-file 

@@ -24,4 +24,20 @@ public class ServiceProductImpl implements ServiceProduct {
 		return daoProd.getProdList();
 	}
 
+
+
+	@Override
+	public Products getProdDetails(int productId) throws StockException {
+
+		return daoProd.getProdDetails(productId);
+	}
+
+
+
+	@Override
+	public boolean insertNewProduct(Products product) throws StockException {
+		// TODO Auto-generated method stub
+		return daoProd.insertNewRecord(product);
+	}
+
 }

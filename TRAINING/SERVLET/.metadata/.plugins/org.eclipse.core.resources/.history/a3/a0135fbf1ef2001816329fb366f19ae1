@@ -1,0 +1,7 @@
+package com.jp.hr.entities;
+
+public class Employee {
+	private int empId;
+	private String firstName;
+	private String LastName;
+}

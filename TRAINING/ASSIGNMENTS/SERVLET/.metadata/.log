@@ -1,0 +1,1942 @@
+!SESSION 2018-11-28 17:39:53.414 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file D:\CoderTechnology\TRAINING\ASSIGNMENTS\SERVLET\.metadata\.bak_1.log
+Created Time: 2018-11-28 18:42:15.495
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:42:15.495
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:42:15.496
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:42:16.556
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:42:16.557
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:42:16.560
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:42:16.560
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:42:25.584
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:42:25.584
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:42:45.207
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:42:45.208
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:42:45.211
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:42:45.211
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:42:46.220
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:42:46.220
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:42:46.224
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:42:46.224
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:42:48.183
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:42:48.184
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:43:27.637
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:43:27.637
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:43:28.354
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:43:28.355
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:43:28.358
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:43:28.358
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:43:29.268
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:43:29.269
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:43:29.272
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:43:29.272
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:43:35.670
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:43:35.671
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:43:35.673
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:43:35.674
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:43:36.703
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:43:36.704
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:43:36.707
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:43:36.707
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:44:15.202
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:44:15.203
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:44:15.206
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:44:15.206
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:44:16.336
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:44:16.336
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:44:16.339
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:44:16.339
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:44:17.230
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:44:17.231
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:44:24.686
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:44:24.686
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:44:25.717
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:44:25.717
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:44:26.242
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:44:26.243
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:44:26.246
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:44:26.246
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:44:26.950
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:44:26.951
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:44:27.353
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:44:27.354
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:44:27.357
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:44:27.357
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:45:53.141
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:45:53.141
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:45:53.144
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:45:53.145
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:45:54.169
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:45:54.170
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:45:54.173
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:45:54.173
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:46:37.519
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:46:37.520
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:46:38.854
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:46:38.855
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:46:44.845
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:46:44.845
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:46:45.489
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:46:45.491
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:46:45.494
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:46:45.495
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:46:46.006
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:46:46.007
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:46:46.409
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:46:46.410
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/JPM_050_Layer_DAO_Service'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-11-28 18:46:46.413
+!MESSAGE Errors occurred while applying Git decorations to resources.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Errors occurred while applying Git decorations to resource 'P/Servers'.
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:235)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	... 9 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2018-11-28 18:46:46.414
+!MESSAGE Errors occurred while applying Git decorations to resource 'P/Servers'.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8a053f73abaf526ad9fe80f94cebd62c65c7845b
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:158)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:227)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:859)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.lib.BranchTrackingStatus.of(BranchTrackingStatus.java:93)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceHelper.getBranchStatus(DecoratableResourceHelper.java:72)
+	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:75)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:233)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:254)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:383)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:367)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
