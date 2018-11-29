@@ -54,7 +54,6 @@ export class EmployeeComponent implements OnInit {
   ngOnInit() {
   }
 
-  // creating an object
     emp : Employee= new Employee(101,"Darshan",1000000);
 
     

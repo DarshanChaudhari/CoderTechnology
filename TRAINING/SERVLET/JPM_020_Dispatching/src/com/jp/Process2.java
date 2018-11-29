@@ -23,7 +23,7 @@ public class Process2 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String param1 = request.getParameter("param1");
-		PrintWriter out = response.getWriter();
+//		PrintWriter out = response.getWriter();
 //    	out.write("In the Servlet process2" + param1);
     	System.out.println("In the Servlet process 2 " + param1);
 		RequestDispatcher dispatch = request.getRequestDispatcher("/jsps/Welcome.jsp");

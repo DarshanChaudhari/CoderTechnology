@@ -367,3 +367,111 @@ ASSIGNMENT : 1. CREATE TABLE FOR THE BELOW CREATE PRODUCT ID , PRODUCT NAME , PR
 	
 	9. Add switch case in frontcontroller mainMenu which show both link add new employee and view employee details.
 	10 Add this tag in web.xml --> <welcome-file>/mainMain.do</welcome-file> remove all welcome-file 
+	
+	
+	===============================================================================================================================================================
+															COOKIES
+	===============================================================================================================================================================
+	===> COOKIES
+		- Cookies is the storage in the user machine.
+		- This storage is controlled by Browser.
+		- Servlet also can creat the cookie and send those cookie along with the response to the browser and Browser will store those cookies.
+		- And within next request from browser those cookie will added and come back to the server.
+		- Cookie will work with pair between request -response.
+		- Cookie is the class given in the servlet where this information you can put and hold this class can only text information. 
+		- Cookie can hold text only.
+		- Per Cookie can hold max. 4 MB of text information.
+		- Cookie cannot hold virus, becuase virus hold executable information and cookie can hold information.
+		- For one website max. 20 cookies browser can maintain.
+		- Overall maximum 300 cookies a browser can maintain.
+	
+	<#> TWO TYPE OF COOKIES
+		--> Persistant Cookies 
+		- The Cookies for whom age is set.
+		- Those cookies are set on the disk(Client Side).
+		- If you abrupdtly close the browser it will still store on the disk
+		- Even you closed browser they held on disk until they expired. They have age.
+		
+		--> Session Cookies
+		- The Cookies for whom age is not set.
+		- Those cookies are store in the RAM.
+		- If you abrupdtly close the browser the cookie will get lost the data.
+		- Once you browser gone cookies get lost.
+	===============================================================================================================================================================
+		==> CREATING SERVLET COOKIES 
+	===============================================================================================================================================================
+		- SESSION COOKIE
+		- PERSISTENT COOKIE
+		
+		Steps:
+			-> Create a Servlet which create two instances of cookies one is for persistent and other for session.
+			-> Create another servlet which call this cookie.
+	
+	===============================================================================================================================================================
+	 == > Create cookies with JSP
+	=============================================================================================================================================================== 
+	 1. Create jsp with Welcome.jsp with checkbox and hyperlink, once you click on hyerlink it will send me to the menu page.
+	 2. create menu page once .
+	 3. Once you click checkbox it should store in somewhere, then second time i visit if there is checkbox cookies it should get me to menu page no welcome page
+	 4. No Cookie it should show me Welcome page. If there is cookies it should get me directly to menu page.
+	 5. Create FrontController servlet.
+	 For this we have to create two jsps MainMenu and Welcome.
+	===============================================================================================================================================================	 
+							SESSION
+	===============================================================================================================================================================	 
+	1. On request setAttribute() and to get the data getAttribute()
+	2. For SessionScope you have to start session . you dont get it by default. 
+		- To start the session means to create the seperate memory space - Session memory space
+		- Command HttpSession session = request.getSession();
+		- Session request can hold any java object. In Key value pair it can store name and object value reference.
+	Benefits:
+		- The benefits is the request data can hold that data beyond the lifecyle of request while using session. 
+		- HTTP protocols is highly scalable becuase it is stateless. means once you get request response the conection get lost , so other can use it.
+		- There is one problem Server doest not know whether the request is coming from user1 or user2 or user3 as mulitiple user are sending request in the fraction of time.
+		- The above problem can be solve by using Token [User Specific], sending some unique identifier.
+		- When user 1 create[ start a session ]  a session, space is allocated to hime even token is allcoated to him. When user send some data that data will go into his space.
+			For this we hve to two things 
+				1. Unique Identity code	
+				2. Space
+		- When we start a session it will crate a unique id called Session ID. We just take care of when to start the session and stop the session, the moment user logged out, the id and space will get lost.
+		- We have to create Session id in Servlet, but in jsp it does not wait for user to create a session id, by defaul jsp is creating it.
+		- We are sending data via Cookies, Header and Webpage.
+		
+		
+		
+	===============================================================================================================================================================
+	 == > Create Session using Servlet
+	=============================================================================================================================================================== 
+		- Need to create two servlet.
+				- Afterlogin Servlet , No need of constructor 
+				- Create MainMenu.jsp in this we have to print session.id which we create in Afterlogin servlet
+				- Create Logout servlet we have to drop or delete sesion.
+				
+			<#> How it works , once you create a session , the control request is send to the jsp via dispatch and then you will able to see in MainMenu.jsp and from jsp response is send to logout.
+				In Logout once you will invalidate the session will drop.
+				
+		===============================================================================================================================================================
+				CREATE SESSION WITH PREVIOUS EMPOYE DAO PROJECT 
+		===============================================================================================================================================================
+			->In Frontcontroller create two case home and login for that we have to create two jsp.
+					-We are creating new Home.jsp On this Home.jsp In that jsp we have to crate login hyperlink button
+					- Create Login.jsp whre user name password and submit button
+					- In Web.xml put "/home.do"
+					- In Home put href as login.do once you click on link it will navigate to login page.
+					- Once you have entered login page credential it will call autenticate.do which call authenticate case.
+					- Create a HttpSession session line, in FrontController so that we can specify the UserFullname all the jsps.
+					- So in jsps we have entered Welcome Mr./Ms. ${ sessionScope.userFullName } after body tag so that it will show to all jsps.
+					- Create logout case where you create http session line and where you hve to show the Thank you username in thankspage.jsp page
+					
+			--> Here we have created 9 jsps where we have added 
+			
+					- Create new class name as Factory class whree every object is created here such as  DAo object, service object
+					
+					
+					Assignments : 
+						--> The same thing we have to do it product
+						--> In this we have to not used delete and edit but view and add to cart.
+						--> once you have added to cart and it should show as product id and quantity.
+						--> After this, we have insert this in table. which show product id and quantity.
+					
+		

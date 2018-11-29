@@ -1,30 +1,5 @@
 {
   "posts": [
-<<<<<<< HEAD
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "title": "ja",
-      "author": "aa",
-      "id": 2
-    },
-    {
-      "title": "ja",
-      "author": "ab",
-      "id": 3
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-=======
     {      
       "Name": "Nokia 5280",      
 	  "id": 1
@@ -43,7 +18,6 @@
     }
   ],
   "comments": [],
->>>>>>> 54f204a9c9bf33d75330f6cb6e8a3913848452cf
   "profile": {
     "name": "typicode"
   }
