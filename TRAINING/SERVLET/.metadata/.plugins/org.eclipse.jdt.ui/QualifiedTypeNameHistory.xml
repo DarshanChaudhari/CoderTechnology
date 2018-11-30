@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.apache.catalina.servlet4preview.RequestDispatcher"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
-<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="com.jp.hr.services.ServiceEmployeeImpl"/>
@@ -17,4 +15,6 @@
 <fullyQualifiedTypeName name="com.jp.hr.exceptions.UserExceptions"/>
 <fullyQualifiedTypeName name="com.jp.hr.entities.User"/>
 <fullyQualifiedTypeName name="com.jp.hr.exceptions.UserException"/>
+<fullyQualifiedTypeName name="org.apache.catalina.servlet4preview.RequestDispatcher"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 </qualifiedTypeNameHistroy>

@@ -542,7 +542,7 @@ ASSIGNMENT : 1. CREATE TABLE FOR THE BELOW CREATE PRODUCT ID , PRODUCT NAME , PR
 ======================================================================================================================================================================		
 						
 ======================================================================================================================================================================		
-							SHOW EXCEPTION ERROR IN JSP - Those error wil able to display in jsp 
+						SHOW EXCEPTION ERROR IN JSP - Those error wil able to display in jsp 
 ======================================================================================================================================================================		
 							1 CREATE error.jsp file and write <h2><%=exception.getMessage() %></h2>.
 							2. At the top  write <%@ page isErrorPage="true" %>  
@@ -552,6 +552,25 @@ ASSIGNMENT : 1. CREATE TABLE FOR THE BELOW CREATE PRODUCT ID , PRODUCT NAME , PR
 							4. Now do some mistak in dao or frontcontroller class you will get jsp print as a error
 							
 ======================================================================================================================================================================		
-							FILTERS
+						FILTERS
 ======================================================================================================================================================================								
-			->
+			-> SElect filter after creating servlet class in the use request dispatcher in url pattern
+			- loadOnStartup in servlet means it will load servlet on loading the server
+			- Fitler is used to intercept the message to servlet.
+			- When reqeeust is going to servlet filter will check whether this user is entitled with servlet to check security. 
+				In ModifyResponse before chain.doFitler(request,response) line we will check for the security and it is good the the it will send to the servlet as a request and response is coming back.
+				
+======================================================================================================================================================================
+						LISTENER
+======================================================================================================================================================================
+		-> One Event is created listener occured. eg : When session is created listener occurred, when session is destroy listner will occurred, such kind of event is created listener is occurred.
+		- > Create Listener for this , Go to Dynamic Web Project -> Select Http -> lifecycle [Listener name = CountForLiveSessions]
+		-> Create servlet. [servlet name = BeginSession.]
+	
+	Methods in Session : 
+			--> getSession()/ getSession(true) ; If session exists :Bring the reference of session Otherwise create new session.
+			--> getSession(false) : If session exists : Bring the reference of session otherwise return null.
+			Create one jsp and in that jsp give hyper link logout 
+			Crate Logout servlet.
+			
+			Order Listener -> Filter -> Servlet
