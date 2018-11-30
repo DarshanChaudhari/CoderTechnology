@@ -20,9 +20,10 @@ public class CountForLiveSessions implements HttpSessionListener {
 
 	@Override
 	public void sessionCreated(HttpSessionEvent arg0) {
-		System.out.println("Session Created.");		
+		System.out.println("Session Created.");
+		Cart cart = new Cart();
 		HttpSession session = arg0.getSession();
-		
+		session.setAttribute("cart", cart);
 		
 	}
 
