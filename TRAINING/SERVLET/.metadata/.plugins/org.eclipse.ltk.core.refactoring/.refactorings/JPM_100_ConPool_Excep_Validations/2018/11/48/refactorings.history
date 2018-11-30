@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JPM_100_ConPool_Excep_Validations/src/com/jp/hr/utilities/ConnectionFactory.java&apos; to &apos;ConnectionFactoryOracle.java&apos;" description="Rename resource &apos;ConnectionFactory.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/jp/hr/utilities/ConnectionFactory.java" name="ConnectionFactoryOracle.java" stamp="1543557304801" updateReferences="true"/>
+</session>

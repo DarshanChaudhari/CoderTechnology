@@ -6,6 +6,15 @@
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="com.jp.hr.utilities.ConnectionFactory"/>
 <fullyQualifiedTypeName name="com.jp.hr.services.ServiceEmployeeImpl"/>
+<fullyQualifiedTypeName name="com.jp.hr.utilities.ConnectionFactory"/>
+<fullyQualifiedTypeName name="oracle.jdbc.pool.OracleDataSource"/>
+<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+<fullyQualifiedTypeName name="javax.naming.Context"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="com.jp.hr.exceptions.HrException"/>
+<fullyQualifiedTypeName name="com.jp.hr.utilities.ConnectionFactoryTomcat"/>
+<fullyQualifiedTypeName name="com.jp.hr.exceptions.UserExceptions"/>
+<fullyQualifiedTypeName name="com.jp.hr.entities.User"/>
+<fullyQualifiedTypeName name="com.jp.hr.exceptions.UserException"/>
 </qualifiedTypeNameHistroy>

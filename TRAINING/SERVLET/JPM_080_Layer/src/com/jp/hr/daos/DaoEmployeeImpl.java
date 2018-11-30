@@ -26,14 +26,13 @@ public class DaoEmployeeImpl implements DaoEmployee {
 	public DaoEmployeeImpl() throws HrException  {
 		try {
 			factory = new ConnectionFactory();
+			
 		} catch (Exception e) {
 			throw new HrException("Problem in procuring connection.",e);
 		}
 	}
 	
 	
-
-
 	@Override
 	public ArrayList<Employee> getEmpList() throws HrException {
 		

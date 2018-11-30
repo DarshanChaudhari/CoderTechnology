@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\CoderTechnology\TRAINING\SERVLET\JPM_080_Product_Layer"/>
 		<item value="D:\CoderTechnology\TRAINING\SERVLET\JPM_050_Layer_DAO_Product_Service"/>
 		<item value="D:\CoderTechnology\TRAINING\SERVLET\JPM_000_DBAProject"/>
 		<item value="D:\CoderTechnology\TRAINING\SERVLET\JPM_020_Dispatching"/>

@@ -1,0 +1,24 @@
+package com.jp.hr.utilities;
+
+import java.sql.SQLException;
+
+public class ConnectionFactoryTomcat {
+	
+	private static ConnectionFactoryTomcat factory;
+	
+	private ConnectionFactoryTomcat() {
+		
+	}
+	
+	
+	public static ConnectionFactoryTomcat getConnectionFactory() throws ClassNotFoundException, SQLException {
+		
+		if (factory == null) {
+			factory = new ConnectionFactoryTomcat();
+		}
+		
+		return factory;
+	}
+
+
+}

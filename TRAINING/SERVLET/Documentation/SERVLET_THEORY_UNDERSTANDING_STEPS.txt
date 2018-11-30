@@ -474,4 +474,84 @@ ASSIGNMENT : 1. CREATE TABLE FOR THE BELOW CREATE PRODUCT ID , PRODUCT NAME , PR
 						--> once you have added to cart and it should show as product id and quantity.
 						--> After this, we have insert this in table. which show product id and quantity.
 					
+===============================================================================================================================================================		
+	HOW TO CREATE SINGLETON FACTORY
+===============================================================================================================================================================
+	1. New JAVA PRoject not Dynamic Web Project
+	2.Declare self reference as static and private 
+	3.Singleton01 class where constructor is private , nobody can create object from outside class .
+	4.create static public method to create restricted number of instances where return type is reference of Singleton01. 
+	5. Why do we need the above method as static
+	
+===============================================================================================================================================================		
+	HOW TO CREATE SINGLETON FACTORY WITH FACTORY OBJECT ALL TOGETHER 
+===============================================================================================================================================================
+
+	-- Create Web Dynamic PROJECT - JPM_100_ConPool_Excep_Validations
+	-- Copy src and WEB-INF of JPM_080_Layer  and paste into JPM_100_ConPool_Excep_Validations
+	-- Check all the systems you have copy it is working fine or not.
+	-- now open ConnectionFactory and create singleton , now you got what to do 
+		1. eclare self reference as static and private 
+		2.Singleton01 class where constructor is private , nobody can create object from outside class .
+		3.create static public method to create restricted number of instances where return type is reference of Singleton01.
+		4. I can create one connection but for connection pool i want to crate more than one connection but restricted connection.
+			--> We have done with Factory with SingleTon and we check it is working fine.
+			--> now Connection pooling we have to search in google for tomcat 8.5 in tomcat webpage that oracle 8i,9i link
+					1. Context configuration - This configuration you have to twig and place in server.xml under resource tag line no. 39
+						<Resource name="jdbc/myoracle" auth="Container"
+						type="javax.sql.DataSource" 
+						driverClassName="oracle.jdbc.OracleDriver"
+						url="jdbc:oracle:thin:@127.0.0.1:1521:orcl"
+						username="hr" 
+						password="hr" 
+						maxTotal="3" 
+						maxIdle="1"
+						maxWaitMillis="-1"/>
+						
+					2. web.xml configuration - This configuration you have place in web.xml save as datasource object
+						<resource-ref>
+							<description>Oracle Datasource example</description>
+							<res-ref-name>jdbc/myoracle</res-ref-name>
+							<res-type>javax.sql.DataSource</res-type>
+							<res-auth>Container</res-auth>
+						</resource-ref>
+
+					3. Code example
+						Context initContext = new InitialContext();
+						Context envContext  = (Context)initContext.lookup("java:/comp/env");
+						DataSource ds = (DataSource)envContext.lookup("jdbc/myoracle");
+						
+						The first three line you have to copy and in ConnectionFactory class for tomcat you have to paste it
+					
+	We have created the earlier factory for Connection Oracle Data Source  and now you have created Connection factory for Tomcat
+		-- > For ConnectionFactoryTomcat we have to do same thing as it is done for singleton(Connection factory for oracle)
+		Now in DAO EmployeeImplementation class we have to create a factory object of Tomcat instead of Connection Oracle data becuase for connection pooling.
+		and call the getconnection().
 		
+		-> After run you will get error that no sql issue becuase context is not getting, so the above you have added in server.xml line no.39 remove it and add in context.xml file
+		
+		ASSIGNMENT :--
+======================================================================================================================================================================
+		Create User details Dao
+			return userid, user name . if you have 
+			from dao it will reache to service layer.
+			
+			user login and in authenticate logic will go to Business Layer but not it is in service layer. And in service layer you will pass unamd and password will send to Dao and in return 
+			it will send to service and in authentical.
+			Same as Empdetails but in this case authenticate switch will call service layer and in service layer all this if else condition will satisfy.
+======================================================================================================================================================================		
+						
+======================================================================================================================================================================		
+							SHOW EXCEPTION ERROR IN JSP - Those error wil able to display in jsp 
+======================================================================================================================================================================		
+							1 CREATE error.jsp file and write <h2><%=exception.getMessage() %></h2>.
+							2. At the top  write <%@ page isErrorPage="true" %>  
+							3. In Frontcontroller in catch clause write 
+								request.setAttribute("exception", e);	
+								jspName = "Errors";
+							4. Now do some mistak in dao or frontcontroller class you will get jsp print as a error
+							
+======================================================================================================================================================================		
+							FILTERS
+======================================================================================================================================================================								
+			->

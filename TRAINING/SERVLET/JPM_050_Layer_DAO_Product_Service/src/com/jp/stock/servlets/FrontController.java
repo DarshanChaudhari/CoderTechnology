@@ -113,7 +113,7 @@ public class FrontController extends HttpServlet {
 		int leftPos = uri.lastIndexOf("/");
 		int rtPos = uri.lastIndexOf(".");
 		if (rtPos<=leftPos) {
-			return "mainMenu";
+			return "Home";
 		}		
 		return uri.substring(leftPos+1, rtPos);
 		

@@ -150,14 +150,13 @@ public class FrontController extends HttpServlet {
 		doGet(request, response);
 	}
 	
-	private String getCommand(String uri) {
+	private String getCommand(String uri) {		
 		
-		int leftPos = uri.lastIndexOf("/");
+		int leftPos =uri.lastIndexOf("/");
 		int rtPos = uri.lastIndexOf(".");
 		if (rtPos<=leftPos) {
-			return "mainMenu";
-		}		
-		return uri.substring(leftPos+1, rtPos);
-		
+			return "home";
+		}
+		return uri.substring(leftPos+1, rtPos);		
 	}
 }

@@ -28,7 +28,7 @@
 					<td>${requestScope.prodDetails.productName}</td>
 					<td>${requestScope.prodDetails.category}</td>
 					<td>${requestScope.prodDetails.price}</td>	
-					<td style="text-align:center;"><input type="text" name="quantity" maxlength=1 style="width: 15px;" pattern="[0-3]"/></td>
+					<td style="text-align:center;"><input type="number" name="quantity" min=0 max=3 maxlength=1 style="width: 15px;" pattern="[0-3]"/></td>
 					<td><input type="submit" name="add" value="ADD" Style="width: 6em;  height: 2em"/></td>  <!-- After this we have to create switch where we have to navigate on another jsp to show selected items-->
 									
 				</tr>	

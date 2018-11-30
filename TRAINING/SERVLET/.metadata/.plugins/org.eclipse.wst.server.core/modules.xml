@@ -3,6 +3,7 @@
   <module moduleId="org.eclipse.jst.jee.server:JPM_040_Config" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:DB_Project" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:JPM_080_Layer" serverId="Tomcat v8.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:JPM_080_Product_Layer"/>
   <module moduleId="org.eclipse.jst.jee.server:JPM_020_Dispatching" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:JPM_030_Navigation" serverId="Tomcat v8.5 Server at localhost"/>
 </modules>

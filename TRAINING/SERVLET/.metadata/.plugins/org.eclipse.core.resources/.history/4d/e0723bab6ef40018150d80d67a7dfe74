@@ -1,0 +1,13 @@
+package com.jp.hr.daos;
+
+import com.jp.hr.entities.User;
+
+public class DaoUserDetailsImpl implements DaoUserDetails{
+
+	@Override
+	public User getUserDetails(int empId) throws UserExceptions {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
