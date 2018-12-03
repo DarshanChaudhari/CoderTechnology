@@ -51,16 +51,16 @@ public class FrontController extends HttpServlet {
 					String userName = request.getParameter("username");
 					String password = request.getParameter("password");
 					
-//					if(userName.equals("a") && (password.equals("a"))) {
-//						String userFullName = "aaaa aaaa aaaa";
-//						HttpSession session = request.getSession();
-//						session.setAttribute("userFullName", userFullName);
-//						jspName = "MainMenu";						
-//					} else {
-//						String errMessage = "Wrong credentials. Please enter again";
-//						request.setAttribute("message", errMessage);
-//						jspName= "Login";
-//					}
+					if(userName.equals("a") && (password.equals("a"))) {
+						String userFullName = "aaaa aaaa aaaa";
+						HttpSession session = request.getSession();
+						session.setAttribute("userFullName", userFullName);
+						jspName = "MainMenu";						
+					} else {
+						String errMessage = "Wrong credentials. Please enter again";
+						request.setAttribute("message", errMessage);
+						jspName= "Login";
+					}
 					
 //					
 					break;
@@ -110,8 +110,9 @@ public class FrontController extends HttpServlet {
 					String empIdStr= request.getParameter("empId");
 					String firstName= request.getParameter("firstName");
 					String lastName= request.getParameter("lastName");
-					int empId = Integer.parseInt(empIdStr);
-					Employee emp = new Employee(empId,firstName,lastName);
+//					int empId = Integer.parseInt(empIdStr); we dont need this value as in daoImpl we have implment auto - increment 
+//					Employee emp = new Employee(empId,firstName,lastName); // Now we are not providing empid from here becuase of auto-increment we have create two parameter constructor in employee so we call 
+					Employee emp = new Employee(firstName,lastName);
 					boolean isSucessfull = services.joinNewEmployee(emp);
 					String msg = isSucessfull?"Employee Inserted.":"Insertion failed!";
 					request.setAttribute("message", msg);

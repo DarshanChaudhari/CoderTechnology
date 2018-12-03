@@ -1,0 +1,49 @@
+package com.jp.cart.daos;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.jp.cart.entities.PlaceOrder;
+import com.jp.cart.exceptions.CartException;
+import com.jp.hr.exceptions.HrException;
+
+public class DaoPlaceOrderImpl implements DaoPlaceOrder {
+
+	@Override
+	public boolean AddNewOrder(PlaceOrder pOrder) throws CartException {
+
+String qry = "INSERT INTO EMP_DETAILS (employee_id,first_name,last_name) VALUES(?,?,?)";
+		
+		Connection connect =null;
+		PreparedStatement stmt=null;
+		
+		try {
+			connect = getConnection();
+			stmt = connect.prepareStatement(qry);
+			stmt.setInt(1, emp.getEmpId());
+			stmt.setString(2, emp.getFirstName());
+			stmt.setString(3, emp.getLastName());
+			
+			int recInserted = stmt.executeUpdate();
+			return recInserted==1? true :false;			
+			
+		} catch (ClassNotFoundException |SQLException e) {
+			throw new HrException("Problem in Fetching.", e);
+		}  finally {
+			try {
+				
+				if (stmt!=null) {
+					stmt.close();
+				}			
+				
+				closeConnection(connect);
+			} catch (SQLException e) {
+				throw new HrException("Problem in closing resources.", e);
+			}
+		}	
+
+		return false;
+	}
+
+}

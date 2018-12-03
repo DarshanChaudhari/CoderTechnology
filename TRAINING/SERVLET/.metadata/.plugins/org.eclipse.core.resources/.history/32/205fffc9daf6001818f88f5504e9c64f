@@ -1,0 +1,64 @@
+package com.jp.hr.daos;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+import com.jp.hr.entities.Employee;
+import com.jp.hr.entities.User;
+import com.jp.hr.exceptions.HrException;
+import com.jp.hr.exceptions.UserException;
+
+
+
+public class DaoUserDetailsImpl implements DaoUserDetails{
+
+	@Override
+	public ArrayList<Employee> getEmpList() throws HrException {
+
+		ArrayList<Employee> empList = new ArrayList<>();
+		Connection connect = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+
+		try {
+			connect = dataSource.getConnection();
+			stmt = connect.createStatement();
+			rs = stmt.executeQuery("SELECT * FROM EMP_DETAILS");
+
+			while (rs.next()) {
+				int empId = rs.getInt("employee_id");
+				String firstNm = rs.getString("first_name");
+				String lastNm = rs.getString("last_name");
+				empList.add(new Employee(empId, firstNm, lastNm));
+
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new HrException("Problem in Fetching.", e);
+		} finally {
+			try {
+				if (rs != null) {
+					rs.close();
+				}
+				if (stmt != null) {
+					stmt.close();
+				}
+
+				if (connect != null) {
+					connect.close();
+				}
+
+				// factory.closeConnection();
+			} catch (SQLException e) {
+				throw new HrException("Problem in closing resources.", e);
+			}
+		}
+
+		return empList;
+	}
+
+}

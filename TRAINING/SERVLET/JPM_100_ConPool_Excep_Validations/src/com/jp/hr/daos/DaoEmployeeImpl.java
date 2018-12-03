@@ -54,7 +54,7 @@ public class DaoEmployeeImpl implements DaoEmployee {
 		try {
 			connect = dataSource.getConnection();
 			stmt = connect.createStatement();
-			rs = stmt.executeQuery("SELECT * FROM EMP_DETAIL");
+			rs = stmt.executeQuery("SELECT * FROM EMP_DETAILS");
 
 			while (rs.next()) {
 				int empId = rs.getInt("employee_id");
@@ -94,7 +94,7 @@ public class DaoEmployeeImpl implements DaoEmployee {
 		Connection connect = null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
-		String qry = "Select employee_id,first_name,last_name FROM EMP_DETAIL where employee_id =?";
+		String qry = "Select employee_id,first_name,last_name FROM EMP_DETAILS where employee_id =?";
 
 		try {
 			connect = dataSource.getConnection();
@@ -140,17 +140,19 @@ public class DaoEmployeeImpl implements DaoEmployee {
 	@Override
 	public boolean insertNewRecord(Employee emp) throws HrException {
 
-		String qry = "INSERT INTO EMP_DETAIL (employee_id,first_name,last_name) VALUES(?,?,?)";
+//		String qry = "INSERT INTO EMP_DETAIL (employee_id,first_name,last_name) VALUES(?,?,?)";
 
+			// This is for Auto-increment unique id
+		String qry = "INSERT INTO EMP_DETAILS (employee_id,first_name,last_name) VALUES (seqEmployee_id.nextval,?,?)";
 		Connection connect = null;
 		PreparedStatement stmt = null;
 
 		try {
 			connect = dataSource.getConnection();
 			stmt = connect.prepareStatement(qry);
-			stmt.setInt(1, emp.getEmpId());
-			stmt.setString(2, emp.getFirstName());
-			stmt.setString(3, emp.getLastName());
+//			stmt.setInt(1, emp.getEmpId());  // This is for Auto-increment unique id
+			stmt.setString(1, emp.getFirstName());
+			stmt.setString(2, emp.getLastName());
 
 			int recInserted = stmt.executeUpdate();
 			return recInserted == 1 ? true : false;

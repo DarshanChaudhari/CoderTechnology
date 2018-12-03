@@ -64,7 +64,8 @@ CONFIGURATION ON SERVLET - xml approach
 				
 				
 	Note: Declaring context parameters through Annotations. They are to be declared on the listener or Filter.	
-	Note : Declaring config paramters : They are private to the servlets . They are not accesible to another servlets
+	Note : Declaring 
+ paramters : They are private to the servlets . They are not accesible to another servlets
 =====================================================================================================================================		
 		
 		CONTEXT PARAMTERS IN JSP : using xml
@@ -273,9 +274,9 @@ ASSIGNMENT : 1. CREATE TABLE FOR THE BELOW CREATE PRODUCT ID , PRODUCT NAME , PR
 			* DIRECTIVES :There are three directives :-> PAGE, INCLUDE, TAGLIB.
 				page directives : Submit the metadata for the page. <%@ page directives mentioned under this symbol %> . We will attribute such as Session , isErrorPage, errorPage, extends.
 				include directives : Pre-compiled inclusion of JSP Code.
-				taglib directives : to define URL for Library.
+				taglib directives : to define jstl for Library.
 			
-			* Expresssion Language : $ {}
+			* Expresssion Language : $ {}  -- 
 			
 			* Standard tag Library :	
 					* Library of java code with methods.
@@ -284,7 +285,7 @@ ASSIGNMENT : 1. CREATE TABLE FOR THE BELOW CREATE PRODUCT ID , PRODUCT NAME , PR
 			
 			* DECLARATIONS : <%! Instance fields, overide, init()/destroy(), define custom methods %>
 			
-			* EXPRESSION : <%=Math expression/method returning a value %>
+			* EXPRESSION : <%=Math expression/method returning a value %> -- you cant call void method.
 			
 			* JSP elements : <jsp:xxx/> include
 	===============================================================================================================================================================
@@ -552,7 +553,7 @@ ASSIGNMENT : 1. CREATE TABLE FOR THE BELOW CREATE PRODUCT ID , PRODUCT NAME , PR
 							4. Now do some mistak in dao or frontcontroller class you will get jsp print as a error
 							
 ======================================================================================================================================================================		
-						FILTERS
+												FILTERS
 ======================================================================================================================================================================								
 			-> SElect filter after creating servlet class in the use request dispatcher in url pattern
 			- loadOnStartup in servlet means it will load servlet on loading the server
@@ -561,7 +562,7 @@ ASSIGNMENT : 1. CREATE TABLE FOR THE BELOW CREATE PRODUCT ID , PRODUCT NAME , PR
 				In ModifyResponse before chain.doFitler(request,response) line we will check for the security and it is good the the it will send to the servlet as a request and response is coming back.
 				
 ======================================================================================================================================================================
-						LISTENER
+												LISTENER
 ======================================================================================================================================================================
 		-> One Event is created listener occured. eg : When session is created listener occurred, when session is destroy listner will occurred, such kind of event is created listener is occurred.
 		- > Create Listener for this , Go to Dynamic Web Project -> Select Http -> lifecycle [Listener name = CountForLiveSessions]
@@ -574,3 +575,117 @@ ASSIGNMENT : 1. CREATE TABLE FOR THE BELOW CREATE PRODUCT ID , PRODUCT NAME , PR
 			Crate Logout servlet.
 			
 			Order Listener -> Filter -> Servlet
+			
+======================================================================================================================================================================			
+												SUMMARY
+======================================================================================================================================================================
+Servlet LifeCycle	
+	--> Session are user specific.
+	--> Dont use init with parameter for overriding, Alwyas use init without parameter for overriding.
+	--> Deployment lifecycle for java code-  Servlet can convert it into .class by ecplispe editor. it is package into war file and this war(Web Archive) is copied into webapp folder.
+	--> jar (java archive)
+	--> war (Web archive)
+	--> ear (Enterprise archive ) Java archive + Web archive 
+	--> When war file is deployed the server monitoring web app folder if it found it will unzip that archive and start deployement. It goes into .class folder create servlet then it goes into jsps folder and that jsps get deployed.
+	--> The order of deployement is decide by LoadonStartup. you have to give it by order 1,2,3...
+	--> In Servet it moniter the timestampd of .class file
+	
+Jsp LifeCycle
+	--> It moniter the timestamp of .jsp
+	--> The change the size of heap memory (JVM) extended max.
+	--> jsp is converted into java and java is tramissted in .class.
+	
+GET Parameter Request:
+	- Which checks the form is of form or query string.
+	- There is only get method not set method.
+	- If you want to send the parameters to the client(browser), cookie is one way which transfer data to the browser.
+	- request.getCookies you will get the data.
+	- setAttribute - It is used to transfer the data from one server component to another server component. Servlet, JSP are servers compoment.
+	- There is only way to send response to the client is Cookies. 
+	- getParameter - To get the data from the client.
+	- Cookies - to Send the data to the client.
+
+Scope :
+		- page Scope : Smallest scope. Alternative to page is this. 
+writable scope	- requestScope : 
+writable scope	- sessionScope : UserFullname is stored in SessionScope. Cart can be placed in session.
+writable scope	-applicationScope : List (The data of usernames ) is placed in applicationScope.Reference of servlet can hold in applicationScope(context).
+
+ContextParameter: 
+		- The data place as context Parameter is accessible to all. 
+		- Context is created per application.
+		- Context is created in web-xml.
+
+Config Parameter : 
+		- The configuration is accessible to per servlet. 
+		- No accessible to another servlet but context data is accessible to every servlets.
+		- Config is created per servlet.
+		- Config is created in initparams.
+
+Page Include and Dispatching:		
+	- Page Include :
+					- Page include is compile time.
+					
+	- Dispatching  : 
+					- Dispatching is Run time. 
+					Forward dispatching - It is used to form the chain. 
+										- Request object is not wipe out, but response object is wipe out.
+					Include dispatching - Accumulating the responses from jsp and appending to the response object. Responses are generated by jsp at runtime.
+
+Re-direction :
+				- Redirection created at the server side and acted at the client side. Actual web page is brought from different web page.
+
+==> When to used Re-direction or when to used Dispatching
+	- From one project you cannot do dispatching to another project. You can do dispatching within the project.
+	- Within the application you can do dispatching.
+	- From one server to another server you can use re-direct. One applcaiton to another application you can used re-direction.
+	- Dispatching is faster than re-direct.
+	
+SESSION MANAGEMENT :
+		1. http is the stateless protocol.
+		2. tcp/ip may not be stateless.
+		3. Session management is doing two things:
+				i) whenever you start the session it will create the unique id and passing the response to the user,
+				ii) Three ways
+					a) Cookies - Session internaly manage the cookie.
+					b) Url rewriting - Whenever some realize someone block hte cookie, session id is visible when user click the btn the session id comes back.
+									 - you have to call that method , session id get appended.	
+					c) Hidden field : This is not been used.
+		4. On JSP session is bydefault existed.  If it doesnot find the session it will create it.
+		5. On servlet session is bydefault doest not existed. 
+	
+	<#> SESSION TIMEOUT :
+				--> When User doesnot interact with page, after some time it automatically destroy the session and destroy the space allocated to session.
+						-- It does not wait becuase of security reason.
+						-- By default 30 mins timeout is declared after 30 mins session will be destroy.
+						-- If session is null, it will direct to the login page.
+						-- if you want to change the timeout to 10 mins you have to add configuration in web.xml.
+						-- In payment gateway the sesssion time is of 2 mins, there is one method setMaxInActiveInterval() which overrides the session timeout for 2 mins.
+					
+	Page Context : Instead of mentioning all the parameters for passing from code to another code, you can used page context where you can pas on parameter.				
+						
+======================================================================================================================================================================
+								ARCHITECTURE
+======================================================================================================================================================================
+1. We create DAO Layer - For interacting with DataBase , for different database we have create different DAOs.
+2. What is use of DAO Layer - Loose Coupling.
+3. From the frontcontroller you can refer to Service layer.
+4. We design frontcontroller, which uses multiple request. On the basis of the command we call differnt action, behind the frontcontroller, there is switch and in swtich there are jsp and jsp wil decide the page.
+5. Actual presentation are done through jsp.
+6. update query command :
+update "HR"."EMP_DETAILS" set "LAST_NAME"='Chaudhari' where "EMPLOYEE_ID"=101 and "FIRST_NAME"='Darsh' and "LAST_NAME"='Chaudhr'; 
+
+
+select * from EMP_DETAILS;
+
+create sequence seqEmployee_id start with 8 increment by 1 NOCACHE; 
+
+drop sequence seqEmployee_id;
+select seqEmployee_id.nextval from dual;
+
+======================================================================================================================================================================
+								SECURITY
+======================================================================================================================================================================
+	1. User Authentication
+	2. Encrypt and decrypt
+	3. Malicious 

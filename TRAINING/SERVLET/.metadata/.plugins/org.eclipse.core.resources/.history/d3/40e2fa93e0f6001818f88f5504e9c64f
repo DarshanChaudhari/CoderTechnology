@@ -1,0 +1,19 @@
+package com.jp.cart.daos;
+
+import java.util.ArrayList;
+
+import com.jp.cart.entities.ShoppingItem;
+import com.jp.cart.exceptions.CartException;
+import com.jp.hr.entities.Employee;
+import com.jp.hr.exceptions.HrException;
+
+public interface DaoItem {
+	
+	public ArrayList<ShoppingItem> getItemList () throws CartException;
+	
+	public ShoppingItem getItemDetails(int itemId) throws HrException;
+	
+	public boolean insertNewRecord(ShoppingItem item) throws HrException;
+	
+		
+}

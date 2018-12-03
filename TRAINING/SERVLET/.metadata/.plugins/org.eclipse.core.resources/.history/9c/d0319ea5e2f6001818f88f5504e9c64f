@@ -1,0 +1,14 @@
+package com.jp.cart.services;
+
+import java.util.ArrayList;
+
+import com.jp.cart.entities.ShoppingItem;
+import com.jp.cart.exceptions.CartException;
+
+
+public interface ServiceEmployee {
+	
+	public ArrayList<ShoppingItem> getItemList () throws CartException;
+	
+	
+}

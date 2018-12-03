@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/JPM_130_Online_Shopping/src/com/jp/cart/daos/DaoShoppingItemImpl.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.jp.cart.daos.DaoShoppingItemImpl"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="JPM_130_Online_Shopping"/>
+</launchConfiguration>

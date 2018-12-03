@@ -1,0 +1,26 @@
+package com.jp.cart.services;
+
+import com.jp.cart.daos.DaoPlaceOrder;
+import com.jp.cart.entities.PlaceOrder;
+import com.jp.cart.exceptions.CartException;
+
+public class ServicePlaceOrderImpl implements ServicePlaceOrder{
+	
+	private DaoPlaceOrder daoPlaceOrder;
+	
+	
+	
+	public ServicePlaceOrderImpl(DaoPlaceOrder daoPlaceOrder) {
+		super();
+		this.daoPlaceOrder = daoPlaceOrder;
+	}
+
+
+
+	@Override
+	public boolean AddNewOrder(PlaceOrder pOrder) throws CartException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

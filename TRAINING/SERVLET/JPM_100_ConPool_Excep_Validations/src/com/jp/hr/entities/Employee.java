@@ -45,7 +45,11 @@ public class Employee {
 		return "Employee [empId=" + empId + ", firstName=" + firstName + ", LastName=" + lastName + "]";
 	}
 
-	
+	public Employee(String firstName, String lastName) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 	
 	
 }

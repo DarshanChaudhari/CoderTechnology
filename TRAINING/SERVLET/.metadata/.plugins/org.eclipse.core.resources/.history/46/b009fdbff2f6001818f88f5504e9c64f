@@ -1,0 +1,20 @@
+package com.jp.cart.daos;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.jp.cart.entities.PlaceOrder;
+import com.jp.cart.exceptions.CartException;
+import com.jp.hr.exceptions.HrException;
+
+
+public class DaoPlaceOrderImpl implements DaoPlaceOrder {
+
+	@Override
+	public boolean AddNewOrder(PlaceOrder pOrder) throws CartException {
+		
+	}
+	
+
+

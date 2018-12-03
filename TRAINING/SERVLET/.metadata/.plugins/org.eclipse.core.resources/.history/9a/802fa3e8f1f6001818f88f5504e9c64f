@@ -1,0 +1,10 @@
+package com.jp.cart.daos;
+
+public interface PlaceOrder {
+	
+	public boolean AddNewOrder(Employee emp) throws CartException;
+	
+	
+	
+
+}

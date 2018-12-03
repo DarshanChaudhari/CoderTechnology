@@ -1,0 +1,123 @@
+package com.jp.cart.servlets;
+
+import java.io.IOException;
+
+import java.util.ArrayList;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.jp.cart.entities.ShoppingItem;
+import com.jp.cart.exceptions.CartException;
+import com.jp.cart.services.ServiceShoppingItem;
+import com.jp.cart.services.ServiceShoppingItemImpl;
+
+/**
+ * Servlet implementation class FrontController
+ */
+@WebServlet("*.do")		// Generic url [.do is the filteration]
+public class FrontController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private ServiceShoppingItem services; // Create a reference of Interface
+
+	/*
+	 	* Front Controller : A JEE design pattern.
+		* Command pattern (GoF pattern).
+	 */
+	
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String command = getCommand(request.getRequestURI());
+		RequestDispatcher dispatch = null;
+		String jspName = null;
+		String preFix = "/WEB-INF/jsps/";
+		String postFix =".jsp";
+		try {
+			switch(command) {		
+				
+				case "*" : 
+				
+				case "mainMenu" :{
+					jspName="MainMenu";
+					break;
+				}
+				case "itemList" :{
+					ArrayList<ShoppingItem> itemList = services.getItemList();
+					System.out.println("In Item list");
+					System.out.println(itemList);			
+					request.setAttribute("itemList", itemList);
+					jspName= "ItemList";					
+					break;
+				}
+				
+				case "itemDetails" : {
+					System.out.println("In Item Details");
+					String itemId = request.getParameter("id"); 
+					System.out.println(itemId);					
+					ShoppingItem itemDetails = services.getItemDetails(itemId);
+					System.out.println(itemList);
+					request.setAttribute("ItemDetails", itemList);
+					jspName= "ItemDetails";					
+					break;
+				}
+				
+				case "newJoining" : {				
+					jspName= "NewJoining";					
+					break;
+				}
+//				case "submitJoinee" : {
+//					String empIdStr= request.getParameter("empId");
+//					String firstName= request.getParameter("firstName");
+//					String lastName= request.getParameter("lastName");
+//					int empId = Integer.parseInt(empIdStr);
+//					Employee emp = new Employee(empId,firstName,lastName);
+//					boolean isSucessfull = services.joinNewEmployee(emp);
+//					String msg = isSucessfull?"Employee Inserted.":"Insertion failed!";
+//					request.setAttribute("message", msg);
+//					jspName= "NewJoining";
+//					break;
+//				}
+			}
+		} catch (CartException e) {			
+			e.printStackTrace();
+		}
+		 	
+		dispatch = request.getRequestDispatcher(preFix + jspName + postFix);
+		dispatch.forward(request, response);
+		
+	}	
+
+
+		
+		@Override
+	public void init() throws ServletException {
+		try {
+			services = new ServiceShoppingItemImpl();
+		} catch (CartException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new ServletException("Init method failed.",e);
+		}  // Create a object of Interface of ServiceEmployee Implementation
+		
+	}
+
+		protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			doGet(request, response);
+	}
+		
+		
+	private String getCommand(String uri) {
+		
+		
+		int leftPos =uri.lastIndexOf("/");
+		int rtPos = uri.lastIndexOf(".");
+		if (rtPos<=leftPos) {
+			return "mainMenu";
+		}
+		return uri.substring(leftPos+1, rtPos);		
+	}
+}

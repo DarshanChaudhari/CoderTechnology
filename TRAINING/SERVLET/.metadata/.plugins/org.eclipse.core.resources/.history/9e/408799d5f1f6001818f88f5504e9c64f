@@ -1,0 +1,13 @@
+package com.jp.cart.daos;
+
+import com.jp.hr.entities.Employee;
+import com.jp.hr.exceptions.HrException;
+
+public interface PlaceOrder {
+	
+	public boolean insertNewRecord(Employee emp) throws HrException;
+	
+	
+	
+
+}

@@ -1,0 +1,16 @@
+package com.jp.hr.services;
+
+import java.util.ArrayList;
+
+import com.jp.cart.entities.ShoppingItem;
+import com.jp.cart.exceptions.CartException;
+
+
+public interface ServiceEmployee {
+	
+	public ArrayList<ShoppingItem> getItemList () throws CartException;
+	
+	public Employee getEmpDetails(int empId) throws HrException;
+	
+	public boolean joinNewEmployee(Employee emp) throws HrException;
+}

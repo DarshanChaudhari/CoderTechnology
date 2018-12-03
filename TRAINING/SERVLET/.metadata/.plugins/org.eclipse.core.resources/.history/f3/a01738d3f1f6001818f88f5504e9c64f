@@ -1,0 +1,10 @@
+package com.jp.cart.daos;
+
+public interface PlaceOrder {
+	
+	private int customerId ;
+	private int orderId;
+	private int itemId;
+	
+
+}
