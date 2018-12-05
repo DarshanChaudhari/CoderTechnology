@@ -1,0 +1,14 @@
+package com.jp.mtm.entities;
+
+
+@Entity
+@TableName(name= "TRAINEE_MTM")
+class Trainee {
+	
+	private Long traineeId;
+	private String traineeName;
+	
+	
+
+	
+}

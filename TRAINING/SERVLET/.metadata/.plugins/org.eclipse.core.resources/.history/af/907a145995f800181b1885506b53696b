@@ -1,0 +1,22 @@
+package com.jp.mtm.client;
+
+import javax.persistence.EntityManager;
+
+import com.jp.mtm.entities.Trainee;
+import com.jp.mtm.util.JPAUtil;
+
+public class MTMClient {
+	
+	public static void main (String [] args) {
+		
+		EntityManager entityManager = JPAUtil.getEntityManager();
+		
+		entityManager.getTransaction().begin();
+		
+		Trainee t1 = new Trainee();
+		elecProduct.setProductId(101L);
+		elecProduct.setProductName("LED TV");
+		elecProduct.setProductPrice(450000.88);
+	}
+
+}

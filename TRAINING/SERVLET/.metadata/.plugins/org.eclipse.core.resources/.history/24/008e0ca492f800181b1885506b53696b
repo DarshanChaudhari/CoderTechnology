@@ -1,0 +1,19 @@
+package com.jp.mtm.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Id;
+
+@Entity
+@TableName(name= "TRAINEE_MTM")
+class Trainee {
+	
+	
+	@Id
+	@Column(name="order_id")
+	private Long traineeId;
+	private String traineeName;
+	
+	
+
+	
+}

@@ -1,0 +1,19 @@
+package com.jp.mtm.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Id;
+
+@Entity
+@Table(name="COURSE_MTM" )
+public class Course {
+
+	
+	@Id
+	@Column(name="Course_Id")
+	private Long courseId;
+	
+	@Id
+	@Column(name="Course_name")
+	private String courseName;
+	
+}

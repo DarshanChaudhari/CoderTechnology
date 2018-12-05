@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;META-INF&apos; to &apos;JPM_137_Association_ManyToMany_Bidirectional/src&apos;&#x0D;&#x0A;- Original project: &apos;JPM_136_JPA_Associate_OneToOne_Bidirection&apos;&#x0D;&#x0A;- Destination element: &apos;JPM_137_Association_ManyToMany_Bidirectional/src&apos;&#x0D;&#x0A;- Original element: &apos;META-INF&apos;" description="Copy folder" destination="=JPM_137_Association_ManyToMany_Bidirectional/src" element1="src/META-INF" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1544017278969" units="0" version="1.0"/>
+</session>
