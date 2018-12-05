@@ -49,20 +49,14 @@ public class MTMClient {
 		
 
 		
-//		Set<Trainee> trainees = new HashSet<>();
-//		trainees.add(t1);
-//		trainees.add(t2);
-//		trainees.add(t3);
-//		trainees.add(t4);
-//		trainees.add(t5);
-//		trainees.add(t6);
-		
-		
 		Set<Trainee> trainees = new HashSet<>();
 		trainees.add(t1);
 		trainees.add(t2);
 		trainees.add(t3);
-	
+		trainees.add(t4);
+		trainees.add(t5);
+		trainees.add(t6);
+		
 		
 		course1.setTrainees(trainees);
 		
@@ -86,8 +80,8 @@ public class MTMClient {
 		t6.setCourses(courses);
 		
 		
-		entityManager.persist(course1);
-		entityManager.persist(course2);
+		entityManager.persist(t1);
+//		entityManager.persist(course2);
 		
 		// commit transactions
 		entityManager.getTransaction().commit();
