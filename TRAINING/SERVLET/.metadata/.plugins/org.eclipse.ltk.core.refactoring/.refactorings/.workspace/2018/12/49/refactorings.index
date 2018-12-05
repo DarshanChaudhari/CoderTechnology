@@ -9,3 +9,5 @@
 1543991151234	Delete resource 'JPM_133_JPA_Association_OneToMany_Bidirectional/src/com/jpm'
 1544003386654	Delete resource 'JPM_133_JPA_Association_OneToMany_Bidirectional/src/com/jp/jpacrud'
 1544003456742	Delete resource 'JPM_134_Association_ManyToMany_Bidirectional/src/com/jp/mtm/entity/MTMClient.java'
+1544007551414	Rename resource 'JPM_134_Association_ManyToMany_Bidirectional'
+1544007888777	Delete resource 'JPM_135_JPA_Associate_OneToOne_Unidirection/src/util'

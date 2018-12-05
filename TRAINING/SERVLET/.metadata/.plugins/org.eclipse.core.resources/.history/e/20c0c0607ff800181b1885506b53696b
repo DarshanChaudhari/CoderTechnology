@@ -1,0 +1,15 @@
+package com.jp.oto.client;
+
+import javax.persistence.EntityManager;
+
+import com.jp.otm.util.JPAUtil;
+
+public class OTOClient {
+
+	public static void main(String[] args) {
+		
+		EntityManager entityManager = JPAUtil.getEntityManager();
+
+	}
+
+}

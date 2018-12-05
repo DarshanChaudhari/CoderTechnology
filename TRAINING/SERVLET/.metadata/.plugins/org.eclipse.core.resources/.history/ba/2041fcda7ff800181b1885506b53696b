@@ -1,0 +1,25 @@
+package com.jp.oto.client;
+
+import javax.persistence.EntityManager;
+
+import com.jp.oto.entities.Address;
+
+public class OTOClient {
+
+	public static void main(String[] args) {
+		
+		EntityManager entityManager = JPAUtil.getEntityManager();
+		entityManager.getTransaction().begin();
+		
+		// address object
+		
+		Address homeAddress = new Address();
+		homeAddress.setAddressId(121L);
+		homeAddress.setStreet("MG Road");
+		homeAddress.setCity("Pune");
+		homeAddress.setState("Maharashtra");
+		homeAddress.setZipCode("411017");
+		
+	}
+
+}

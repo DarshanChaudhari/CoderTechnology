@@ -1,0 +1,5 @@
+package com.jp.oto.entities;
+
+public class Address {
+
+}
