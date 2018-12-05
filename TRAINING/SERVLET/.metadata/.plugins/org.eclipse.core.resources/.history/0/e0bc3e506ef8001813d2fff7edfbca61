@@ -1,0 +1,6 @@
+package com.jp.mtm.entity;
+
+
+public class Order {
+
+}

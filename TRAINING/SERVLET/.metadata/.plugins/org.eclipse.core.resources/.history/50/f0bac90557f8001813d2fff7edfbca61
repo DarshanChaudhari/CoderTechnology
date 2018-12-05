@@ -1,0 +1,19 @@
+package com.jp.otm.client;
+
+import javax.persistence.EntityManager;
+
+import com.jp.otm.util.JPAUtil;
+
+public class OTMClient {
+
+	
+	
+	public static void main(String[] args) {
+		// Step 1 Obtain EntityManager object
+		EntityManager entityManager = JPAUtil.getEntityManager();
+		
+		/// create the object to be persisted
+
+	}
+
+}

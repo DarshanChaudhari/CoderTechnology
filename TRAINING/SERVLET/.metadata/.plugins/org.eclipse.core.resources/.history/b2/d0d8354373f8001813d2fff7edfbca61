@@ -1,0 +1,15 @@
+package com.jp.mtm.entity;
+
+import javax.persistence.EntityManager;
+
+import com.jp.mtm.util.JPAUtil;
+
+public class MTMClient {
+
+	public static void main(String[] args) {
+		
+		EntityManager entityManager = JPAUtil.getEntityManager();
+
+	}
+
+}

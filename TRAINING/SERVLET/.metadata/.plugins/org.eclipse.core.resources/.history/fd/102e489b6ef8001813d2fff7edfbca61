@@ -1,0 +1,9 @@
+package com.jp.mtm.entity;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="ORDER_MTM)
+public class Order {
+		
+}

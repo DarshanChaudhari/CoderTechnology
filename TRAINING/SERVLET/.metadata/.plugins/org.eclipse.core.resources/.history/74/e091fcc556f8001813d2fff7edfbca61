@@ -1,0 +1,10 @@
+package com.jp.otm.client;
+
+public class OTMClient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
