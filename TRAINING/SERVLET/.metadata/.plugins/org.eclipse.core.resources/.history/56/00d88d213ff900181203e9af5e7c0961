@@ -1,0 +1,20 @@
+package com.jp.jpql.client;
+
+import com.jp.jpql.services.BookServiceImpl;
+import com.jp.jpql.services.IBookService;
+
+public class BookClient {
+
+	
+	public static void main (String [] args) {
+		IBookService service = new BookServiceImpl();
+		System.out.println("**************************Listing book with id*********************************** ");
+		System.out.println("Book with ID 101 : " + service.getBookById(102));
+		
+		
+		System.out.println("**************************Listing All Books*********************************** ");
+		System.out.println("List All Books : " + service.getAllBooks());
+		
+		
+	}
+}

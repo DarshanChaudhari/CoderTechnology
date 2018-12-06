@@ -14,7 +14,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="TRAINEE_MTM1")
+@Table(name="TRAINEE_MTM")
 public class Trainee {
 	
 	
@@ -28,7 +28,7 @@ public class Trainee {
 	
 	
 	// STEP 1 :
-	@ManyToMany(fetch=FetchType.LAZY,mappedBy="trainees")	
+	@ManyToMany (cascade=CascadeType.ALL , fetch=FetchType.LAZY,mappedBy="trainees")	
 	private Set<Course> courses = new HashSet<>();
 	
 	

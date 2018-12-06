@@ -1,0 +1,9 @@
+package com.jp.jpql.client;
+
+public class BookClient {
+
+	
+	public static void main (String [] args) {
+		IBookService service = new BookServiceImpl();
+	}
+}

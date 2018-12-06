@@ -1,0 +1,10 @@
+package com.jp.jpql.dao;
+
+import java.util.List;
+
+import com.jp.jpql.entity.Book;
+
+public class BookDaoImpl implements IBookDao {
+
+	
+}

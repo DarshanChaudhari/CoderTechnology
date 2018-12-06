@@ -1,0 +1,6 @@
+package com.jp.jpql.services;
+
+public class IBookServiceImpl implements IBookService{
+
+	
+}

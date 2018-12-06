@@ -57,19 +57,19 @@ public class MTMClient {
 		trainees.add(t5);
 		trainees.add(t6);
 		
-//		
-//		Set<Trainee> trainees = new HashSet<>();
-//		trainees.add(t1);
-//		trainees.add(t2);
-//		trainees.add(t3);
-	
-		
 		course1.setTrainees(trainees);
 		
 		
+		//Set<Trainee> trainees = new HashSet<>();
+
 		Course course2 = new Course();
 		course2.setCourseId(201L);
 		course2.setCourseName("SERVLET");
+		
+		trainees.add(t1);
+		trainees.add(t2);
+		trainees.add(t3);
+		
 		
 		course2.setTrainees(trainees);
 		

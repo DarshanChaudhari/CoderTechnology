@@ -6,7 +6,7 @@ import java.util.Set;
 import javax.persistence.*;
 
 @Entity
-@Table(name="COURSE_MTM1" )
+@Table(name="COURSE_MTM" )
 public class Course {
 
 	

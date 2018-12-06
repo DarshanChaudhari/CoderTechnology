@@ -1,0 +1,5 @@
+package com.jp.jpql.entity;
+
+public class Book {
+
+}
