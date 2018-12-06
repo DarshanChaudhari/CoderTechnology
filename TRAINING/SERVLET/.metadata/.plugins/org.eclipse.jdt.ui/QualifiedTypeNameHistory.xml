@@ -17,4 +17,15 @@
 <fullyQualifiedTypeName name="org.apache.catalina.servlet4preview.RequestDispatcher"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
+<fullyQualifiedTypeName name="com.jp.oto.entities.Address"/>
+<fullyQualifiedTypeName name="com.jp.oto.entities.Employee"/>
+<fullyQualifiedTypeName name="com.jp.oto.util.JPAUtil"/>
+<fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="com.jp.mtm.entities.Trainee"/>
+<fullyQualifiedTypeName name="com.jp.mtm.entities.Course"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
 </qualifiedTypeNameHistroy>
