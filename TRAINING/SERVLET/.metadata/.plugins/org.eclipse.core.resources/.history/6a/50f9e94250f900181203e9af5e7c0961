@@ -23,7 +23,7 @@ public class BookDaoImpl implements IBookDao {
 
 	@Override
 	public Book getBookById(int id) {
-		//Book book = entityManager.find(Book.class, id);
+		Book book = entityManager.find(Book.class, id);
 		//logger.info("Invoked getBookByID at BookDaoImpl and book found is : ",book);
 		//return book;
 		

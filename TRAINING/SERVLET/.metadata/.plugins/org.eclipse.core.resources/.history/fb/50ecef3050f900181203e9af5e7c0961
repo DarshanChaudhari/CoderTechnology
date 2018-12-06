@@ -4,8 +4,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.jp.jpql.entity.Book;
 import com.jp.jpql.util.JPAUtil;
@@ -13,11 +11,11 @@ import com.jp.jpql.util.JPAUtil;
 public class BookDaoImpl implements IBookDao {
 	
 	private EntityManager entityManager;
-	private Logger logger;
+	//private Logger logger;
 	
 	public BookDaoImpl() {
 		entityManager = JPAUtil.getEntityManager();
-		logger = LoggerFactory.getLogger(BookDaoImpl.class);
+		//logger = LoggerFactory.getLogger(BookDaoImpl.class);
 	}
 	
 
