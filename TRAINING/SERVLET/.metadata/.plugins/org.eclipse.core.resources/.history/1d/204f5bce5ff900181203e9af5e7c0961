@@ -10,16 +10,14 @@ import javax.persistence.Table;
 @Entity
 @Table(name="emp_master")
 public class Employee {
+	private Long empId;
+	private String firstName;
+	private String lastName;
 	
 	@Id //Primary key
 	//@GeneratedValue(strategy=GenerationType.TABLE)
 	@SequenceGenerator(name="EMP_GEN" ,sequenceName="emp_master_seq")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="EMP_GEN")
-	private Long empId;
-	private String firstName;
-	private String lastName;
-	
-	
 	public Employee(Long empId, String firstName, String lastName) {		
 		this.empId = empId;
 		this.firstName = firstName;
