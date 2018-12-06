@@ -31,14 +31,14 @@ public class OTOClient {
 		empObj.setEmpSal(88.88);
 		
 
-// set address to the Emplooyee object
-//		empObj.setAddress(homeAddress);
+// set address to the Employee object
+		empObj.setAddress(homeAddress);
 		
-		homeAddress.setEmployee(empObj);
+		//homeAddress.setEmployee(empObj);
 
 // now persist the empobj
-//		entityManager.persist(empObj);
-		entityManager.persist(homeAddress);
+		entityManager.persist(empObj);
+		//entityManager.persist(homeAddress);
 // now commit and close
 		entityManager.getTransaction().commit();
 		entityManager.close();

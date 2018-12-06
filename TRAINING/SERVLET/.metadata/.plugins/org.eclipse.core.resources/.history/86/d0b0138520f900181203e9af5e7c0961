@@ -1,0 +1,21 @@
+package com.jp.inheritance.tpc.client;
+
+import javax.persistence.EntityManager;
+
+import com.jp.inheritance.tpc.util.JPAUtil;
+
+public class ClientTPC {
+	
+	
+	public static void main(String[] args) {
+		EntityManager em = JPAUtil.getEntityManager();
+		em.getTransaction().begin();
+		
+		// Create Emp Object
+		
+		
+		// Create Manager Object
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.jp.inheritance.tpc.entities;
+
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="MGR_TPC")
+@AttributeOverrides({
+	@AttributeOverride(name="empId", column=@Column(name="EMP_ID")),
+	@AttributeOverride(column=@Column(name="EMP_NAME"),name="empName"),
+	@AttributeOverride(column=@Column(name="EMP_SALARY"),name="empSal")
+})
+public class SalesManager extends Manager {
+
+}

@@ -1,0 +1,6 @@
+package com.jp.oto.entities;
+
+public class Manager extends Employee {
+	
+	
+}

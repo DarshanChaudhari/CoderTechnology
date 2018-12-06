@@ -1,0 +1,5 @@
+package com.jp.inheritance.tpc.client;
+
+public class ClientTPC {
+
+}

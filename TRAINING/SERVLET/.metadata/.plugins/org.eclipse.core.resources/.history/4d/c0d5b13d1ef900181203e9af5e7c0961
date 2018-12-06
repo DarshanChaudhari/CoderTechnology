@@ -1,0 +1,16 @@
+package com.jp.oto.entities;
+
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="MGR_TPC")
+@AttributeOverridess
+public class Manager extends Employee {
+	
+	private Double bonus;
+	
+	
+	
+}

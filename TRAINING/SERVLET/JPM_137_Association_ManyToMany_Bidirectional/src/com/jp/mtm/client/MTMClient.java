@@ -94,9 +94,7 @@ public class MTMClient {
 		
 		// close em
 		entityManager.close();		
-		
-		
-		
+				
 	}
 
 }

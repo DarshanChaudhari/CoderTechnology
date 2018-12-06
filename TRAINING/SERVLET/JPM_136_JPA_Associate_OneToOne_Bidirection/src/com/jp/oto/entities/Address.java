@@ -1,14 +1,22 @@
 package com.jp.oto.entities;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="ADDRESS_OTO")
+@Table(name="ADDRESS_OTO_BI")
 public class Address {
+	
+	/*
+	@Id
+	@Column(name="emp_Id", unique=true, nullable=false)
+	@GeneratedValue(generator="gen")@GenericGenerator(name="gen",
+	strategy="foreign")*/
 	
 	@Id
 	@Column(name="ADDRESS_ID")
@@ -26,7 +34,9 @@ public class Address {
 	@Column(name="ADDRESS_ZIPCODE")
 	private String zipCode;
 	
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
+//	@PrimaryKeyJoinColumn
+	@JoinColumn(name="EMP_ID")
 	private Employee employee;
 	
 	public Long getAddressId() {
@@ -74,7 +84,7 @@ public class Address {
 	@Override
 	public String toString() {
 		return "Address [addressId=" + addressId + ", street=" + street + ", city=" + city + ", state=" + state
-				+ ", zipCode=" + zipCode + ", employee=" + employee.getEmpId() + "]";
+				+ ", zipCode=" + zipCode + ", employee=" + employee + "]";
 	}
 
 	public Address() {

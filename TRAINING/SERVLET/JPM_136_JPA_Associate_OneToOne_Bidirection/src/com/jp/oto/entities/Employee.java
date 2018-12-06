@@ -23,7 +23,7 @@ import javax.persistence.Table;
 	private Double empSal;
 	
 	
-	@OneToOne (cascade=CascadeType.ALL)
+	@OneToOne (cascade=CascadeType.ALL)	
 	@JoinColumn(name="ADDRESS_ID")
 	private Address address;
 	
