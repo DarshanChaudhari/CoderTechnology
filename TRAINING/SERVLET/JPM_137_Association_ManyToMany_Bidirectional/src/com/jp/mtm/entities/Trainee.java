@@ -14,7 +14,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="TRAINEE_MTM")
+@Table(name="TRAINEE_MTM1")
 public class Trainee {
 	
 	
@@ -26,14 +26,9 @@ public class Trainee {
 	@Column(name="trainee_name")
 	private String traineeName;
 	
-	@ManyToMany (cascade=CascadeType.ALL)
-	// STEP 2 : it will create third table and now steps will joinTable AND THEN JOIN COLUMNS
-		@JoinTable(name="COURSE_TRAINEE_MAPPING_MTM",
-	// STEP 3 :joinColumns	
-		joinColumns={@JoinColumn(name="Course_Id")},
-	// STEP 4 :InversejoinColumns
-		inverseJoinColumns={@JoinColumn(name="trainee_id") 
-		})
+	
+	// STEP 1 :
+	@ManyToMany(fetch=FetchType.LAZY,mappedBy="trainees")	
 	private Set<Course> courses = new HashSet<>();
 	
 	

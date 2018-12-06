@@ -6,7 +6,7 @@ import java.util.Set;
 import javax.persistence.*;
 
 @Entity
-@Table(name="COURSE_MTM" )
+@Table(name="COURSE_MTM1" )
 public class Course {
 
 	
@@ -20,9 +20,14 @@ public class Course {
 	private String courseName;
 	
 	
-	// STEP 1 :
-	@ManyToMany(fetch=FetchType.LAZY,mappedBy="courses")
-	
+	@ManyToMany (cascade=CascadeType.ALL)
+	// STEP 2 : it will create third table and now steps will joinTable AND THEN JOIN COLUMNS
+		@JoinTable(name="COURSE_TRAINEE_MAPPING_MTM",
+	// STEP 3 :joinColumns	
+		joinColumns={@JoinColumn(name="Course_Id")},
+	// STEP 4 :InversejoinColumns
+		inverseJoinColumns={@JoinColumn(name="trainee_id") 
+		})
 	private Set<Trainee> trainees = new HashSet<>();
 
 
@@ -64,7 +69,7 @@ public class Course {
 
 	@Override
 	public String toString() {
-		return "Course [courseId=" + courseId + ", courseName=" + courseName + ", trainees=" + trainees + "]";
+		return "Course [courseId=" + courseId + ", courseName=" + courseName +  "]";
 	}
 
 

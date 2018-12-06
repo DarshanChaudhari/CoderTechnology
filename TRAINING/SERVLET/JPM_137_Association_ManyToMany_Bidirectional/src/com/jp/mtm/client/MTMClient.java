@@ -39,7 +39,7 @@ public class MTMClient {
 		t5.setTraineeName("Swati");
 		
 		Trainee t6 = new Trainee();
-		t6.setTraineeId(102L);
+		t6.setTraineeId(106L);
 		t6.setTraineeName("Sanjay");
 		
 		
@@ -68,8 +68,8 @@ public class MTMClient {
 		
 		
 		Course course2 = new Course();
-		course1.setCourseId(201L);
-		course1.setCourseName("SERVLET");
+		course2.setCourseId(201L);
+		course2.setCourseName("SERVLET");
 		
 		course2.setTrainees(trainees);
 		
@@ -86,6 +86,8 @@ public class MTMClient {
 		t6.setCourses(courses);
 		
 		
+		
+		// persisit course1 and course2
 		entityManager.persist(course1);
 		entityManager.persist(course2);
 		
