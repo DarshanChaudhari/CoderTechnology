@@ -1,34 +1,35 @@
 package com.jp.mtm.entities;
 
-import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 
 @Entity
-@Table(name="COURSE_MTM" )
+@Table(name="Course")
 public class Course {
-
 	
 	@Id
-	@Column(name="Course_Id")	
+	@Column(name="course_id")
 	private Long courseId;
 	
-	
-	
-	@Column(name="Course_name")
+	@Column(name="course_name")
 	private String courseName;
 	
+	@Column(name="trainer_Name")
+	private String trainerName;
 	
-	@ManyToMany (cascade=CascadeType.ALL)
-	// STEP 2 : it will create third table and now steps will joinTable AND THEN JOIN COLUMNS
-		@JoinTable(name="COURSE_TRAINEE_MAPPING_MTM",
-	// STEP 3 :joinColumns	
-		joinColumns={@JoinColumn(name="Course_Id")},
-	// STEP 4 :InversejoinColumns
-		inverseJoinColumns={@JoinColumn(name="trainee_id") 
-		})
-	private Set<Trainee> trainees = new HashSet<>();
+	
+	@ManyToMany(cascade=CascadeType.ALL)
+	@JoinTable(name="Course_Trainee", joinColumns={@JoinColumn(name="course_id")} , 
+	inverseJoinColumns={@JoinColumn(name="trainee_id")} )
+	private Set<Trainee> trainee;
 
 
 	public Long getCourseId() {
@@ -51,13 +52,23 @@ public class Course {
 	}
 
 
-	public Set<Trainee> getTrainees() {
-		return trainees;
+	public String getTrainerName() {
+		return trainerName;
 	}
 
 
-	public void setTrainees(Set<Trainee> trainees) {
-		this.trainees = trainees;
+	public void setTrainerName(String trainerName) {
+		this.trainerName = trainerName;
+	}
+
+
+	public Set<Trainee> getTrainee() {
+		return trainee;
+	}
+
+
+	public void setTrainee(Set<Trainee> trainee) {
+		this.trainee = trainee;
 	}
 
 
@@ -69,10 +80,8 @@ public class Course {
 
 	@Override
 	public String toString() {
-		return "Course [courseId=" + courseId + ", courseName=" + courseName +  "]";
+		return "Course [courseId=" + courseId + ", courseName=" + courseName + ", trainerName=" + trainerName
+				+ ", trainee=" + trainee + "]";
 	}
-
-
-		
 	
 }
