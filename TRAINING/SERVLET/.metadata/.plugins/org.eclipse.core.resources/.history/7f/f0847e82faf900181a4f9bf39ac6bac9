@@ -10,5 +10,5 @@ public interface ServiceEmployee {
 	
 	public Employee getEmpDetails(int empId) throws HrException;
 	
-	public boolean joinNewEmployee(Employee emp) throws HrException;
+	public Long joinNewEmployee(Employee emp) throws HrException;
 }

@@ -49,7 +49,7 @@ public class ServiceEmployeeImpl implements ServiceEmployee {
 		daoEmp.beginTransaction();
 		daoEmp.insertNewRecord(emp);
 		daoEmp.commitTransaction();
-		return true;
+		return daoEmp.getEmpList();;
 	}
 
 	

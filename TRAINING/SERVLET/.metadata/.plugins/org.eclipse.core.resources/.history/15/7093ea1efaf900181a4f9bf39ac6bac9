@@ -44,12 +44,13 @@ public class ServiceEmployeeImpl implements ServiceEmployee {
 	}
 
 	@Override
-	public boolean joinNewEmployee(Employee emp) throws HrException {
-		// TODO Auto-generated method stub		
-		daoEmp.beginTransaction();
-		daoEmp.insertNewRecord(emp);
-		daoEmp.commitTransaction();
-		return true;
+	public Long joinNewEmployee(Employee emp) throws HrException {
+		// TODO Auto-generated method stub
+		return daoEmp.insertNewRecord(emp);
+		employeeDao.beginTransaction();
+		employeeDao.updateEmployee(employee);
+		employeeDao.commitTransaction();
+		return employee.getEmployeeId(); 
 	}
 
 	

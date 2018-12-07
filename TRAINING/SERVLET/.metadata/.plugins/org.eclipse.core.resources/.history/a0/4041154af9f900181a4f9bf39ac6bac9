@@ -40,8 +40,10 @@ public class DaoEmployeeImpl implements DaoEmployee {
 
 	@Override
 	public Employee getEmpDetails(int empId) throws HrException {
-		return entityManager.find(Employee.class, empId);
-				
+		// TODO Auto-generated method stub
+				return entityManager.find(Employee.class, empId);
+			
+		
 	}
 
 
@@ -53,7 +55,13 @@ public class DaoEmployeeImpl implements DaoEmployee {
 	}
 	
 	
+	public static void main (String [] args) throws HrException {
 		
+		DaoEmployeeImpl damp = new DaoEmployeeImpl() ;
+		damp.getEmpDetails(E1001);
+		
+	}
+	
 	@Override
 	public void commitTransaction() {
 		// TODO Auto-generated method stub
