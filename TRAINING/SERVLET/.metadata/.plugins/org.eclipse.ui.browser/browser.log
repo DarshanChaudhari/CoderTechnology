@@ -68,3 +68,16 @@ Dec 07, 2018 15:16:38.19 [Child 5792, Chrome_ChildThread] WARNING: pipe error: 1
 Dec 07, 2018 15:16:38.36 
 Dec 07, 2018 15:16:38.36 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 Dec 07, 2018 15:16:38.36 
+Dec 07, 2018 15:29:22.59 [Child 6536, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Dec 07, 2018 15:29:22.59 [Child 6536, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Dec 07, 2018 15:29:22.59 [Child 1896, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Dec 07, 2018 15:29:22.59 [Child 1896, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Dec 07, 2018 15:29:22.60 [Child 7036, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Dec 07, 2018 15:29:22.60 [Child 7036, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Dec 07, 2018 15:29:22.75 [GPU 6768, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Dec 07, 2018 15:29:22.75 
+Dec 07, 2018 15:29:22.75 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+Dec 07, 2018 15:29:22.75 
+Dec 07, 2018 15:29:22.76 
+Dec 07, 2018 15:29:22.76 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+Dec 07, 2018 15:29:22.76 
