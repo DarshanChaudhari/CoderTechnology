@@ -15,12 +15,12 @@ public class Employee {
 	//@GeneratedValue(strategy=GenerationType.TABLE)
 	@SequenceGenerator(name="EMP_GEN" ,sequenceName="emp_master_seq")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="EMP_GEN")
-	private Long empId;
+	private int empId;
 	private String firstName;
 	private String lastName;
 	
 	
-	public Employee(Long empId, String firstName, String lastName) {		
+	public Employee(int empId, String firstName, String lastName) {		
 		this.empId = empId;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -30,11 +30,13 @@ public class Employee {
 		
 	}
 
-	public Long getEmpId() {   // Property name :empId
+	
+
+	public int getEmpId() {   // Property name :empId
 		return empId;
 	}
 
-	public void setEmpId(Long empId) {
+	public void setEmpId(int empId) {
 		this.empId = empId;
 	}
 

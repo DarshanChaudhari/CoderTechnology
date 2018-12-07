@@ -4,15 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Main Menu</title>
+<title>My Tomcat Page</title>
 </head>
 <body>
-	<jsp:include page="Head01.jsp"></jsp:include>
-	<jsp:include page="Head02.jsp"></jsp:include>	
-	<%-- Welcome Mr./Ms. ${ sessionScope.userFullName }  --%>
-	<!--<a href="logout.do">Logout</a>  -->
-	<ul>
-		<li><a href="itemList.do">View Item List</a></li>		
-	</ul>
+	<h1>Hello </h1>
 </body>
 </html>

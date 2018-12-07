@@ -41,12 +41,13 @@ public class DaoEmployeeImpl implements DaoEmployee {
 	@Override
 	public Employee getEmpDetails(int empId) throws HrException {
 		return entityManager.find(Employee.class, empId);
-				
+		
+		
 	}
 
 
 	@Override
-	public Long insertNewRecord(Employee emp) throws HrException {
+	public int insertNewRecord(Employee emp) throws HrException {
 		entityManager.persist(emp);
 		return emp.getEmpId();
 		
