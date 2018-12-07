@@ -1,2 +1,0 @@
-<h1>Welcome Mr./Ms. ${ sessionScope.userFullName }</h1>
-<a href="logout.do">Logout</a>

@@ -1,5 +1,0 @@
-package com.jp.jpql.dao;
-
-public class BookDaoImpl {
-
-}

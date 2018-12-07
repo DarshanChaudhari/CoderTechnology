@@ -1,0 +1,12 @@
+package com.jp.collections.list;
+
+public class DemoList {
+
+	public static void main(String[] args) {
+		
+		// List Collection - Ordered Collections
+		
+
+	}
+
+}
