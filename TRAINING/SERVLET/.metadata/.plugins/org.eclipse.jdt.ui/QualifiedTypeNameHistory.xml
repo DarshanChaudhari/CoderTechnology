@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-<fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="com.jp.hr.services.ServiceEmployeeImpl"/>
 <fullyQualifiedTypeName name="com.jp.hr.utilities.ConnectionFactory"/>
 <fullyQualifiedTypeName name="oracle.jdbc.pool.OracleDataSource"/>
@@ -57,4 +54,10 @@
 <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.jp.collections.Employee"/>
+<fullyQualifiedTypeName name="com.jp.collections.SortByEmpName"/>
+<fullyQualifiedTypeName name="org.omg.Messaging.SyncScopeHelper"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.ServletSecurity"/>
 </qualifiedTypeNameHistroy>
