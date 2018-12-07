@@ -1,0 +1,4 @@
+https://o7planning.org/en/10285/create-a-simple-java-web-application-using-servlet-jsp-and-jdbc
+
+
+https://www.javatpoint.com/fee-management-project-in-servlet
