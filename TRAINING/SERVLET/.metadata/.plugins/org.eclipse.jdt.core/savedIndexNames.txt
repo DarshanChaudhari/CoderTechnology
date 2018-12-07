@@ -1,7 +1,2 @@
 INDEX VERSION 1.129+D:\Darshan_GIT\CoderTechnology\TRAINING\SERVLET\.metadata\.plugins\org.eclipse.jdt.core
-2353542307.index
-3025851940.index
-3738803657.index
-3288763075.index
 3650667009.index
-2557386943.index
