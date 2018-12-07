@@ -81,3 +81,10 @@ Dec 07, 2018 15:29:22.75
 Dec 07, 2018 15:29:22.76 
 Dec 07, 2018 15:29:22.76 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 Dec 07, 2018 15:29:22.76 
+Dec 07, 2018 15:35:23.27 [Child 5888, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Dec 07, 2018 15:35:23.27 [Child 6408, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Dec 07, 2018 15:35:23.29 [Child 4492, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Dec 07, 2018 15:35:23.42 [GPU 688, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Dec 07, 2018 15:35:23.42 
+Dec 07, 2018 15:35:23.42 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+Dec 07, 2018 15:35:23.42 
