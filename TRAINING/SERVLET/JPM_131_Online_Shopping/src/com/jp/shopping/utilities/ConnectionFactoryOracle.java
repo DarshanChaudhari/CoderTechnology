@@ -18,7 +18,7 @@ public class ConnectionFactoryOracle {
 		dataSource.setUser("hr");
 		dataSource.setPassword("hr");
 		dataSource.setServerName("localhost");
-		dataSource.setServiceName("orcl");
+		dataSource.setServiceName("XE");
 
 	}
 

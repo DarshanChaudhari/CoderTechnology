@@ -1,13 +1,14 @@
-package com.jp.shopping.daos;
+package com.jp.shopping.services;
 
 import java.util.ArrayList;
 
 import com.jp.shopping.entities.ItemMaster;
 import com.jp.shopping.exceptions.ShoppingException;
 
-public interface ItemMasterDAO {
-
+public interface ItemMasterService {
+	
 	public ArrayList<ItemMaster> getItemList() throws ShoppingException;
 	
-	public ItemMaster getItemDetails(String itemId) throws ShoppingException;
+	public ItemMaster getItemDetails(String itemdId) throws ShoppingException;
+
 }

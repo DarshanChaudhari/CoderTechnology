@@ -16,6 +16,10 @@ public class ItemMaster {
 		this.itemStock = itemStock;
 	}
 
+	public ItemMaster() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getItemId() {
 		return itemId;
 	}
