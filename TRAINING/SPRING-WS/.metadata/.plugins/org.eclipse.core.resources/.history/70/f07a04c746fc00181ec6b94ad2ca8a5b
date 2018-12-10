@@ -1,0 +1,26 @@
+package com.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.jp.dao.MyApplDao;
+
+/*  1. Creation of an application context
+ * 	2. The ClassPathXmlApplicationContext refers to config file which is relative to a path on ClassPath.
+*/
+
+public class TestSpringFactory {
+
+	public static void main(String[] args) {
+		// Create a Spring Context		
+		ApplicationContext ctx = new ClassPathXmlApplicationContext ("context.xml");
+		
+		System.out.println("Context created.");
+		MyApplDao dao = (MyApplDao) ctx.getBean("dao");
+		System.out.println(dao.hashCode());
+		
+		MyApplDao dao1 = (MyApplDao) ctx.getBean("dao");  // Spring object is not only creating object but also it is giving you SingleTon pattern as it is singleton is true
+		System.out.println(dao.hashCode());
+	}
+
+}

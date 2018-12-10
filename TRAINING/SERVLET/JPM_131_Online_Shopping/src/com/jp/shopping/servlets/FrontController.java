@@ -73,6 +73,7 @@ public class FrontController extends HttpServlet {
 				}
 				
 				case "itemDetails" : {
+					
 					String itemdId = request.getParameter("itemId");
 					ItemMaster item = itemMasterService.getItemDetails(itemdId);
 					System.out.println(item);

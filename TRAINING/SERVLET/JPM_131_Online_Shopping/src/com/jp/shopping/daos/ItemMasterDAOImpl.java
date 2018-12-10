@@ -121,6 +121,14 @@ public class ItemMasterDAOImpl implements ItemMasterDAO {
 		}
 
 	}
+	
+	public static void main(String [] args) throws ShoppingException {
+		
+		ItemMasterDAOImpl  abc = new ItemMasterDAOImpl();
+		ItemMaster item = abc.getItemDetails("E1001");
+		System.out.println(item);
+		
+	}
 		
 
 }
