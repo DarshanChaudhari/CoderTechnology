@@ -1,8 +1,8 @@
 package com.main;
 
-import com.java.MyApplDao;
-import com.java.MyApplServices;
-import com.java.ObjectFactory;
+import com.jp.dao.MyApplDao;
+import com.jp.services.MyApplServices;
+import com.jp.Factory.ObjectFactory;
 
 public class TestDependencyInjection {
 
@@ -25,8 +25,11 @@ public class TestDependencyInjection {
 
 		// Calling getBean Method - for this you have to comment the above two lines
 		
-		MyApplDao dao = (MyApplDao) factory.getBean("dao");
+		MyApplDao dao = (MyApplDao) factory.getBean("dao"); // Why TypeCasting - Because return type is dao and actually we are returning Object superclass and dao is subclass
 		MyApplServices services = (MyApplServices) factory.getBean("service");
+		
+		
+		
 		
 
 	}

@@ -1,6 +1,6 @@
 package com.main;
 
-import com.java.MyApplServices;
+import com.jp.services.MyApplServices;
 
 public class TestLawOfDemerits {
 

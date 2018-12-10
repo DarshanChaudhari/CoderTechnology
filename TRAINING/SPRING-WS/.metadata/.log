@@ -24,3 +24,108 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jface.text 2 0 2018-12-10 09:48:28.536
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:52:07.111
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:52:08.156
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:52:54.880
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:52:55.925
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:52:57.002
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:53:54.052
+!MESSAGE The POM for junit:junit:jar:${junit.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:53:54.614
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:14.454
+!MESSAGE The POM for junit:junit:jar:${junit.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:14.454
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:14.797
+!MESSAGE The POM for junit:junit:jar:${junit.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:14.797
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:34.980
+!MESSAGE The POM for junit:junit:jar:${junit.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:34.980
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:35.354
+!MESSAGE The POM for junit:junit:jar:${junit.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:35.354
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:40.939
+!MESSAGE The POM for junit:junit:jar:${junit.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:40.939
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:41.220
+!MESSAGE The POM for junit:junit:jar:${junit.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:41.220
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:45.417
+!MESSAGE The POM for junit:junit:jar:${junit.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:45.432
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:45.729
+!MESSAGE The POM for junit:junit:jar:${junit.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:45.729
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:52.421
+!MESSAGE The POM for junit:junit:jar:${junit.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:52.421
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:52.640
+!MESSAGE The POM for junit:junit:jar:${junit.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:52.655
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:57.554
+!MESSAGE The POM for junit:junit:jar:${junit.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:57.569
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:57.803
+!MESSAGE The POM for junit:junit:jar:${junit.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:55:57.803
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:56:14.276
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 10:56:14.557
+!MESSAGE The POM for org.hibernate:hibernate-core:jar:${hibernate.version} is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 11:20:45.061
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-10 11:20:45.061
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
