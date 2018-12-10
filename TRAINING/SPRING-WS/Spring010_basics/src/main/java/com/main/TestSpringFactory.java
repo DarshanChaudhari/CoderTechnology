@@ -16,7 +16,9 @@ import com.jp.entity.*;
 	5. Prototypes are always on demand. Nothing like eager creation.	
 	6. By Default, it calls Default Constructor. If does not exists in Entity class, throws exception. No default constructor found . It is Un-Checked Exception because it is not asking try catch to write.
 	7. In frameworks, why there is always Un-Checked EXceptions, as there is always an headache for developers for checked exception to write try catch.
-	8. 
+	8. The <constructor-arg> tag decides the constructor to be invoked while creating a bean.
+	9. The <value> is for defining initial value while <ref> is for injection.
+	10.Order of the bean creation is not customizable, Spring decides it.   
 	
 */	
 

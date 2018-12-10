@@ -1,3 +1,16 @@
 127.0.0.1 - - [10/Dec/2018:12:19:50 +0530] "GET / HTTP/1.1" 404 1074
 127.0.0.1 - - [10/Dec/2018:12:28:06 +0530] "GET / HTTP/1.1" 404 1074
 127.0.0.1 - - [10/Dec/2018:12:29:09 +0530] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [10/Dec/2018:13:01:37 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/Dec/2018:13:02:39 +0530] "GET /JPM_131_Online_Shopping/*.do HTTP/1.1" 200 427
+0:0:0:0:0:0:0:1 - - [10/Dec/2018:13:02:39 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [10/Dec/2018:13:02:42 +0530] "GET /JPM_131_Online_Shopping/itemList.do HTTP/1.1" 200 1003
+0:0:0:0:0:0:0:1 - - [10/Dec/2018:13:02:43 +0530] "GET /JPM_131_Online_Shopping/itemDetails.do?itemId=E1001 HTTP/1.1" 200 727
+0:0:0:0:0:0:0:1 - - [10/Dec/2018:13:02:46 +0530] "GET /JPM_131_Online_Shopping/itemList.do HTTP/1.1" 200 1003
+0:0:0:0:0:0:0:1 - - [10/Dec/2018:13:02:54 +0530] "GET /JPM_131_Online_Shopping/itemDetails.do?itemId=E1002 HTTP/1.1" 200 727
+127.0.0.1 - - [10/Dec/2018:13:42:41 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [10/Dec/2018:13:42:41 +0530] "GET /JPM_131_Online_Shopping/*.do HTTP/1.1" 200 427
+0:0:0:0:0:0:0:1 - - [10/Dec/2018:13:42:43 +0530] "GET /JPM_131_Online_Shopping/itemList.do HTTP/1.1" 200 1003
+0:0:0:0:0:0:0:1 - - [10/Dec/2018:13:42:44 +0530] "GET /JPM_131_Online_Shopping/itemDetails.do?itemId=E1001 HTTP/1.1" 200 775
+0:0:0:0:0:0:0:1 - - [10/Dec/2018:13:44:26 +0530] "GET /JPM_131_Online_Shopping/itemDetails.do?itemId=E1001 HTTP/1.1" 200 698
+0:0:0:0:0:0:0:1 - - [10/Dec/2018:13:44:28 +0530] "GET /JPM_131_Online_Shopping/itemDetails.do?itemId=E1001 HTTP/1.1" 200 698

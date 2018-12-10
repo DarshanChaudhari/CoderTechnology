@@ -25,7 +25,7 @@ public class ItemMasterServiceImpl implements ItemMasterService {
 	@Override
 	public ItemMaster getItemDetails(String itemId) throws ShoppingException {
 		
-		return null;
+		return itemMasterDAO.getItemDetails(itemId);
 	}
 
 }

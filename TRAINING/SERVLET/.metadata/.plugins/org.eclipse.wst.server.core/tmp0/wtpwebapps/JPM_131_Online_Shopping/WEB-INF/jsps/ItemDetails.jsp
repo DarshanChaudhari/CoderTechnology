@@ -21,11 +21,7 @@
 				<td>${requestScope.itemDetails.itemId}</td>
 				<td>${requestScope.itemDetails.name}</td>
 				<td>${requestScope.itemDetails.category}</td>
-				<td>${requestScope.itemDetails.price}</td>
-			<td>${requestScope.itemDetails.itemId}</td>
-			<td>${requestScope.itemDetails.name}</td>
-			<td>${requestScope.itemDetails.category}</td>
-			<td>${requestScope.itemDetails.price}</td>
+				<td>${requestScope.itemDetails.price}</td>			
 			</tr>		
 		</table>
 		<br>
