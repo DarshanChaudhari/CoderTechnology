@@ -1,9 +1,0 @@
-package com.jp.cart.entities;
-
-public class PlaceOrder {
-
-	private int customerId;
-	private int orderId;
-	private int itemId;
-	
-}
