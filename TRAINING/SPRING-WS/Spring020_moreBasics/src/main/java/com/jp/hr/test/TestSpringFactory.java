@@ -46,6 +46,8 @@ public class TestSpringFactory {
 		System.out.println("service1 : " +service1.hashCode());
 		
 		
+		
+		
 
 		
 	}

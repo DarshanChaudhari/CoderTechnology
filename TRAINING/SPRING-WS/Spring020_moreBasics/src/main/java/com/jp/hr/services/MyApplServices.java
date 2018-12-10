@@ -21,6 +21,11 @@ import com.jp.hr.dao.MyApplDao;
 @Lazy(true)
 @Scope("singleton")
 public class MyApplServices {
+	
+	/*// It will directly get the reference and assigned it, no setter method. Here it is using Reference API
+	 *  This is called Field Injection.
+	 */	
+	@Autowired
 	private MyApplDao dao;
 	
 	
@@ -32,10 +37,19 @@ public class MyApplServices {
 
 	// Dependency Injection using the Constructor
 	
-	@Autowired  				// This is used for to call the below constructor not the above one. This is also Autowiring/Plumbing by type.
+	//@Autowired // This is used for to call the below constructor not the above one. This is also Autowiring/Plumbing by type.
 	public MyApplServices(MyApplDao dao) {
 		this.dao=dao;
 		System.out.println("Object of class MyApplServices(dao) is created");
 	}
-			
+
+	// Setter method to create if client want to injection without using constructor, for this we have to comment Autowired in paramerterised constructor
+	// This is called as Setter Injection
+	//@Autowired
+	public void setDao(MyApplDao dao) {
+		this.dao = dao;
+		System.out.println("In setter for injecting dao: Here we are not calling setter method explicitly");
+	}
+		
+	
 }

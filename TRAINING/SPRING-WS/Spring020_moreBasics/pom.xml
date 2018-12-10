@@ -18,8 +18,5 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring-ioc.version}</version>
 		</dependency>
-	
-	
-		
 	</dependencies>	
 </project>
