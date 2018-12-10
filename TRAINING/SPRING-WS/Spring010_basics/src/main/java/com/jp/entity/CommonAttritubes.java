@@ -1,5 +1,12 @@
 package com.jp.entity;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component("commonData1")
+@Scope("prototype")
 public class CommonAttritubes {
 	private String companyName;
 	private String address;
@@ -28,11 +35,38 @@ public class CommonAttritubes {
 	}
 
 
-
 	@Override
 	public String toString() {
 		return "CommonAttritubes [companyName=" + companyName + ", address=" + address + ", niftyBank=" + niftyBank
 				+ "]";
+	}
+
+	
+	public String getCompanyName() {
+		return companyName;
+	}
+	@Value("J.P.Morgan")
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+	
+	
+	public String getAddress() {
+		return address;
+	}
+	
+	@Value("Mumbai")
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	public int getNiftyBank() {
+		return niftyBank;
+	}
+	
+	@Value("40")
+	public void setNiftyBank(int niftyBank) {
+		this.niftyBank = niftyBank;
 	}
 	
 	
