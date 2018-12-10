@@ -37,7 +37,7 @@ public class DaoEmployeeImpl implements DaoEmployee{
 			throw new HrException("Problem in producing connection.", e);
 		}*/
 		/* We have to used Injection setter injection so commit calling to constructor */
-		System.out.println("Constructor : Inside DaoEmployeeImpl");
+		System.out.println("Inside DaoEmployeeImpl");
 	}
 	
 	@Autowired

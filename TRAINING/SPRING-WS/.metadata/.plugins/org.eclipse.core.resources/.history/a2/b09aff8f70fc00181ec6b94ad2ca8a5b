@@ -37,13 +37,13 @@ public class DaoEmployeeImpl implements DaoEmployee{
 			throw new HrException("Problem in producing connection.", e);
 		}*/
 		/* We have to used Injection setter injection so commit calling to constructor */
-		System.out.println("Constructor : Inside DaoEmployeeImpl");
+		System.out.println("Inside DaoEmployeeImpl");
 	}
 	
 	@Autowired
 	public void setConnectionFactory(ConnectionFactory factory){
 		this.factory = factory;
-		System.out.println("Setter Method : Connection factory injected in Dao");
+		System.out.println("Connection factory injected in Dao");
 	}
 	
 

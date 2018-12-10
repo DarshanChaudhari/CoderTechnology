@@ -34,7 +34,7 @@ public class ServiceEmployeeImpl implements ServiceEmployee, Role1 {
 	@Autowired
 	public ServiceEmployeeImpl(@Qualifier("dao") DaoEmployee daoEmp) throws HrException {
 		this.daoEmp = daoEmp;
-		System.out.println("Constructor of ServiceEmployeeImpl : Calling the constructor based on @QualifierName- dao");
+		System.out.println("Constructor :");
 	}
 	//Resolving Dependency.
 	public ServiceEmployeeImpl() throws HrException {
