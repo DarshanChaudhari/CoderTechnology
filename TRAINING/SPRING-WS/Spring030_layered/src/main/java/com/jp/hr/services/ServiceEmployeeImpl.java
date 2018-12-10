@@ -3,9 +3,8 @@ package com.jp.hr.services;
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-
-import com.jp.hr.daos.DaoEmployeeImpl;
 import com.jp.hr.entities.Employee;
 import com.jp.hr.exceptions.HrException;
 import com.jp.hr.interfaces.DaoEmployee;
@@ -31,13 +30,14 @@ public class ServiceEmployeeImpl implements ServiceEmployee, Role1 {
 	
 	
 	// Resolving Dependency
+	// Injecting Service By Name
 	@Autowired
-	public ServiceEmployeeImpl(DaoEmployee daoEmp) {
+	public ServiceEmployeeImpl(@Qualifier("daoDS") DaoEmployee daoEmp) throws HrException {
 		this.daoEmp = daoEmp;
 	}
 	//Resolving Dependency.
 	public ServiceEmployeeImpl() throws HrException {
-		//daoEmp = new DaoEmployeeImpl();  we Commenting the Constructor here becuase we used constructor injection spring
+		//daoEmp = new DaoEmployeeImpl();  we Commenting the Constructor here because we used constructor injection spring
 	}
 
 	@Override

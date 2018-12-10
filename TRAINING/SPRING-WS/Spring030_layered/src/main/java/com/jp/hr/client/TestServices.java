@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.jp.hr.entities.Employee;
 import com.jp.hr.exceptions.HrException;
 import com.jp.hr.services.ServiceEmployee;
-import com.jp.hr.services.ServiceEmployeeImpl;
+
 
 public class TestServices {
 
