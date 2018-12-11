@@ -1,0 +1,11 @@
+package com.jp.hr.advices;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+public class SecurityCheck {
+	
+	public Object checkAuthorization(ProceedingJoinPoint doCall) {
+		
+	}
+
+}

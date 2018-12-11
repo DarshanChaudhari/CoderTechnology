@@ -18,14 +18,14 @@ public class LoggingAspect3 implements Ordered {
 		this.order = order;
 	}
 	
-	@Around("execution(* pack_40_aop.pack_10_aspect.pack_joinpoints.pack_dao.*Dao.*(..))") //Pointcut
-	public Object adviceLogging(ProceedingJoinPoint call) throws Throwable {
+	@Around("execution(* pack_40_aop.pack_10_aspect.pack_joinpoints.pack_dao.*Dao.*(..))") //Pointcut	
+	public Object adviceLogging(ProceedingJoinPoint call) throws Throwable { //// Advice 
 		StopWatch st = new StopWatch();
 		st.start();
 		
-		System.out.println("\nFrom LoggingAspect3 before : "+call.toShortString());
-		Object point = call.proceed();
-		System.out.println("From LoggingAspect3 after : "+call.toShortString());
+		System.out.println("\nFrom LoggingAspect3 before : "+call.toShortString()); // Before part
+		Object point = call.proceed(); // This is something like do filter [Actual save method will call here]
+		System.out.println("From LoggingAspect3 after : "+call.toShortString()); // After part execution of save method
 		
 		return point;
 	}

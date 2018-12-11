@@ -1,0 +1,7 @@
+package com.jp.hr.advices;
+
+public class SecurityCheck {
+	
+	public Object checkAuthorization(ProceedingJoinPoints doCall)
+
+}

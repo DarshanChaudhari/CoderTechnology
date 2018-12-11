@@ -19,7 +19,24 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring-ioc.version}</version>
 		</dependency>
-	
+				<!-- Spring core -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring-ioc.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring-ioc.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${spring-ioc.version}</version>
+		</dependency>
 	
 		
 	</dependencies>	

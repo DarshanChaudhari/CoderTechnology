@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;context.xml&apos; to &apos;Spring050_aop/src/main/resources&apos;&#x0D;&#x0A;- Original project: &apos;Spring040_LifeCycle&apos;&#x0D;&#x0A;- Destination element: &apos;Spring050_aop/src/main/resources&apos;&#x0D;&#x0A;- Original element: &apos;context.xml&apos;" description="Copy file" destination="=Spring050_aop/src\/main\/resources" element1="src/main/resources/context.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1544516221177" units="0" version="1.0"/>
+</session>
