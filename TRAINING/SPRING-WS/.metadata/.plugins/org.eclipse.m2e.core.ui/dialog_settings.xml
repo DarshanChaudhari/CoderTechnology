@@ -4,16 +4,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.jp.hr"/>
-			<item value="com.jp.hr.daos"/>
-			<item value="com.java"/>
+			<item value="com.jp.hr.beans"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="Spring030_layered"/>
-			<item value="Spring020_moreBasics"/>
-			<item value="Spring010_basics"/>
+			<item value="Spring040_LifeCycle"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -49,6 +45,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring030_layered"/>
 			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring000_DI-Factory"/>
 			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring000_DI-Factory\src\com\java\ObjectFactory.java"/>
 		</list>
