@@ -7,4 +7,15 @@ AJAX-->
 JEE-->
 	JAVAX.SERVLET - https://docs.oracle.com/javaee/7/api/javax/servlet/http/package-summary.html
 	JAVAX.SERVLET.HTTP-https://docs.oracle.com/javaee/7/api/javax/servlet/package-summary.html	
+	
+	
+Hibernate -->
+	http://www.java2novice.com/hibernate/hello-world-initial-setup/
+	
+	
+Spring -->
+	https://howtodoinjava.com/spring-aop/aspectj-around-annotation-example/ 
+	
+	
+	WebSystique
 

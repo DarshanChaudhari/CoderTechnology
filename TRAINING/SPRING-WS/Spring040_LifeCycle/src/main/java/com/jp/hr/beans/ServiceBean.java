@@ -1,6 +1,7 @@
 package com.jp.hr.beans;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
@@ -39,7 +40,7 @@ public class ServiceBean implements InitializingBean, ApplicationContextAware{
 		System.out.println("In No Parameter Constructor ");
 	}
 
-	@Autowired
+	@Autowired	
 	public ServiceBean(@Value("10") int x) {
 		this.x = x;
 		System.out.println("In Constructor "  + x);

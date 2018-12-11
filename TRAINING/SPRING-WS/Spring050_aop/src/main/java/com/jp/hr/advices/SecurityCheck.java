@@ -12,11 +12,22 @@ public class SecurityCheck {
 	
 	/*  This is all about Point Cut
 	 * [* before execution : is for return type]
-	 * [.* means all methods]
+	 * [.* means all methods] --> Join Point
 	 * [(..)  means any Type of parameters]
+	 * If you want to execute particular method then you have to give end character of method name. This is pointcut
+	 * 	"execution(* com.jp.hr.services.MyServices.*(*,*))"
+	 * Here one (*,*) --> means two parameters (*) --> one parameter
+	 * 
 	 */ 
+		
+	// Advice Class
+	// All parameters
+	/*@Around("execution(* com.jp.hr.services.MyServices.*(..))")*/
+	//Only Accepting two parameters
+	@Around("execution(* com.jp.hr.services.MyServices.*(*,*))")  // pointcut
 	
-	@Around("execution(* com.jp.hr.services.MyServices.*(..))")
+	// Within
+//	@Around("within(* com.jp.hr.services.MyServices)")
 	public Object checkAuthorization(ProceedingJoinPoint doCall) throws Throwable {
 		
 		System.out.println("Check for Authorization");
