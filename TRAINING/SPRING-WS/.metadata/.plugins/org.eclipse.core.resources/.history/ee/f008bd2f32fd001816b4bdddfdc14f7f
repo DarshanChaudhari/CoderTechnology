@@ -1,0 +1,14 @@
+package com.jp.hr.controllers;
+
+import org.springframework.stereotype.Controller;
+
+// We have to use Annotation as a controller 
+@Controller
+public class HomePageControllerf {
+	
+	public String getHomePage() {
+		System.out.println("In GetHomePage()");		
+		return "/HomePage.jsp";
+		
+	}
+}
