@@ -1,11 +1,11 @@
 package com.jp.hr.controllers;
 
 import java.util.ArrayList;
-
-import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -52,8 +52,12 @@ public class HomePageController {
 		return mAndV;		
 	}	
 	
+	/*
+	 * The comment method signature is used before to get the request which get we method getParameter in line 63
+	 */
+	//public ModelAndView getEmpDetails(HttpServletRequest request, @RequestParam("id") int empId) 
 	@RequestMapping("empDetails.hr") // This is the jsp name mentioned as a link name in emplist.jsp
-	public ModelAndView getEmpDetails(HttpServletRequest request, @RequestParam("id") int empId) {
+	public ModelAndView getEmpDetails(@RequestParam("id") int empId) {
 		
 		/* This have been commented becuase in parameters i have directly taken the variable as Int 
 				String strEmpId = request.getParameter("id");
@@ -71,4 +75,26 @@ public class HomePageController {
 		}
 		return mAndV;		
 	}	
+	
+	
+	@RequestMapping("registrationForm.hr")
+	public String getRegistrationForm(Model model) {
+			// Define Commond Object
+		Employee emp = new Employee();
+		model.addAttribute("command",emp);
+		return "EntryPage";		
+	}
+	
+	@RequestMapping("submitRegistrationData.hr") // This is the jsp name mentioned as a link name in emplist.jsp
+	public String submitRegistrationData(@ModelAttribute("command") Employee emp, Model model) {
+		System.out.println(emp);		
+		try {
+			empService.addNewEmployee(emp);
+			return "SaveSuccess";
+		} catch (HrException e) {
+			model.addAttribute("msg", "Insert failed." + e.getMessage());
+			return "EntryPage";
+		}
+				
+	}
 }
