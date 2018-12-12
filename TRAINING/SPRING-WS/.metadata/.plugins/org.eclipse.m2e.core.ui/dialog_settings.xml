@@ -4,11 +4,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.jp.hr.aop"/>
 			<item value="com.jp.hr.beans"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Spring050_aop"/>
 			<item value="Spring040_LifeCycle"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -43,8 +45,22 @@
 			<item value="[name]"/>
 		</list>
 	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="com.jp.hr.basics"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Spring100_MVCBasics"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring040_LifeCycle"/>
 			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring030_layered"/>
 			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring000_DI-Factory"/>
 			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring000_DI-Factory\src\com\java\ObjectFactory.java"/>

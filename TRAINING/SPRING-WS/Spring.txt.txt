@@ -1,0 +1,72 @@
+==> Dependency Injection
+==> Constructor Injection -->	Priority 2
+==> Setter Injection      -->	Priority 1
+==> Field Injection		  -->	Priority 3
+
+==> Interception
+		--It is used for Security/Authorization, Transaction Management and Logging . It is hidden from client , when you are calling some method say abc(), there is some methods which 
+			get called before a() and after b() when client called method abc().
+
+==> Aspect Oriented Programming [AOP]
+		--> Advice/ Aspect -- Means Intercepting code [Before and after part]	
+		--> Join Points	   -- Target Method	 	
+		--> PointCuts     -- It is defined on Advices to decide the JoinPoint [target]
+		
+	<#> Policy 1 : Compile Time Weaving - Special Compiler - In this when you call abc () in that abc() compiler put a() and then statement after all this statment b() is called.
+						abc() {
+							a(); Before
+							stmt;
+							...
+							...
+							...
+							b(); After
+						}
+		Policy 2 : Load Time Weaving - Special Class Loader .It will do the same thing but it is not recommended becuase client has it own class loader but we need special class loader.
+		
+		
+		Policy 3 : RunTime Weaving - In this it is creating a wrapper object around by method. 
+					here there are different wrapper object are created
+						a();     Before
+						abc();
+						b();     After
+		
+==============================================================================================================================================================
+									CREATING DYNAMIC WEB PROJECT USING SPRING
+==============================================================================================================================================================
+==> Project named : Spring100_MVCBasics
+
+	1. Create new Dynamic Web project
+	2. Create a Controller file
+	3. Above Class add @Controller
+	4. Create a method before that add annotation @RequestMapping("/homePage")
+	5. Create jsp name as HomePage.
+	6. Copy <servlet> and <servlet-mapping> from web.xml of MavenMvc010Basics and paste it on our web.xml
+	7. Remove init-param tag from web-xml.
+	8. Copy context-servlet.xml from MavenMvc010Basics and paste it besides WEB-INF
+	9. Copy the name of servlet-name i.e. appServlet . 
+
+
+==============================================================================================================================================================
+										HOW TO CREATE MULTI - CONTEXT
+==============================================================================================================================================================
+		--> For this we have to create one instance of ApplicationContext and two instance of WebContext 
+		--> ApplicationContext will be Parent and two WebContext would be Child 
+		
+IMPORTANT NOTE : 
+				 Whenever you deployed it will first look for web.xml after this init method called , it will look for the configuration file (appServlet-servlet.xml).
+				 Then it will look for the Default handler mapper or handler mapper  is mentioned now it is mentioned default handler mapper even it is looking for default View Resolver.
+				 Dispatcher servlet configuration goes in web.xml, Every server refers to Dispatcher Servlet and dispatcher servlet refers to this configuration file.
+				 Here Spring MVC is giving you ready front Controller, you have simply to write different controlling methods.
+				 
+		==>		What is responsibility of Controlling Methods -> Controlling methods is suppose to return View name 
+				What parameter -> No Request parameter No Response parameter.
+					If No Request parameter No Response parameter then how will do getParamter() and getSession(). For this we have to give Session parameter in the method it will
+					return the Session. We just simply have to give paramters.		
+			
+			--> Interaction with service layer with @Autowired Annotation can be done.
+			--> Data Transformation.
+	
+	PROJECT : -> Spring110_MVCBasics
+	==> How to create Alias jsp name simply in method of controller remove .jsp and in appletServlet-servlet uncomment beans 
+		In that prefix : -->  value="/WEB-INF/jsps/"
+		In suffix : -->	.jsp

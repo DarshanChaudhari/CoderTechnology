@@ -15,7 +15,8 @@
    </bean> -->
    
    <!-- The below component scan to give the folder path if you give only com  it will check whether annotation is given-->
-   <context:component-scan base-package="com.jp"/>
+   
+   <context:component-scan base-package="com"/>
   
   <!--  Commenting for service bean and try to do it from annotation but in this there is reference of dao there is one more annotation--> 
   <!--  <bean id="service" class="com.jp.services.MyApplServices">
@@ -23,11 +24,11 @@
 	</constructor-arg>
    </bean> -->
    
-   <bean id="commonData" class="com.jp.entity.CommonAttritubes" scope="singleton">
-	<!-- By default, singleton is true  or mentioned scope as singleton--> 
-	<!-- If no constructor or property child is specified, no-arg constructor is invoked. -->
+ <!--   <bean id="commonData" class="com.jp.entity.CommonAttritubes" scope="singleton">
+	By default, singleton is true  or mentioned scope as singleton 
+	If no constructor or property child is specified, no-arg constructor is invoked.
    </bean>
- 
+  -->
  <!-- No Comment Parameterised Construcutor bean and try to it do it from Annotation -->  
  <!--    <bean id="commonData1" class="com.jp.entity.CommonAttritubes" scope="prototype">
     	Parameterized Constructor
@@ -41,14 +42,14 @@
 		<value>40</value>
 	</constructor-arg>
    </bean> -->
-
+<!-- 
     <bean id="commonData2" class="com.jp.entity.CommonAttritubes" scope="prototype">
-    	<!-- Parameterized Constructor -->
+    	Parameterized Constructor
 	<constructor-arg>
 		<value>J.P. Morgan Chase Ltd</value>		
 	</constructor-arg>
 	<constructor-arg>
 		<value>40</value>
 	</constructor-arg>
-   </bean>
+   </bean> -->
 </beans>

@@ -30,8 +30,7 @@ public class CommonAttritubes {
 
 
 	public CommonAttritubes() {
-		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 
