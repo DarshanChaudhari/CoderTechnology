@@ -125,3 +125,12 @@
 0:0:0:0:0:0:0:1 - - [12/Dec/2018:12:44:08 +0530] "GET /Spring110_MVCBasics/empList.do HTTP/1.1" 200 23706
 0:0:0:0:0:0:0:1 - - [12/Dec/2018:12:44:11 +0530] "GET /Spring110_MVCBasics/empDetails.do?id=139 HTTP/1.1" 200 733
 0:0:0:0:0:0:0:1 - - [12/Dec/2018:12:44:12 +0530] "GET /Spring110_MVCBasics/empList.do HTTP/1.1" 200 23706
+127.0.0.1 - - [12/Dec/2018:13:05:06 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:13:05:06 +0530] "GET /Spring110_MVCBasics/ HTTP/1.1" 404 1098
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:13:05:14 +0530] "GET /Spring110_MVCBasics/homePage HTTP/1.1" 404 1106
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:13:05:22 +0530] "GET /Spring110_MVCBasics/homePage.hr HTTP/1.1" 200 331
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:13:05:25 +0530] "GET /Spring110_MVCBasics/empList.hr HTTP/1.1" 200 23706
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:13:05:26 +0530] "GET /Spring110_MVCBasics/empDetails.hr?id=101 HTTP/1.1" 200 738
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:13:05:29 +0530] "GET /Spring110_MVCBasics/empList.hr HTTP/1.1" 200 23706
+127.0.0.1 - - [12/Dec/2018:13:06:07 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:13:06:07 +0530] "GET /Spring110_MVCBasics/ HTTP/1.1" 200 331

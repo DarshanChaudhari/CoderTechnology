@@ -3,7 +3,7 @@
   <display-name>Spring110_MVCBasics</display-name>
   <welcome-file-list>
  					 <!-- If you want to directly navigate homePage.do as a welcome page  -->
-    <welcome-file>homePage.hr</welcome-file>   
+    <welcome-file>homePage.do</welcome-file>   
   </welcome-file-list>
   		
   		

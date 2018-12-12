@@ -75,6 +75,44 @@ IMPORTANT NOTE :
 			and in this tag we have to set name and value name must be fixed as DispatcherServlet read that name "contextConfigLocation"
 			And value you can give anything now i am giving the path /WEB-INF/springWeb.xml and change the appletServer-servlet.xml 
 			
+		-- Here for ApplicationContext as a Parent Context . This is called as Parent context. This is going to designed as all the layer for CORE layer
+			we have add Listener tag as mentioned below in web.xml
+
+					<listener>
+						<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+					</listener>
+			
+			
+				CHILD CONTEXT: BY DEFUALT IS appletServer-servlet which i have change to springWeb.xml
+					<servlet>
+						<servlet-name>appServlet</servlet-name>
+						<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+						<init-param>
+							<param-name>contextConfigLocation</param-name>
+							<param-value>/WEB-INF/springWeb.xml</param-value>
+						</init-param>		
+						<load-on-startup>1</load-on-startup>
+					</servlet>
+					
+			Once you have added this now change the context.xml to ApplicationContext.xml 
+			
+			
+			If you have to change the name of ApplicationContext.xml
+					 
+					<context-param>
+						<param-name>contextConfigLocation</param-name>
+						<param-value>/WEB-INF/spring.xml</param-value>
+					</context-param>
+			
+			Execute it you can get the output.
+			
+			
+			Now we create two frontcontroller 
+					-- fcForHR
+					-- fcForFin
+			
+			
+==============================================================================================================================================================		
 			
 		==> 
 		

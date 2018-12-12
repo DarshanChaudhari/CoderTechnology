@@ -26,6 +26,6 @@
 			</table>	
 			</br>
 			<!-- Providing HyperLink to provide list of the employee -->
-			<a href="empList.do">Go back to List</a> 		
+			<a href="empList.hr">Go back to List</a> 		
 		</body>
 	</html>

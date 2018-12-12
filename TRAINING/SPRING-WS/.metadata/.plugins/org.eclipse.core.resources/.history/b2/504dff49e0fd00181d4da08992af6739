@@ -32,13 +32,13 @@ public class HomePageController {
 	@Qualifier("service") // This is will do autowiring for serviceLayer
 	private ServiceEmployee empService;
 	
-	@RequestMapping("homePage.hr")  // This is the url(command)  for getHomePage method 
+	@RequestMapping("homePage.do")  // This is the url(command)  for getHomePage method 
 	public String getHomePage() {
 		System.out.println("In getHomePage()");		
 		return "HomePage";
 		
 	}
-	@RequestMapping("empList.hr") // This is the jsp name mentioned as a link name in homePage.jsp
+	@RequestMapping("empList.do") // This is the jsp name mentioned as a link name in homePage.jsp
 	public ModelAndView getEmpList() {
 		ModelAndView mAndV = new ModelAndView();
 		try {
@@ -52,7 +52,7 @@ public class HomePageController {
 		return mAndV;		
 	}	
 	
-	@RequestMapping("empDetails.hr") // This is the jsp name mentioned as a link name in emplist.jsp
+	@RequestMapping("empDetails.do") // This is the jsp name mentioned as a link name in emplist.jsp
 	public ModelAndView getEmpDetails(HttpServletRequest request, @RequestParam("id") int empId) {
 		
 		/* This have been commented becuase in parameters i have directly taken the variable as Int 

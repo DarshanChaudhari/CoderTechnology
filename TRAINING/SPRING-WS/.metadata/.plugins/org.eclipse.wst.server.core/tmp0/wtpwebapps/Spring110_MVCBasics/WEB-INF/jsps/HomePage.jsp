@@ -8,6 +8,6 @@
 </head>
 <body>
 	<h1>J.P. Morgan Chase Ltd.</h1>
-	<a href="empList.do">Employee List</a>	
+	<a href="empList.hr">Employee List</a>	
 </body>
 </html>
