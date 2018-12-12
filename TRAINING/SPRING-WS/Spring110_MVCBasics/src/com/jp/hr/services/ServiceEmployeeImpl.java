@@ -23,7 +23,7 @@ import com.jp.hr.interfaces.DaoEmployee;
  * 		* Implemented singleton by creating single object of outermost class.
  * 		* Delegates and controls Cross Cutting Concerns.
  */
-@Service("service")
+@Service("employeeService")
 public class ServiceEmployeeImpl implements ServiceEmployee, Role1 {
 	
 	private DaoEmployee daoEmp;
@@ -32,7 +32,7 @@ public class ServiceEmployeeImpl implements ServiceEmployee, Role1 {
 	// Resolving Dependency
 	// Injecting Service By Name
 	@Autowired
-	public ServiceEmployeeImpl(@Qualifier("daoDS") DaoEmployee daoEmp) throws HrException {
+	public ServiceEmployeeImpl(@Qualifier("daoEmployeeDS") DaoEmployee daoEmp) throws HrException {
 		this.daoEmp = daoEmp;
 		System.out.println("Constructor of ServiceEmployeeImpl : Calling the constructor based on @QualifierName- dao");
 	}

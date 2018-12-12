@@ -6,7 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+
 import javax.sql.DataSource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
@@ -19,7 +21,7 @@ import com.jp.hr.interfaces.DaoEmployee;
  * This is used to Inject DataSource class using Autowired in Field 
  * 
  */
-@Repository("daoDS")
+@Repository("daoEmployeeDS")
 public class DaoEmployeeImplDS implements DaoEmployee {
 	
 	@Autowired
@@ -64,7 +66,7 @@ public class DaoEmployeeImplDS implements DaoEmployee {
 
 	@Override
 	public Employee getEmpDetails(int empId) throws HrException {
-		String qry = "Select Employee_ID,FIRST_NAME,LAST_NAME from employees where EMP_DETAILS = ?";
+		String qry = "Select Employee_ID,FIRST_NAME,LAST_NAME from EMP_DETAILS where Employee_ID = ?";
 		Connection connect = null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;

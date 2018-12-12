@@ -8,7 +8,9 @@
 </head>
 <body>
 	<h1>J.P. Morgan Chase Ltd.</h1>
-	<a href="empList.hr">Employee List</a> <br><br>
-	<a href="registrationForm.hr">Join New Employee</a>		
+	<a href="empList.hr">Employee List</a> <br>
+	<a href="registrationForm.hr">Join New Employee</a><br>
+	<a href="prodList.fin">Product List</a><br>
+	<a href="productForm.fin">Product List</a><br>	
 </body>
 </html>

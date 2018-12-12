@@ -22,22 +22,27 @@
  	</p>
  	
     <springForm:form method="POST" commandName="command"
-        action="submitRegistrationData.hr">
+        action="submitProductData.fin">
         <table>
             <tr>
-                <td>Employee ID:</td>
-                <td><springForm:input path="empId" /></td>
-                <td><springForm:errors path="empId" cssClass="error" /></td>
+                <td>Product ID :</td>
+                <td><springForm:input path="productId" /></td>
+                <td><springForm:errors path="productId" cssClass="error" /></td>
             </tr>
             <tr>
-                <td>Employee First Name:</td>
-                <td><springForm:input path="firstName" /></td>
-                <td><springForm:errors path="firstName" cssClass="error" /></td>
+                <td>Product Name :</td>
+                <td><springForm:input path="productName" /></td>
+                <td><springForm:errors path="productName" cssClass="error" /></td>
             </tr>
             <tr>
-            	<td>Employee Last Name:</td>
-                <td><springForm:input path="lastName" /></td>
-                <td><springForm:errors path="lastName" cssClass="error" /></td>
+            	<td>Category :</td>
+                <td><springForm:input path="category" /></td>
+                <td><springForm:errors path="category" cssClass="error" /></td>
+            </tr>            
+            <tr>
+            	<td>Price :</td>
+                <td><springForm:input path="price" /></td>
+                <td><springForm:errors path="price" cssClass="error" /></td>
             </tr>
             
             <tr>

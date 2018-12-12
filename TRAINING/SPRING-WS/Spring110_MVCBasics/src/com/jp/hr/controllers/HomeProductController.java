@@ -21,8 +21,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.jp.hr.entities.Employee;
+import com.jp.hr.entities.Product;
 import com.jp.hr.exceptions.HrException;
 import com.jp.hr.services.ServiceEmployee;
+import com.jp.hr.services.ServiceProduct;
 
 // http://localhost:8080/Spring110_MVCBasics/homePage.do
 // We have to use Annotation as a controller
@@ -36,11 +38,11 @@ import com.jp.hr.services.ServiceEmployee;
  * Multi-Action Controllers methods over here are called as Multi-Action Controller 
  */
 @Controller
-public class HomePageController {
+public class HomeProductController {
 	
 	@Autowired
-	@Qualifier("employeeService") // This is will do autowiring for serviceLayer
-	private ServiceEmployee empService;
+	@Qualifier("productService") // This is will do autowiring for serviceLayer
+	private ServiceProduct prodService;
 	
 	@Autowired
 	private Validator validator;
@@ -54,19 +56,19 @@ public class HomePageController {
         System.out.println("Validator is set."+validator.hashCode());
 	}
 	
-	@RequestMapping("homePage.hr")  // This is the url(command)  for getHomePage method 
+	@RequestMapping("homePage.fin")  // This is the url(command)  for getHomePage method 
 	public String getHomePage() {
 		System.out.println("In getHomePage()");		
 		return "HomePage";
 		
 	}
-	@RequestMapping("empList.hr") // This is the jsp name mentioned as a link name in homePage.jsp
+	@RequestMapping("prodList.fin") // This is the jsp name mentioned as a link name in homePage.jsp
 	public ModelAndView getEmpList() {
 		ModelAndView mAndV = new ModelAndView();
 		try {
-			ArrayList<Employee> empList = empService.getEmpList();
-			mAndV.addObject("empList",empList);			
-			mAndV.setViewName("EmpList");
+			ArrayList<Product> prodList = prodService.getProdList();
+			mAndV.addObject("prodList",prodList);			
+			mAndV.setViewName("ProdList");
 			
 		} catch (HrException e) {			
 			e.printStackTrace();
@@ -78,8 +80,8 @@ public class HomePageController {
 	 * The comment method signature is used before to get the request which get we method getParameter in line 63
 	 */
 	//public ModelAndView getEmpDetails(HttpServletRequest request, @RequestParam("id") int empId) 
-	@RequestMapping("empDetails.hr") // This is the jsp name mentioned as a link name in emplist.jsp
-	public ModelAndView getEmpDetails(@RequestParam("id") int empId) {
+	@RequestMapping("prodDetails.fin") // This is the jsp name mentioned as a link name in emplist.jsp
+	public ModelAndView getProdDetails(@RequestParam("id") int productId) {
 		
 		/* This have been commented becuase in parameters i have directly taken the variable as Int 
 				String strEmpId = request.getParameter("id");
@@ -87,10 +89,10 @@ public class HomePageController {
 		*/
 		ModelAndView mAndV = new ModelAndView();
 		try {
-			Employee emp = empService.getEmpDetails(empId);
-			mAndV.addObject("empDetails",emp);
+			Product product = prodService.getProdDetails(productId);
+			mAndV.addObject("prodDetails",product);
 			//Set the View name for JSP
-			mAndV.setViewName("EmpDetails"); // This is jsp name, now in this case EmpDetails.jsp
+			mAndV.setViewName("ProductDetails"); // This is jsp name, now in this case EmpDetails.jsp
 			
 		} catch (HrException e) {			
 			e.printStackTrace();
@@ -99,21 +101,24 @@ public class HomePageController {
 	}	
 	
 	
-	@RequestMapping("registrationForm.hr")
+	@RequestMapping("productForm.fin")
 	public String getRegistrationForm(Model model) {
+		System.out.println("In Product Fin");
 			// Define Commond Object
-		Employee emp = new Employee();
-		model.addAttribute("command",emp);
+		Product product = new Product();
+		model.addAttribute("command",product);
 		return "EntryPage";		
 	}
 	
-	@RequestMapping("submitRegistrationData.hr") // This is the jsp name mentioned as a link name in emplist.jsp
-	public String submitRegistrationData(@ModelAttribute("command") Employee emp,  BindingResult result, Model model) {
-		System.out.println(emp);		
+	
+	
+	@RequestMapping("submitProductData.fin") // This is the jsp name mentioned as a link name in emplist.jsp
+	public String submitRegistrationData(@ModelAttribute("command") Product product,  BindingResult result, Model model) {
+		System.out.println(product);		
 		// We have apply Validation here		
-		Set<ConstraintViolation<Employee>> violations = validator.validate(emp);
+		Set<ConstraintViolation<Product>> violations = validator.validate(product);
 		
-		for (ConstraintViolation<Employee> violation : violations)
+		for (ConstraintViolation<Product> violation : violations)
         {
             String propertyPath = violation.getPropertyPath().toString();
             String message = violation.getMessage();
@@ -128,7 +133,7 @@ public class HomePageController {
             return "EntryPage";
         } else {
         	try {
-    			empService.addNewEmployee(emp);
+    			prodService.insertNewRecord(product);
     			return "SaveSuccess";
     		} catch (HrException e) {
     			model.addAttribute("msg", "Insert failed." + e.getMessage());
