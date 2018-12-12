@@ -1,6 +1,7 @@
 package com.jp.hr.daos;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -61,8 +62,39 @@ public class DaoEmployeeImplDS implements DaoEmployee {
 
 	@Override
 	public Employee getEmpDetails(int empId) throws HrException {
+		String qry = "Select Employee_ID,FIRST_NAME,LAST_NAME from employees where Employee_ID = ?";
+		Connection connect = null;
+		PreparedStatement stmt = null;
+		ResultSet rs = null;
+		try {
+			connect = dataSource.getConnection();
+			stmt = connect.prepareStatement(qry);
+			stmt.setInt(1, empId);
+			rs = stmt.executeQuery();
+			if(rs.next()) {
+				String firstNm = rs.getString("FIRST_NAME");
+				String lastNm = rs.getString("LAST_NAME");
+				return new Employee(empId, firstNm, lastNm);
+			} else {
+				// Id is wrong.
+				return null;
+			}
+		} catch (SQLException e) {
+			throw new HrException("Problem in fetching.", e);
+		} finally {
+			try {
+				if (rs != null) {
+					rs.close();
+				}
+				if (stmt != null) {
+					stmt.close();
+				}
+				// factory.closeConnection();
+			} catch (SQLException e) {
+				throw new HrException("Problem in closing resources.", e);
+			}
+		}
 		
-		return null;
 	}
 
 	@Override

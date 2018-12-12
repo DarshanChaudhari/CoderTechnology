@@ -1,6 +1,2 @@
 INDEX VERSION 1.129+D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\.metadata\.plugins\org.eclipse.jdt.core
-3966129674.index
-1989438709.index
-2512873700.index
-3186984689.index
 2360702540.index

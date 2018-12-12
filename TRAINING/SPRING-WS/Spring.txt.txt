@@ -70,3 +70,13 @@ IMPORTANT NOTE :
 	==> How to create Alias jsp name simply in method of controller remove .jsp and in appletServlet-servlet uncomment beans 
 		In that prefix : -->  value="/WEB-INF/jsps/"
 		In suffix : -->	.jsp
+		-Here instead of switch case we have to  write different method for different jsp and it operations it is called as @RequestMapping
+		-- After that we have to set the cannonical name appletServer-servlet.xml with springWeb.xml for this we have to set in web.xml we have set the tag as init-param
+			and in this tag we have to set name and value name must be fixed as DispatcherServlet read that name "contextConfigLocation"
+			And value you can give anything now i am giving the path /WEB-INF/springWeb.xml and change the appletServer-servlet.xml 
+			
+			
+		==> 
+		
+		
+	If you want to welcome page as a homePage in web.xml you have to mentioned home.do [ <welcome-file>homePage.do</welcome-file> ]
