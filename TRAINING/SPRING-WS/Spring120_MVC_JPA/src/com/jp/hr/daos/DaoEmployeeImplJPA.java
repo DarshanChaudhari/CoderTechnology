@@ -5,12 +5,14 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.jp.hr.entities.Employee;
 import com.jp.hr.exceptions.HrException;
 import com.jp.hr.interfaces.DaoEmployee;
 
 
-@Repository("daoEmployeeDS")  
+@Repository("daoEmployeeDS")
 public class DaoEmployeeImplJPA implements DaoEmployee {
 
 	@PersistenceContext
@@ -27,14 +29,19 @@ public class DaoEmployeeImplJPA implements DaoEmployee {
 
 	@Override
 	public Employee getEmpDetails(int empId) throws HrException {
-		// TODO Auto-generated method stub
-		return null;
+		return entityManager.find(Employee.class, empId);
 	}
 
-	@Override
+	@Override	
 	public boolean insertNewRecord(Employee emp) throws HrException {
-		// TODO Auto-generated method stub
-		return false;
+		entityManager.persist(emp);
+		Employee empNew = entityManager.find(Employee.class, emp.getEmpId());
+		System.out.println(empNew);
+		if(empNew != null) {
+			return true;
+		}else {
+			return false;
+		}
 	}
 
 }

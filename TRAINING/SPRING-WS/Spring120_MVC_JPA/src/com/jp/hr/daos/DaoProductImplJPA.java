@@ -1,22 +1,26 @@
 package com.jp.hr.daos;
 
 import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+
 import org.springframework.stereotype.Repository;
+
 import com.jp.hr.entities.Product;
 import com.jp.hr.exceptions.HrException;
 import com.jp.hr.interfaces.DaoProduct;
 
-@Repository("daoProductDS")  
-public class DaoProductImplJPA implements DaoProduct {
-
+@Repository("daoProductDS")
+public class DaoProductImplJPA implements DaoProduct{
+	
+	@PersistenceContext
+	private EntityManager entityManager;
 	@Override
 	public List<Product> getProdList() throws HrException {
-		String sql = "SELECT e FROM prodRec e";
-		Query qry = entityManager.createQuery(sql);
-		
+		String sql = "Select p from prodRec p";
+		Query qry = entityManager.createQuery(sql);		
 		List<Product> prodList = qry.getResultList();
 		return prodList;
 	}

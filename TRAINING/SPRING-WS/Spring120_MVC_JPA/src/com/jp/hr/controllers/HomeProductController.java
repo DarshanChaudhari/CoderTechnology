@@ -1,6 +1,7 @@
 package com.jp.hr.controllers;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import javax.validation.ConstraintViolation;
@@ -19,8 +20,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.jp.hr.entities.Employee;
 import com.jp.hr.entities.Product;
 import com.jp.hr.exceptions.HrException;
+import com.jp.hr.services.ServiceEmployee;
 import com.jp.hr.services.ServiceProduct;
 
 // http://localhost:8080/Spring110_MVCBasics/homePage.do
@@ -38,12 +42,12 @@ import com.jp.hr.services.ServiceProduct;
 public class HomeProductController {
 	
 	@Autowired
-	@Qualifier("productService") // This is will do autowiring for serviceLayer
+	@Qualifier("productService")
 	private ServiceProduct prodService;
 	
 	@Autowired
 	private Validator validator;
-	
+		
 	
 	@InitBinder
 	private void validatorBinder() {
@@ -60,10 +64,10 @@ public class HomeProductController {
 		
 	}
 	@RequestMapping("prodList.fin") // This is the jsp name mentioned as a link name in homePage.jsp
-	public ModelAndView getProdList() {
+	public ModelAndView getEmpList() {
 		ModelAndView mAndV = new ModelAndView();
 		try {
-			ArrayList<Product> prodList = prodService.getProdList();
+			List<Product> prodList = prodService.getProdList();
 			mAndV.addObject("prodList",prodList);			
 			mAndV.setViewName("ProdList");
 			
@@ -74,22 +78,19 @@ public class HomeProductController {
 	}	
 	
 	/*
-	 * The comment method signature is used before to get the request which get we method getParameter in line 63
-	 */
-	//public ModelAndView getEmpDetails(HttpServletRequest request, @RequestParam("id") int empId) 
-	@RequestMapping("prodDetails.fin") // This is the jsp name mentioned as a link name in emplist.jsp
-	public ModelAndView getProdDetails(@RequestParam("id") int productId) {
+	@RequestMapping("empDetails.hr") // This is the jsp name mentioned as a link name in emplist.jsp
+	public ModelAndView getEmpDetails(@RequestParam("id") int empId) {
 		
-		/* This have been commented becuase in parameters i have directly taken the variable as Int 
+		 This have been commented becuase in parameters i have directly taken the variable as Int 
 				String strEmpId = request.getParameter("id");
 				int empId = Integer.parseInt(strEmpId);
-		*/
+		
 		ModelAndView mAndV = new ModelAndView();
 		try {
-			Product product = prodService.getProdDetails(productId);
-			mAndV.addObject("prodDetails",product);
+			Employee emp = empService.getEmpDetails(empId);
+			mAndV.addObject("empDetails",emp);
 			//Set the View name for JSP
-			mAndV.setViewName("ProductDetails"); // This is jsp name, now in this case EmpDetails.jsp
+			mAndV.setViewName("EmpDetails"); // This is jsp name, now in this case EmpDetails.jsp
 			
 		} catch (HrException e) {			
 			e.printStackTrace();
@@ -98,24 +99,21 @@ public class HomeProductController {
 	}	
 	
 	
-	@RequestMapping("productForm.fin")
-	public String getProductForm(Model model) {
-		System.out.println("In Product Fin");
+	@RequestMapping("registrationForm.hr")
+	public String getRegistrationForm(Model model) {
 			// Define Commond Object
-		Product product = new Product();
-		model.addAttribute("command",product);
-		return "EntryProduct";		
+		Employee emp = new Employee();
+		model.addAttribute("command",emp);
+		return "EntryPage";		
 	}
 	
-	
-	
-	@RequestMapping("submitProductData.fin") // This is the jsp name mentioned as a link name in emplist.jsp
-	public String submitProductData(@ModelAttribute("command") Product product,  BindingResult result, Model model) {
-		System.out.println(product);		
+	@RequestMapping("submitRegistrationData.hr") // This is the jsp name mentioned as a link name in emplist.jsp
+	public String submitRegistrationData(@ModelAttribute("command") Employee emp,  BindingResult result, Model model) {
+		System.out.println(emp);		
 		// We have apply Validation here		
-		Set<ConstraintViolation<Product>> violations = validator.validate(product);
+		Set<ConstraintViolation<Employee>> violations = validator.validate(emp);
 		
-		for (ConstraintViolation<Product> violation : violations)
+		for (ConstraintViolation<Employee> violation : violations)
         {
             String propertyPath = violation.getPropertyPath().toString();
             String message = violation.getMessage();
@@ -127,16 +125,16 @@ public class HomeProductController {
 		
     	if (result.hasErrors()) {
     		model.addAttribute("msg", "Error in entry.");    		
-            return "EntryProduct";
+            return "EntryPage";
         } else {
         	try {
-    			prodService.insertNewRecord(product);
+    			empService.addNewEmployee(emp);
     			return "SaveSuccess";
     		} catch (HrException e) {
     			model.addAttribute("msg", "Insert failed." + e.getMessage());
-    			return "EntryProduct";
+    			return "EntryPage";
     		}
         }
 		
-	}
+	}*/
 }

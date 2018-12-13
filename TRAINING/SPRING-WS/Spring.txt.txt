@@ -136,7 +136,7 @@ IMPORTANT NOTE :
 
 
 ==============================================================================================================================================================
-			ONE TO ONE MAPPING
+			ONE TO ONE MAPPING AND ONE TO MANY MAPPING 
 ==============================================================================================================================================================
 	PROJECT NAME : Spring130_MVC_JPA
 	For this we have Employe table and department table .
@@ -155,6 +155,18 @@ IMPORTANT NOTE :
 		5. Run it you will get an error.
 		6. So for this you have remmove the members dept_no from employee entity.
 		7. In EmpDetails jsp you have to add getEmpDetails.dept.deptNm.
-		
+	
+	ONE TO MANY :DEPT CLASS 
+
+
 ==============================================================================================================================================================
+			==> PROJECTS OVERVIEW OF SPRING 
+==============================================================================================================================================================
+	
+	--> Spring050_aop  : AOP Concept
+	--> Spring100_MVCBasics : simple projct with appServlet-servlet concept
+	--> Spring110_MVCBasics : DATASOURCE CONCEPT WHICH exclude appServlet-servlet concept and instead of that spring.xml comes in pictures multi -context
+	--> Spring120_MVC_JPA 	: JPA CONCEPT INSTEAD OF DATASOURCE
+	--> Spring130_MVC_JPA 	: JPA CONCEPT WITH ONE TO ONE AND ONE TO MANY MAPPING RELATIONSHIP
+
 ==============================================================================================================================================================

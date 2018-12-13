@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.jp.hr.entities.Employee;
 import com.jp.hr.exceptions.HrException;
 import com.jp.hr.interfaces.DaoEmployee;
@@ -24,6 +26,7 @@ import com.jp.hr.interfaces.DaoEmployee;
  * 		* Delegates and controls Cross Cutting Concerns.
  */
 @Service("employeeService")
+@Transactional
 public class ServiceEmployeeImpl implements ServiceEmployee {
 	
 	private DaoEmployee daoEmp;

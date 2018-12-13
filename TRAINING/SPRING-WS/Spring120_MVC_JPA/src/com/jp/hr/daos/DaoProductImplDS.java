@@ -18,7 +18,7 @@ import com.jp.hr.interfaces.DaoProduct;
  * This is used to Inject DataSource class using Autowired in Field 
  * 
  */
-@Repository("daoProductDS")
+//@Repository("daoProductDS")
 public class DaoProductImplDS implements DaoProduct {
 	
 	@Autowired
