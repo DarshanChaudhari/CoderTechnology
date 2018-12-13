@@ -77,20 +77,17 @@ public class HomeProductController {
 		return mAndV;		
 	}	
 	
-	/*
-	@RequestMapping("empDetails.hr") // This is the jsp name mentioned as a link name in emplist.jsp
-	public ModelAndView getEmpDetails(@RequestParam("id") int empId) {
-		
-		 This have been commented becuase in parameters i have directly taken the variable as Int 
-				String strEmpId = request.getParameter("id");
-				int empId = Integer.parseInt(strEmpId);
-		
-		ModelAndView mAndV = new ModelAndView();
+	
+	@RequestMapping("prodDetails.fin") // This is the jsp name mentioned as a link name in emplist.jsp
+	public ModelAndView getEmpDetails(@RequestParam("id") int prodId) {
+		System.out.println(prodId);
+	ModelAndView mAndV = new ModelAndView();
 		try {
-			Employee emp = empService.getEmpDetails(empId);
-			mAndV.addObject("empDetails",emp);
+			Product prod = prodService.getProdDetails(prodId);
+			System.out.println(prod);
+			mAndV.addObject("prodDetails",prod);
 			//Set the View name for JSP
-			mAndV.setViewName("EmpDetails"); // This is jsp name, now in this case EmpDetails.jsp
+			mAndV.setViewName("ProductDetails"); // This is jsp name, now in this case EmpDetails.jsp
 			
 		} catch (HrException e) {			
 			e.printStackTrace();
@@ -99,21 +96,21 @@ public class HomeProductController {
 	}	
 	
 	
-	@RequestMapping("registrationForm.hr")
+	@RequestMapping("productForm.fin")
 	public String getRegistrationForm(Model model) {
 			// Define Commond Object
-		Employee emp = new Employee();
-		model.addAttribute("command",emp);
-		return "EntryPage";		
+		Product prod = new Product();
+		model.addAttribute("command",prod);
+		return "EntryProduct";		
 	}
 	
-	@RequestMapping("submitRegistrationData.hr") // This is the jsp name mentioned as a link name in emplist.jsp
-	public String submitRegistrationData(@ModelAttribute("command") Employee emp,  BindingResult result, Model model) {
-		System.out.println(emp);		
+	@RequestMapping("submitProductData.fin") // This is the jsp name mentioned as a link name in emplist.jsp
+	public String submitRegistrationData(@ModelAttribute("command") Product prod,  BindingResult result, Model model) {
+		System.out.println(prod);		
 		// We have apply Validation here		
-		Set<ConstraintViolation<Employee>> violations = validator.validate(emp);
+		Set<ConstraintViolation<Product>> violations = validator.validate(prod);
 		
-		for (ConstraintViolation<Employee> violation : violations)
+		for (ConstraintViolation<Product> violation : violations)
         {
             String propertyPath = violation.getPropertyPath().toString();
             String message = violation.getMessage();
@@ -125,16 +122,16 @@ public class HomeProductController {
 		
     	if (result.hasErrors()) {
     		model.addAttribute("msg", "Error in entry.");    		
-            return "EntryPage";
+            return "EntryProduct";
         } else {
         	try {
-    			empService.addNewEmployee(emp);
+        		prodService.insertNewRecord(prod);
     			return "SaveSuccess";
     		} catch (HrException e) {
     			model.addAttribute("msg", "Insert failed." + e.getMessage());
-    			return "EntryPage";
+    			return "EntryProduct";
     		}
         }
 		
-	}*/
+	}
 }

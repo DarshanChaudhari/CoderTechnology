@@ -27,14 +27,21 @@ public class DaoProductImplJPA implements DaoProduct{
 
 	@Override
 	public Product getProdDetails(int prodId) throws HrException {
-		// TODO Auto-generated method stub
-		return null;
+		Product prod = entityManager.find(Product.class, prodId);
+		return prod;
 	}
 
 	@Override
 	public boolean insertNewRecord(Product prod) throws HrException {
-		// TODO Auto-generated method stub
-		return false;
+		entityManager.persist(prod);
+		Product newProd = entityManager.find(Product.class, prod.getProductId());
+		
+		if(newProd !=null) {
+			return true;
+		} else {
+			return false;
+		}
+		
 	}
 
 }
