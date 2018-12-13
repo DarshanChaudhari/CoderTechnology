@@ -77,7 +77,7 @@ public class HomeProductController {
 	
 	
 	@RequestMapping("prodDetails.fin") // This is the jsp name mentioned as a link name in emplist.jsp
-	public ModelAndView getprodDetails(@RequestParam("id") int prodId) {
+	public ModelAndView getEmpDetails(@RequestParam("id") int prodId) {
 		System.out.println(prodId);
 	ModelAndView mAndV = new ModelAndView();
 		try {
