@@ -29,8 +29,7 @@ import com.jp.hr.interfaces.DaoEmployee;
 public class ServiceEmployeeImpl implements ServiceEmployee {
 	
 	private DaoEmployee daoEmp;
-	
-	
+		
 	// Resolving Dependency
 	// Injecting Service By Name
 	@Autowired
@@ -60,6 +59,10 @@ public class ServiceEmployeeImpl implements ServiceEmployee {
 	@Override
 	public List<Dept> getDeptList() throws HrException {		
 		return daoEmp.getDeptList();
+	}
+	@Override
+	public Dept getDeptDetails(int deptId) throws HrException {		
+		return daoEmp.getDeptDetails(deptId);
 	}
 
 }

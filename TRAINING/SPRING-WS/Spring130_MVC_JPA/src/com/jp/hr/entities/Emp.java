@@ -80,7 +80,7 @@ public class Emp implements Serializable {
 	
 	// for One Employee One Departmetn thats why one to one
 	@OneToOne
-	@JoinColumn(name="DEPT_NO")
+	@JoinColumn(name="DEPT_NO") // Foreign key column for EMP Table
 	public Dept getDept() {
 		return dept;
 	}

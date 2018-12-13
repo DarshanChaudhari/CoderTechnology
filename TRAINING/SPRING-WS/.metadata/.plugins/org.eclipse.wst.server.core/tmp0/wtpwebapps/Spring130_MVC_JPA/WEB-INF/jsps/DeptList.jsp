@@ -19,15 +19,13 @@
  <!--This give jstl for employee details link below  this shows once you click on the view details link you will get the output -->
  
 			 	<tr>
-			 		<th>Department ID</th>
-			 		<th>Department Name</th>			 		
+			 		<th>Department ID</th>			 					 		
 			 	</tr>
 			 	
 			 	<c:forEach items="${ requestScope.deptList}" var="dept">
 		 	<tr>
-		 	 	<td>${dept.deptNo}</td>  
-		 	 	<td>${dept.deptNm}</td> 
-		 				 		
+		 	 	<td>${dept.deptNo}</td>
+		 		<td><a href="deptDetails.hr?id=${dept.deptNo}">View Department Details</a></td>
 		 	</tr>	
 		 </c:forEach>
  			 

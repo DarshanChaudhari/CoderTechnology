@@ -14,4 +14,6 @@ public interface DaoEmployee {
 	
 	public Emp getEmpDetails(int empId) throws HrException;
 	public boolean insertNewRecord(Emp emp) throws HrException;
+
+	public Dept getDeptDetails(int deptId) throws HrException;
 }

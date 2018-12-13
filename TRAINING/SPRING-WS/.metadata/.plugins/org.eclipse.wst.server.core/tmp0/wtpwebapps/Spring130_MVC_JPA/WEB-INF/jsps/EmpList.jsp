@@ -26,7 +26,7 @@
 			 	<c:forEach items="${ requestScope.empList}" var="emp">
 		 	<tr>
 		 	 	<td>${emp.empNo}</td>  <!-- this property empId will call getEmpId -->
-		 		<td><a href="empDetails.hr?id=${emp.empNo}">View</a></td>
+		 		<td><a href="empDetails.hr?id=${emp.empNo}">View Employee Details</a></td>
 		 		
 		 	</tr>	
 		 </c:forEach>

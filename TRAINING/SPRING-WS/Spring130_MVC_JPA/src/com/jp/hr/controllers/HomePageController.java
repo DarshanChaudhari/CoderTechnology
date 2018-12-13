@@ -108,6 +108,22 @@ public class HomePageController {
 		return mAndV;		
 	}	
 	
+	@RequestMapping("deptDetails.hr") // This is the jsp name mentioned as a link name in emplist.jsp
+	public ModelAndView getdeptDetails(@RequestParam("id") int deptId) {
+		System.out.println("In Dept details");		
+		ModelAndView mAndV = new ModelAndView();
+		try {
+			Dept dept = empService.getDeptDetails(deptId);
+			System.out.println(dept);
+			mAndV.addObject("deptDetails",dept);
+			//Set the View name for JSP
+			mAndV.setViewName("DeptDetails"); // This is jsp name, now in this case EmpDetails.jsp
+			
+		} catch (HrException e) {			
+			e.printStackTrace();
+		}
+		return mAndV;		
+	}	
 	
 	@RequestMapping("registrationForm.hr")
 	public String getRegistrationForm(Model model) {

@@ -15,5 +15,7 @@ public interface ServiceEmployee {
 	public Emp getEmpDetails(int empId) throws HrException;
 
 	public boolean addNewEmployee(Emp emp) throws HrException;
+	
+	public Dept getDeptDetails(int deptId) throws HrException;
 
 }

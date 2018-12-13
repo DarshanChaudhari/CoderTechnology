@@ -1,0 +1,60 @@
+package com.jp.hr.entities;
+
+import java.io.Serializable;
+import java.util.Set;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity(name="deptRecord")
+@Table(name="DEPT")
+public class Dept implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	private int deptNo;
+	private String deptNm;
+	
+	// Field for Association
+	Set<Emp> empList;
+	
+	@Id
+	@Column(name="DEPT_NO")
+	public int getDeptNo() {
+		return deptNo;
+	}
+	
+	
+	public void setDeptNo(int deptNo) {
+		this.deptNo = deptNo;
+	}
+	
+	
+	@Column(name="DNAME")
+	public String getDeptNm() {
+		return deptNm;
+	}
+	public void setDeptNm(String deptNm) {
+		this.deptNm = deptNm;
+	}
+	
+	
+	public Set<Emp> getEmpList() {
+		return empList;
+	}
+
+
+	public void setEmpList(Set<Emp> empList) {
+		this.empList = empList;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Dept [deptNo=" + deptNo + ", deptNm=" + deptNm + "]";
+	}
+	
+	
+
+}
