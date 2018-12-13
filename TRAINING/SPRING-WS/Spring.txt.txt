@@ -118,3 +118,43 @@ IMPORTANT NOTE :
 		
 		
 	If you want to welcome page as a homePage in web.xml you have to mentioned home.do [ <welcome-file>homePage.do</welcome-file> ]
+	
+==============================================================================================================================================================
+		IMPORTANT NOTES
+==============================================================================================================================================================	
+
+	==> Configuration file	
+		Context loader Listener [Spring.xml]
+			we declare 
+				-> dao
+				-> service
+				-> dataSource
+				
+	==> Dispatcher Servlets [SpringWebFIN]  AND [SpringWebHR]	
+			We declare	
+				->There would be different controllers for the above dispatcher servlets
+
+
+==============================================================================================================================================================
+			ONE TO ONE MAPPING
+==============================================================================================================================================================
+	PROJECT NAME : Spring130_MVC_JPA
+	For this we have Employe table and department table .
+		1. Emp Entity Class
+		2. Dept Entity Class
+		3. In Employee class, we have to create 
+				private Dept dept  // This is Association
+		4. Now pull getter setter methods for dept	
+				on dept getter method 
+					// for One Employee One Departmetn thats why one to one
+						@OneToOne
+						@JoinColumn(name="DEPT_NO")
+						public Dept getDept() {
+							return dept;
+						}
+		5. Run it you will get an error.
+		6. So for this you have remmove the members dept_no from employee entity.
+		7. In EmpDetails jsp you have to add getEmpDetails.dept.deptNm.
+		
+==============================================================================================================================================================
+==============================================================================================================================================================

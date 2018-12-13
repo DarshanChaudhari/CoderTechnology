@@ -10,11 +10,8 @@ import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
-
-import com.jp.hr.entities.Employee;
 import com.jp.hr.entities.Product;
 import com.jp.hr.exceptions.HrException;
-import com.jp.hr.interfaces.DaoEmployee;
 import com.jp.hr.interfaces.DaoProduct;
 
 /*

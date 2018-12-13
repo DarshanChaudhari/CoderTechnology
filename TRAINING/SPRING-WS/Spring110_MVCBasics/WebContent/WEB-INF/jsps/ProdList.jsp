@@ -26,7 +26,9 @@
 		 		
 		 	</tr>	
 		 </c:forEach>
+		<tr> 
 	 	<td><a href="homePage.fin">Go to Home Page</a></td>
+	 	</tr>
 	</table> 
 </body>
 </html>

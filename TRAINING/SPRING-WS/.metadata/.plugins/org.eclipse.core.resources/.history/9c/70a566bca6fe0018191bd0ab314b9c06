@@ -1,0 +1,39 @@
+package com.jp.hr.daos;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.Query;
+
+import org.springframework.stereotype.Repository;
+
+import com.jp.hr.entities.Employee;
+import com.jp.hr.entities.Product;
+import com.jp.hr.exceptions.HrException;
+import com.jp.hr.interfaces.DaoProduct;
+
+@Repository("daoProductDS")  
+public class DaoProductImplJPA implements DaoProduct {
+
+	@Override
+	public List<Product> getProdList() throws HrException {
+		String sql = "SELECT e FROM prodRec e";
+		Query qry = entityManager.createQuery(sql);
+		
+		List<Employee> empList = qry.getResultList();
+		return empList;
+	}
+
+	@Override
+	public Product getProdDetails(int prodId) throws HrException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean insertNewRecord(Product prod) throws HrException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

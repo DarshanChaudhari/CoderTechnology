@@ -12,14 +12,14 @@ import com.jp.hr.interfaces.DaoProduct;
 
 @Service("productService")
 public class ServiceProductImpl implements ServiceProduct {
-
+	
 	private DaoProduct daoProd;
 	
 	
 	@Autowired
 	public ServiceProductImpl(@Qualifier("daoProductDS") DaoProduct daoProd) {		
 		this.daoProd = daoProd;
-		System.out.println("Constructor of ServiceProductImpl : Calling the constructor based on @QualifierName- dao");
+		System.out.println("Constructor of ServiceProductImpl : Calling the constructor based on @QualifierName- daoProduct");
 	}
 
 	

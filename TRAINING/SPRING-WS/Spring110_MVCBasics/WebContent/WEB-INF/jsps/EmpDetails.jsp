@@ -24,7 +24,7 @@
 					<td>${requestScope.empDetails.lastName}</td>
 				</tr>				
 			</table>	
-			</br>
+			
 			<!-- Providing HyperLink to provide list of the employee -->
 			<a href="empList.hr">Go back to List</a> 		
 		</body>

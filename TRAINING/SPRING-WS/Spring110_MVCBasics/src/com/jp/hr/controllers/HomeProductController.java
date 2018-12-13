@@ -19,11 +19,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
-import com.jp.hr.entities.Employee;
 import com.jp.hr.entities.Product;
 import com.jp.hr.exceptions.HrException;
-import com.jp.hr.services.ServiceEmployee;
 import com.jp.hr.services.ServiceProduct;
 
 // http://localhost:8080/Spring110_MVCBasics/homePage.do

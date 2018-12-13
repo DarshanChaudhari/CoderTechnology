@@ -34,6 +34,6 @@
 				 
 	</table> 
 	 
-	 <td><a href="homePage.hr">Go to Home Page</a></td>
+	 <a href="homePage.hr">Go to Home Page</a>
 </body>
 </html>
