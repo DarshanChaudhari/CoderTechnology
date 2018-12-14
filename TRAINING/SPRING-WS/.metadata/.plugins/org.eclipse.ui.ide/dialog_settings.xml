@@ -15,6 +15,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring4_0MavenMvc100ValidationsJsr349"/>
 			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\OnlineCompaintPortal_Darshan"/>
 			<item value="D:\GITHUB\CoderTechnology\TRAINING\ENTIRE-DOCUMENTS\Spring"/>
 		</list>

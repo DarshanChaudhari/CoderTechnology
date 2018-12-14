@@ -1,7 +1,0 @@
-package com.jp.hr.entities;
-
-public class Complaint {
-	private int accountId;
-	
-
-}
