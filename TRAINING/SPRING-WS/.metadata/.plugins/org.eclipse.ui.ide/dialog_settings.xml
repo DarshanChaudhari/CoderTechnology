@@ -3,11 +3,19 @@
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
 		<item value="D:\GITHUB\CoderTechnology\TRAINING\ENTIRE-DOCUMENTS\Spring\Spring4_0MavenMvc010Basics"/>
 	</list>
+	<section name="CleanDialogSettings">
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="true" key="TOGGLE_SELECTED"/>
+		<item value="377" key="DIALOG_HEIGHT"/>
+		<item value="430" key="DIALOG_X_ORIGIN"/>
+		<item value="113" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\OnlineCompaintPortal_Darshan"/>
 			<item value="D:\GITHUB\CoderTechnology\TRAINING\ENTIRE-DOCUMENTS\Spring"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

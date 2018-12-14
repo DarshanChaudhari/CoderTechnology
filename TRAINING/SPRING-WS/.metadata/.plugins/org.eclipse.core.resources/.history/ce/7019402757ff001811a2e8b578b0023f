@@ -1,0 +1,13 @@
+package com.jp.hr.interfaces;
+
+import com.jp.hr.entities.Complaint;
+import com.jp.hr.entities.Employee;
+import com.jp.hr.exceptions.HrException;
+
+public interface DaoComplaint {
+	
+	
+	
+	public boolean insertNewRecord(Complaint emp) throws ComplaintServiceException;
+
+}

@@ -1,0 +1,13 @@
+package com.jp.hr.services;
+
+import com.jp.hr.entities.Complaint;
+import com.jp.hr.exceptions.ComplaintRequestException;
+
+public interface ServiceComplaintRequest {
+	
+
+	public Complaint getComplaintDetails(int complaintId) throws ComplaintRequestException;
+		
+	boolean raiseNewComplaint(Complaint complaint) throws ComplaintRequestException;
+
+}

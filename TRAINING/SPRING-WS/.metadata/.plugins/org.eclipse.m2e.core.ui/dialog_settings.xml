@@ -47,6 +47,8 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="com.jp.service"/>
+			<item value="com.jp.complaint"/>
 			<item value="com.jp.cart.product"/>
 			<item value="com.jp.hr.mvc"/>
 			<item value="com.jp.hr.basics"/>
@@ -54,6 +56,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="OnlinePortal"/>
+			<item value="OnlineComplaintPortal"/>
 			<item value="Spring030_layered_Product"/>
 			<item value="Spring111_MVCBasics"/>
 			<item value="Spring100_MVCBasics"/>

@@ -1,0 +1,20 @@
+package com.jp.hr.services;
+
+import com.jp.hr.entities.Complaint;
+import com.jp.hr.exceptions.ComplaintRequestException;
+
+public class ServiceComplaintRequestImpl implements ServiceComplaintRequest {
+
+	@Override
+	public Complaint getComplaintDetails(int complaintId) throws ComplaintRequestException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean insertNewRecord(Complaint complaint) throws ComplaintRequestException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

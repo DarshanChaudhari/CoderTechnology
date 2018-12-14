@@ -1,0 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://www.springframework.org/tags/form"
+    prefix="springForm"%>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Home Page</title>
+<style>
+.error {
+    color: #ff0000;
+    font-style: italic;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+	<jsp:include page="Head01.jsp"></jsp:include>
+	<jsp:include page="Head02.jsp"></jsp:include>
+ 	<p>
+ 		${msg}	
+ 		
+ 	</p>
+ 	
+    <springForm:form method="POST" commandName="command"
+        action="submitRegistrationData.hr">
+        <table>
+            <tr>
+                <td>Account Id :</td>
+                <td><springForm:input path="accountId" /></td>
+                <td><springForm:errors path="accountId" cssClass="error" /></td>
+            </tr>
+            <tr>
+                <td>Branch Code :</td>
+                <td><springForm:input path="branchCode" /></td>
+                <td><springForm:errors path="branchCode" cssClass="error" /></td>
+            </tr>
+            <tr>
+            	<td>Email Id :</td>
+                <td><springForm:input path="emailId" /></td>
+                <td><springForm:errors path="emailId" cssClass="error" /></td>
+            </tr>
+            
+             <tr>
+                <td>Complaint Category :</td>
+                <td><form:select path="category">
+                    <form:option value="Select">Select</form:option>
+                    <form:option value="Internet Banking">Internet Banking</form:option>
+                   <form:option value="General Banking">General Banking</form:option>
+                   <form:option value="Others">Others</form:option>
+                    </form:select>
+                </td>
+                <td><form:errors path="category" cssClass="error" /></td>
+            </tr>
+            
+            <tr>
+                <td colspan="3"><input type="submit" value="Save"></td>
+            </tr>
+        </table>
+ 		
+    </springForm:form>
+	
+	<a href="checkStatus.cr">Go back to List</a>
+</body>
+</html>

@@ -1,0 +1,18 @@
+package com.jp.hr.interfaces;
+
+import java.util.List;
+
+import com.jp.hr.entities.Complaint;
+import com.jp.hr.entities.Employee;
+import com.jp.hr.exceptions.ComplaintServiceException;
+import com.jp.hr.exceptions.HrException;
+
+public interface DaoComplaint {
+	
+	public List<Complaint> getComplaintList() throws HrException;
+
+	public Employee getEmpDetails(int empId) throws HrException;
+	
+	public boolean insertNewRecord(Complaint emp) throws ComplaintServiceException;
+
+}
