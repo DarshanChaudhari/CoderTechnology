@@ -1,0 +1,40 @@
+package com.jp.hr.utilities;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import oracle.jdbc.pool.OracleDataSource;
+
+/*
+ * 1. Self referential static private field.
+ * 2. Constructor private.
+ * 3. Public static method to create restricted number of instances.
+ */
+public class ConnectionFactory {
+	private static ConnectionFactory factory;
+	private OracleDataSource dataSource;
+	
+	private ConnectionFactory() throws SQLException{
+		dataSource = new OracleDataSource();
+		dataSource.setDriverType("thin");
+		dataSource.setPortNumber(1521);
+		dataSource.setUser("scott");
+		dataSource.setPassword("lion");
+		dataSource.setServerName("localhost");
+		dataSource.setServiceName("XE");
+	}
+	
+	public static ConnectionFactory getConnectionFactory() 
+			throws ClassNotFoundException, SQLException{
+		if (factory == null){
+			factory = new ConnectionFactory();
+		}
+		
+		return factory;
+	}
+	
+	public OracleDataSource getDataSource(){
+		return dataSource;
+	}
+}

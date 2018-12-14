@@ -1,0 +1,7 @@
+package com.jp.hr.utilities;
+
+public class ConnectionFactoryTomcat {
+	private static ConnectionFactoryTomcat factory;
+	
+	
+}

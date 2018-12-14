@@ -1,0 +1,102 @@
+package com.jp.hr.daos;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+import com.jp.hr.entities.Employee;
+import com.jp.hr.exceptions.HrException;
+
+/*
+ * The ClassNotFoundException, SQLException must not come out of DAO class
+ * The database specific entities must not come out of the class(Like Exceptions and ResultSet).
+ * Each and every resource (Connection, Statement, Resultset) must be closed properly before comming out.
+ * Always prefer Statement over PreparedStatement for non-interactive queries.
+ * Fetch the data page wise.
+ * Prefer mentioning column names instead of column position in getXXX() methods.
+ */
+public class DaoEmployeeImpl implements DaoEmployee {
+
+	private Connection getConnection() 
+			throws ClassNotFoundException, SQLException {
+		String driverName = "oracle.jdbc.OracleDriver";
+		String url = "jdbc:oracle:thin:@localhost:1521:XE";
+		String userName = "scott";
+		String password = "lion";
+		
+		Class.forName(driverName);
+		return DriverManager.getConnection(url, userName, password);
+	}
+	
+	private void closeConnection(Connection connect) throws SQLException {
+		connect.close();
+	}
+	
+	@Override
+	public ArrayList<Employee> getEmpList() throws HrException {
+		ArrayList<Employee> empList = new ArrayList<>();
+		Connection connect = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		try {
+			connect = getConnection();
+			stmt = connect.createStatement();
+			rs = stmt.executeQuery("SELECT empid,ename,address FROM employee_details");
+			
+			while(rs.next()){
+				int empId = rs.getInt("empid");
+				String firstNm = rs.getString("ename");
+				String lastNm = rs.getString("address");
+				empList.add(new Employee(empId, firstNm, lastNm));
+			}
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			throw new HrException("Problem in fetching.", e);
+		} finally {
+			try {
+				rs.close();
+				stmt.close();
+				closeConnection(connect);
+			} catch (SQLException e) {
+				throw new HrException("Problem in closing resources.", e);
+			}
+		}
+		
+		return empList;
+	}
+
+	@Override
+	public Employee getEmpDetails(int empId) throws HrException {
+		Connection connect = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		try {
+			connect = getConnection();
+			stmt = connect.createStatement();
+			rs = stmt.executeQuery("SELECT empid,ename,address FROM employee_details");
+			
+			while(rs.next()){
+				int empId = rs.getInt("empid");
+				String firstNm = rs.getString("ename");
+				String lastNm = rs.getString("address");
+				empList.add(new Employee(empId, firstNm, lastNm));
+			}
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			throw new HrException("Problem in fetching.", e);
+		} finally {
+			try {
+				rs.close();
+				stmt.close();
+				closeConnection(connect);
+			} catch (SQLException e) {
+				throw new HrException("Problem in closing resources.", e);
+			}
+		}
+		
+		return empList;
+	}
+}

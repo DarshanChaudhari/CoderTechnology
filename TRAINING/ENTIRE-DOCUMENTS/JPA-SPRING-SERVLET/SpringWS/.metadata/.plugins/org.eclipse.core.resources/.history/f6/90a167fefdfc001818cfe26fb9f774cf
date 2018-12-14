@@ -1,0 +1,7 @@
+package com.jp.hr.beans;
+
+public class ServiceBean {
+	private int x;
+	
+	
+}

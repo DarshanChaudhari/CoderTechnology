@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Spring4_0BasicsWithMaven/src/main/java/pack_40_aop/pack_10_aspect/pack_30_aspect_order/Test2_3.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="pack_40_aop.pack_10_aspect.pack_30_aspect_order.Test2_3"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Spring4_0BasicsWithMaven"/>
+</launchConfiguration>

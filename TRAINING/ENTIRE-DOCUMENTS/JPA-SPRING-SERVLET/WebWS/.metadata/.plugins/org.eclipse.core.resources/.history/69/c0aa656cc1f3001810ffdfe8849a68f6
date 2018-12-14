@@ -1,0 +1,20 @@
+package com.jp.hr.utilities;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class ConnectionFactory {
+	private Connection connect;
+	
+	public ConnectionFactory(){
+		String driverName = "oracle.jdbc.OracleDriver";
+		String url = "jdbc:oracle:thin:@localhost:1521:XE";
+		String userName = "scott";
+		String password = "lion";
+		
+		Class.forName(driverName);
+		return DriverManager.getConnection(url, userName, password);
+	}
+	
+	
+}

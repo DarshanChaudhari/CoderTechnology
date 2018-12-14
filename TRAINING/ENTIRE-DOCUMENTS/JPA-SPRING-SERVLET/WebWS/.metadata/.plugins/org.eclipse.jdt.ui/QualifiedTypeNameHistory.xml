@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="com.jp.hr.utilities.ConnectionFactory"/>
+<fullyQualifiedTypeName name="com.jp.hr.services.ServiceEmployeeImpl"/>
+<fullyQualifiedTypeName name="com.jp.hr.services.Role1"/>
+<fullyQualifiedTypeName name="oracle.jdbc.pool.OracleDataSource"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="javax.naming.Context"/>
+<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+<fullyQualifiedTypeName name="com.jp.hr.exceptions.HrException"/>
+<fullyQualifiedTypeName name="com.jp.hr.utilities.ConnectionFactoryTomcat"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+</qualifiedTypeNameHistroy>

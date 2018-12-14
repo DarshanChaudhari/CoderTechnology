@@ -1,0 +1,9 @@
+package com.jp.hr.tests;
+
+public class TestLifeCycle {
+
+	public static void main(String[] args) {
+		
+
+	}
+}

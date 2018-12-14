@@ -1,0 +1,8 @@
+package com.jp.hr.entities;
+
+public class Dept {
+	private int deptNo;
+	private String deptNm;
+	
+	
+}

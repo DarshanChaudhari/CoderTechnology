@@ -1,0 +1,24 @@
+package com.jp.hr.entities;
+
+public class Dept {
+	private int deptNo;
+	private String deptNm;
+	
+	public int getDeptNo() {
+		return deptNo;
+	}
+	public void setDeptNo(int deptNo) {
+		this.deptNo = deptNo;
+	}
+	public String getDeptNm() {
+		return deptNm;
+	}
+	public void setDeptNm(String deptNm) {
+		this.deptNm = deptNm;
+	}
+	
+	@Override
+	public String toString() {
+		return "Dept [deptNo=" + deptNo + ", deptNm=" + deptNm + "]";
+	}
+}

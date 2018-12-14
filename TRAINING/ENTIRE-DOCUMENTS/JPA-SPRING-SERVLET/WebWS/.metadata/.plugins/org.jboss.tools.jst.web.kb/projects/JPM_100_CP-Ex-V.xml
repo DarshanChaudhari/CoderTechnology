@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/catalina-ha.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/ojdbc6.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/jasper.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/tomcat-coyote.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/tomcat-websocket.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/tomcat-i18n-ja.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/tomcat-jdbc.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/ecj-4.5.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/tomcat-util.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/tomcat-dbcp.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/tomcat-jni.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/catalina.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/el-api.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/jsp-api.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/websocket-api.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/catalina-tribes.jar"/>
+  <path value="F:/Synergetics/Trainings/JPMorgon/CodingAcademy/2018-11-26JEE/WebWS/JPM_100_CP-Ex-V/WebContent/WEB-INF/lib/ojdbc6.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/catalina-ant.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/jasper-el.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/tomcat-api.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/annotations-api.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/catalina-storeconfig.jar"/>
+  <path value="F:/Synergetics/Trainings/JPMorgon/CodingAcademy/2018-11-26JEE/WebWS/JPM_100_CP-Ex-V/WebContent/WEB-INF/lib/jstl-1.2.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c-1_0-rt.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c-1_0.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt-1_0-rt.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt-1_0.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fn.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/permittedtaglibs.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/scriptfree.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql-1_0-rt.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql-1_0.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x-1_0-rt.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x-1_0.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x.tld" project="JPM_100_CP-Ex-V"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/servlet-api.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/tomcat-i18n-es.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/tomcat-util-scan.jar"/>
+  <path value="C:/ChandraSoftware/servers/Tomcat/Tomcat8Download/apache-tomcat-8.0.36/lib/tomcat-i18n-fr.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jboss.cdi.core"/>
+  <el>
+   <linked-el length="37" name="%0" offset="668" path="%1"/>
+   <linked-el length="37" name="%0" offset="668" path="%2"/>
+   <linked-el length="38" name="%3" offset="615" path="%1"/>
+   <linked-el length="38" name="%3" offset="615" path="%2"/>
+   <linked-el length="34" name="%4" offset="566" path="%2"/>
+   <linked-el length="37" name="%4" offset="668" path="%1"/>
+   <linked-el length="38" name="%4" offset="615" path="%1"/>
+   <linked-el length="34" name="%4" offset="566" path="%1"/>
+   <linked-el length="37" name="%4" offset="668" path="%2"/>
+   <linked-el length="38" name="%4" offset="615" path="%2"/>
+   <linked-el length="14" name="%5" offset="742" path="%6"/>
+   <linked-el length="33" name="%5" offset="799" path="%6"/>
+   <linked-el length="14" name="%5" offset="742" path="%7"/>
+   <linked-el length="33" name="%5" offset="799" path="%7"/>
+   <linked-el length="30" name="%8" offset="16" path="%9"/>
+   <linked-el length="30" name="%8" offset="16" path="%10"/>
+   <linked-el length="34" name="%11" offset="566" path="%2"/>
+   <linked-el length="27" name="%11" offset="684" path="%7"/>
+   <linked-el length="37" name="%11" offset="668" path="%1"/>
+   <linked-el length="30" name="%11" offset="427" path="%12"/>
+   <linked-el length="38" name="%11" offset="615" path="%1"/>
+   <linked-el length="27" name="%11" offset="684" path="%6"/>
+   <linked-el length="34" name="%11" offset="566" path="%1"/>
+   <linked-el length="37" name="%11" offset="668" path="%2"/>
+   <linked-el length="30" name="%11" offset="427" path="%13"/>
+   <linked-el length="38" name="%11" offset="615" path="%2"/>
+   <linked-el length="14" name="%14" offset="742" path="%6"/>
+   <linked-el length="33" name="%14" offset="799" path="%6"/>
+   <linked-el length="14" name="%14" offset="742" path="%7"/>
+   <linked-el length="33" name="%14" offset="799" path="%7"/>
+   <linked-el length="30" name="%15" offset="427" path="%12"/>
+   <linked-el length="30" name="%15" offset="427" path="%13"/>
+   <linked-el length="30" name="%16" offset="16" path="%9"/>
+   <linked-el length="30" name="%16" offset="16" path="%10"/>
+   <linked-el length="12" name="%17" offset="479" path="%18"/>
+   <linked-el length="12" name="%17" offset="423" path="%19"/>
+   <linked-el length="12" name="%17" offset="423" path="%20"/>
+   <linked-el length="12" name="%17" offset="479" path="%21"/>
+   <linked-el length="27" name="%22" offset="684" path="%7"/>
+   <linked-el length="27" name="%22" offset="684" path="%6"/>
+   <linked-el length="34" name="%23" offset="566" path="%2"/>
+   <linked-el length="34" name="%23" offset="566" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="requestScope.empDetails.firstName" value="%3"/>
+  <alias path="/JPM_100_CP-Ex-V/WebContent/WEB-INF/jsps/EmpList.jsp" value="%7"/>
+  <alias path="emp.empId" value="%5"/>
+  <alias path="sessionScope.userFullName" value="%8"/>
+  <alias path="/JPM_100_CP-Ex-V/WebContent/WEB-INF/jsps/Head02.jsp" value="%9"/>
+  <alias
+   path="/JPM_100_CP-Ex-V/WebContent/WEB-INF/WEB-INF/jsps/EmpDetails.jsp" value="%1"/>
+  <alias path="emp" value="%14"/>
+  <alias path="/JPM_100_CP-Ex-V/WebContent/WEB-INF/jsps/ThanksPage.jsp" value="%12"/>
+  <alias
+   path="/JPM_100_CP-Ex-V/WebContent/WEB-INF/WEB-INF/jsps/Head02.jsp" value="%10"/>
+  <alias path="message" value="%17"/>
+  <alias path="requestScope.empDetails.lastName" value="%0"/>
+  <alias
+   path="/JPM_100_CP-Ex-V/WebContent/WEB-INF/WEB-INF/jsps/EmpList.jsp" value="%6"/>
+  <alias path="/JPM_100_CP-Ex-V/WebContent/WEB-INF/jsps/Login.jsp" value="%19"/>
+  <alias path="requestScope.empDetails" value="%4"/>
+  <alias path="/JPM_100_CP-Ex-V/WebContent/WEB-INF/jsps/NewJoining.jsp" value="%21"/>
+  <alias path="requestScope" value="%11"/>
+  <alias
+   path="/JPM_100_CP-Ex-V/WebContent/WEB-INF/WEB-INF/jsps/ThanksPage.jsp" value="%13"/>
+  <alias path="requestScope.userFullName" value="%15"/>
+  <alias path="sessionScope" value="%16"/>
+  <alias
+   path="/JPM_100_CP-Ex-V/WebContent/WEB-INF/WEB-INF/jsps/NewJoining.jsp" value="%18"/>
+  <alias
+   path="/JPM_100_CP-Ex-V/WebContent/WEB-INF/WEB-INF/jsps/Login.jsp" value="%20"/>
+  <alias path="requestScope.empList" value="%22"/>
+  <alias path="/JPM_100_CP-Ex-V/WebContent/WEB-INF/jsps/EmpDetails.jsp" value="%2"/>
+  <alias path="requestScope.empDetails.empId" value="%23"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://java.sun.com/jsp/jstl/core">
+   <prefix>c</prefix>
+  </uri>
+ </uris>
+</kb-project>

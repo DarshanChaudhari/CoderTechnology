@@ -1,0 +1,21 @@
+package com.jp.hr.assembers;
+
+import com.jp.hr.entities.Employee;
+
+public class Report1 {
+	private Employee emp;
+	private Product product;
+	
+	public Employee getEmp() {
+		return emp;
+	}
+	public void setEmp(Employee emp) {
+		this.emp = emp;
+	}
+	public Product getProduct() {
+		return product;
+	}
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+}

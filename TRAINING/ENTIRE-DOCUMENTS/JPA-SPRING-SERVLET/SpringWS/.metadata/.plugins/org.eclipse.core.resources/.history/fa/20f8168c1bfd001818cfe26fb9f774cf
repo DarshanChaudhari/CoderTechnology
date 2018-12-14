@@ -1,0 +1,14 @@
+package com.jp.hr.advises;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+public class SecurityCheck {
+
+	
+	public Object checkAuthorization(ProceedingJoinPoint doCall) throws Throwable{
+		System.out.println("Check for authorization");
+		Object obj = doCall.proceed();
+		System.out.println("Logging");
+		return obj;
+	}
+}
