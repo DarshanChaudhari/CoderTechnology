@@ -29,7 +29,7 @@
         	
             <tr>
                 <td>Account Id :</td>
-                <td><springForm:input path="accountId" /></td>
+                <td><springForm:input path="accountId" /></td> <!-- This is nothing but showing the path of property name  -->
                 <td><springForm:errors path="accountId" cssClass="error" /></td>
             </tr>
             <tr>

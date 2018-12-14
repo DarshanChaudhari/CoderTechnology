@@ -170,3 +170,13 @@ IMPORTANT NOTE :
 	--> Spring130_MVC_JPA 	: JPA CONCEPT WITH ONE TO ONE AND ONE TO MANY MAPPING RELATIONSHIP
 
 ==============================================================================================================================================================
+
+
+
+==============================================================================================================================================================
+			HOW TO PUT CLASS WHICH SHOWS IN JSPS
+==============================================================================================================================================================
+	1. For showing one object -- in create one method we have ato create one object of class aand model.addAttribute("command",emp);
+	2. For showing from two tables we have done association we used onetomany relationship and we can create it and show it 
+	3. For Non Associated tables we have to create one class wchich can used one class and another class [product + employee] .
+	
