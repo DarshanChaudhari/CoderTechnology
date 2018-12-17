@@ -14079,3 +14079,11 @@ org.eclipse.core.runtime.CoreException: Launch configuration TestEmpCrud referen
 2018-12-14 16:49:49,878 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\OnlineCompaintPortal_Darshan\src\main\resources
 2018-12-14 16:49:49,879 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-12-14 16:49:49,879 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\OnlineCompaintPortal_Darshan\src\test\resources
+2018-12-17 09:24:00,652 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-17 09:24:00,667 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\OnlineCompaintPortal_Darshan\src\main\resources
+2018-12-17 09:24:00,672 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-17 09:24:00,673 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\OnlineCompaintPortal_Darshan\src\test\resources
+2018-12-17 09:24:06,066 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-17 09:24:06,066 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring4_0MavenMvc100ValidationsJsr349\src\main\resources
+2018-12-17 09:24:06,068 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-17 09:24:06,069 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring4_0MavenMvc100ValidationsJsr349\src\test\resources

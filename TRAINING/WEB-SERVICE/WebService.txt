@@ -15,5 +15,12 @@ CHALLENGES : -
 		3.  Suppose in server side it is written in JAVA and client side it is fetching .Net so in Intermediatory
 			it is receiving in one language and converting into another language. This is known aas Common Object
 			Request Broking.
-			
-	
+		4. To avoid Commone object reqeuest broking [CORBA] due to performance new concept convert JAVA object into XML Data, there are two component Binder which read the data from java object and supply to the parser,
+			and Parser to convert xml to client side. [server side] 
+		5. In the Client side, there is again two componenet, Binder and Parser. done the same thing. [Client side] 
+		6. They have new componenet for binding and Parsing  known as JAXB [Java Exdended for Binding] and JAXP [Java Exdended for Parsing]
+		7. There are one more arrangement in component section JAXM for different workload or payload for sending images etc.
+		8. JAX WS[Java Exdended WebService] framework [API] is introduced to arrange all this thing which all the JAXB,JAXP and JAXM. We just have to call the method and it will send the 
+		   data to the client .	
+		9. In Servlet-JSP only the client send the reqeuest then only servlet JSP sends the response, it should not send by its own. If you want to
+			send some alert message or something this can be done by WEB-SOCKET
