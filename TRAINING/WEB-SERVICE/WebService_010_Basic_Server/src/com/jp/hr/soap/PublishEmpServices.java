@@ -9,7 +9,7 @@ public class PublishEmpServices {
 
 	public static void main(String[] args) {
 		try {
-			EmpSoapServices soapServices = new EmpSoapServiceImpl();
+			EmpSoapServices soapServices = new EmpSoapServiceImpl(); // This is one Interface
 			Endpoint.publish("http://localhost:9898/hr", soapServices);
 			System.out.println("Services Started");
 		} catch (Exception e) {

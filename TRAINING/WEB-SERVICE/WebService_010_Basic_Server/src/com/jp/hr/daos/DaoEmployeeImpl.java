@@ -1,12 +1,13 @@
 package com.jp.hr.daos;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.List;
+
 import com.jp.hr.entities.Employee;
 import com.jp.hr.exceptions.HrException;
 import com.jp.hr.interfaces.DaoEmployee;
@@ -35,9 +36,9 @@ public class DaoEmployeeImpl implements DaoEmployee {
 	
 	
 	@Override
-	public ArrayList<Employee> getEmpList() throws HrException {
+	public List<Employee> getEmpList() throws HrException {
 		
-		ArrayList<Employee> empList = new ArrayList<>();
+		List<Employee> empList = new ArrayList<>();
 		Connection connect =null;
 		Statement stmt=null;
 		ResultSet rs =null;

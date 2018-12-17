@@ -1,0 +1,8 @@
+package com.jp.fin.services;
+
+public interface FinancialServices {
+	
+	public int getEmpCount() throws FinException;
+	
+
+}

@@ -1,6 +1,6 @@
 package com.jp.hr.services;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import com.jp.hr.interfaces.DaoEmployee;
 import com.jp.hr.interfaces.ServiceEmployee;
@@ -33,7 +33,7 @@ public class ServiceEmployeeImpl implements ServiceEmployee {
 	}
 
 	@Override
-	public ArrayList<Employee> getEmpList() throws HrException {
+	public List<Employee> getEmpList() throws HrException {
 
 		return daoEmp.getEmpList();
 	}

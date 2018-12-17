@@ -1,0 +1,12 @@
+package com.jp.fin.tests;
+
+import com.jp.fin.services.FinancialServices;
+
+public class TestFinServices {
+
+	public static void main(String[] args) {
+		FinancialServices services = new FinancialServicesImpl();
+
+	}
+
+}
