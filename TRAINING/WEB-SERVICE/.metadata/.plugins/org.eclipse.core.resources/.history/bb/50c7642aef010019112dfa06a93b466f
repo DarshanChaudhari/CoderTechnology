@@ -1,0 +1,11 @@
+package com.jp.hr.utilities;
+
+
+public class ServiceFactory {
+	
+	private static ServiceEmployee service;
+	
+	
+	
+
+}

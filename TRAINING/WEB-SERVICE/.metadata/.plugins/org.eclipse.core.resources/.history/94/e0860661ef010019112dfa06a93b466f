@@ -1,0 +1,29 @@
+package com.jp.hr.soap;
+import javax.jws.WebService;
+import com.jp.hr.entities.Employee;
+import com.jp.hr.exceptions.HrException;
+import com.jp.hr.services.ServiceEmployeeImpl;
+import com.jp.hr.updateInterfaces.EmpSoapServicesUpdate;
+
+
+@WebService(endpointInterface="com.jp.hr.updateInterfaces.EmpSoapServicesUpdate")
+public class EmpSoapServiceUpdateImpl implements EmpSoapServicesUpdate {
+
+	private ServiceEmployee services;
+	
+	public EmpSoapServiceUpdateImpl() throws HrException {
+		services = new ServiceEmployeeImpl();  // Creating a object of ServiceEmployeeIMpl
+	}
+
+	@Override
+	public Employee getEmpDetails(int empId) throws HrException {
+		return services.getEmpDetails(empId);
+	}
+
+	@Override
+	public boolean joinNewEmployee(Employee emp) throws HrException {
+		return services.joinNewEmployee(emp);
+	}
+
+
+}

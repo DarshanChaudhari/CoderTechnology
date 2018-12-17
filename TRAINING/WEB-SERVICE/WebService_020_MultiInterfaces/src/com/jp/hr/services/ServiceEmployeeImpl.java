@@ -6,7 +6,6 @@ import com.jp.hr.daos.DaoEmployeeImpl;
 import com.jp.hr.entities.Employee;
 import com.jp.hr.exceptions.HrException;
 import com.jp.hr.viewInterfaces.DaoEmployee;
-import com.jp.hr.viewInterfaces.ServiceEmployee;
 
 /* 	One layer refers to another layer through interface only.
  *	Implementation of the business rule should be done here in absence of BL layer.
