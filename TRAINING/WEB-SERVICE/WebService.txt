@@ -29,3 +29,33 @@ CHALLENGES : -
 ============================================================================================================================================================================================================
 			HOW TO ACHIEVE THIS IN REAL PROJECT
 ============================================================================================================================================================================================================
+	
+	PROJECT : WebService_010_Basic
+	-> Create a JAVA Project
+	-> Create DAO, Interface, exception, utitlites and services.
+	-> Now we are adding WebServices here, for thsi open ServiceEmployeImpl add simple service and test if it is working or not.
+	-> Add one method and impl and interface
+	-> create one websoap interface class and add that method.
+	-> On Interface add @WebService and @SOAPBinding(style=Style.DOCUMENT)
+	-> Create soap implementation of websoap.
+			on class @WebService(endpointInterface="com.jp.hr.interfaces.EmpSoapServices")
+			--> create constructor 
+				-- create object of serviceEmployeeImpl
+				-- call that method
+	--> Create publish employee service class
+	
+	Creating Client PRoject 
+	PROJECT : WebService_010_Basic_CLIENT
+		--> Copy Interface of EmpSoapServices and exception package 
+		--> create client class to process the data 
+		--> Copy URL and change the url as per we test in the above project
+		--> Change the qName as the targetnamespace of wsdl i.e. http://soap.hr.jp.com/ and name = "EmpSoapServiceImplService" given in wsdl
+		--> Create EmpSoapServices object and call method getPort(EmpSoapServices.class)
+		--> call the reference.getTestInteger(10) method created in EmployeeServiceImpl
+		--> Execute it 
+		--> Now interact with DAO Layer.
+		--> Copy one method from EmployeeService layer to EmpSoapService Interface and implement it.
+		--> After implementation you will get error about Entity Class, Copy the entity from server project and pste it in client projct.
+		--> Run the Publish class from Server project, check whether new method is appeared in wsdl.
+		-> Execute the Client Main method.
+		

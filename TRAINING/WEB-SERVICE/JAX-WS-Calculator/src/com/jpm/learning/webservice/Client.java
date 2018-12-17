@@ -13,8 +13,8 @@ public class Client {
 		// Qualified name of the service:
 		// 1st arg is the service URI
 		// 2nd is the service name published in the WSDL
-		QName qname = new QName("http://webservice.learning.jpm.com/",
-				"CalculatorService");
+		QName qname = new QName("http://webservice.learning.jpm.com/","CalculatorService");
+		 
 
 		// Create, in effect, a factory for the service.
 		Service service = Service.create(url, qname);
