@@ -1,0 +1,19 @@
+There are Server side and Client side
+	Server side - DB, DAO,Businesss language , Service
+	
+	Client Side - Web Client  --> Sends WebPages --> Using -->Servlet JSP, Spring MVC, Struts, JSF
+				- Application --> Sends Actual Data-->Using WebServices 1) SOAP 2)REST 3) AJAX --> it is explicitly for WebServer to Client
+								 - csv, xml and json are pure text file, They are language free, it is just for transferring data.
+				- Mobile Appl 
+				- Machine
+
+Loose-Coupling - Client side should not take care of whatever technology written in Server Side.				
+
+CHALLENGES : - 
+		1.  Exchange of Data in Common Format.
+		2.  Intermediatory must be ubiqudious to platform of both sides.
+		3.  Suppose in server side it is written in JAVA and client side it is fetching .Net so in Intermediatory
+			it is receiving in one language and converting into another language. This is known aas Common Object
+			Request Broking.
+			
+	
