@@ -35,6 +35,7 @@ public class CalculatorPublisher {
       // 1st argument is the publication URL
       // 2nd argument is an SIB instance
       Endpoint.publish("http://127.0.0.1:9876/cs", new Calculator()); // This will publish Calculator class and remains alive 24/7
+      System.out.println("Application Started");
     }
 }
 

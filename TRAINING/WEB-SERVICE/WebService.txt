@@ -23,4 +23,9 @@ CHALLENGES : -
 		8. JAX WS[Java Exdended WebService] framework [API] is introduced to arrange all this thing which all the JAXB,JAXP and JAXM. We just have to call the method and it will send the 
 		   data to the client .	
 		9. In Servlet-JSP only the client send the reqeuest then only servlet JSP sends the response, it should not send by its own. If you want to
-			send some alert message or something this can be done by WEB-SOCKET
+			send some alert message or something this can be done by WEB-SOCKET.
+
+
+============================================================================================================================================================================================================
+			HOW TO ACHIEVE THIS IN REAL PROJECT
+============================================================================================================================================================================================================
