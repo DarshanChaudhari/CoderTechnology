@@ -1,0 +1,12 @@
+@RequestMapping(value = "/empDetails",method = RequestMethod.GET,headers="Accept=application/json")
+	public Employee getEmpDetails(@RequestParam("id") int empId){
+		Employee emp = null;
+		System.out.println("In getEmpDetails");
+		try {
+			emp = empService.getEmpDetails(empId);
+			System.out.println(emp);
+		} catch (HrException e) {
+			e.printStackTrace();
+		}
+		return emp;
+	}
