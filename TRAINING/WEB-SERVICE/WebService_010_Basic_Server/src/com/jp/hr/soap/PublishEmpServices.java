@@ -16,7 +16,5 @@ public class PublishEmpServices {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
-
 	}
-
 }

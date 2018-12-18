@@ -1,3 +1,7 @@
+https://general.bajajallianz.com/MotorInsurance/onlineportal/motorNew/yourVehicleDetails.jsp?p_type=drivesmart&u_action=new
+
+
+
 There are Server side and Client side
 	Server side - DB, DAO,Businesss language , Service
 	
@@ -73,7 +77,13 @@ CHALLENGES : -
 		
 		
 		REST V/S SOAP
-			REST gives you actual data in form of JSON format.
-			SOAP gives you entire structure from that you have to fetch data.
+			REST gives you actual data in form of JSON or XMLformat.
+			SOAP gives you entire services and data in form of XML.
 			REST is faster than SOAP.
+			-- Jersey lib provides a REST API services [JAX RS - Actually jersey inside]
+			-- Jackson lib provides JAVA to JSON
+			
+			
+		SOAP VS REST VS AJAX
 		
+		SERVLET VS WEBSERVICE

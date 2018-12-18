@@ -37,7 +37,9 @@ AFTER INSTALLATION, COPY THE PATH OF CSS AND PLACE IT IN angular.json file in st
 ==> NOTE: IF YOU WANT TO CHANGE THE PORT NUMBER : IN package.json -- add "start": "ng serve" --port 4500
 
 
+https://medium.freecodecamp.org/48-answers-on-stack-overflow-to-the-most-popular-angular-questions-52f9eb430ab0
 
+https://stackoverflow.com/questions/35692503/ts2307-cannot-find-module-angular2-core-while-importing-angular2-on-typescrip
 
 
 

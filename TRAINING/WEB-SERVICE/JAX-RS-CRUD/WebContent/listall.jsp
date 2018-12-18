@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:redirect url="http://localhost:9090/JAX-RS-CRUD/rest/countries"></c:redirect>
+	<c:redirect url="http://localhost:8080/JAX-RS-CRUD/rest/countries"></c:redirect> <!--countries is the path given to CountryController class  -->
 	<br>
 	
 </body>

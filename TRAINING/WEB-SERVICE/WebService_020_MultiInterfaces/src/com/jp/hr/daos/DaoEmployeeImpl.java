@@ -7,11 +7,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
 import com.jp.hr.entities.Employee;
 import com.jp.hr.exceptions.HrException;
 import com.jp.hr.utilities.ConnectionFactory;
-import com.jp.hr.viewInterfaces.DaoEmployee;
 
 /* The ClassNotException, SQLException must not come of DAO Class
  *	The database specific entities must not come out of the class(Like Exception and classes)
