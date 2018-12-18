@@ -68,3 +68,12 @@ CHALLENGES : -
 		--> Then we have moved to FinancialSErviceImpl class that 4 lines and in main method create the object to call the method.
 		--> Then we have remove the 4 lines of code and implmented in LocatorServices which handled soapServices and call that method in FinancialServiceImpl
 		
+		
+		
+		
+		
+		REST V/S SOAP
+			REST gives you actual data in form of JSON format.
+			SOAP gives you entire structure from that you have to fetch data.
+			REST is faster than SOAP.
+		
