@@ -42,7 +42,7 @@ public class SessionManage03 {
 	
 	@RequestMapping("/createSession")
 	public String createSession(HttpServletRequest request){
-		//HttpSession session = request.getSession(true);
+		HttpSession session = request.getSession(true);
 		
 		if (session == null){
 			System.out.println("Fail: Session creation failed.");
@@ -55,6 +55,7 @@ public class SessionManage03 {
 	
 	@RequestMapping("/removeSession")
 	public String removeSession(){
+		System.out.println("From removeSession: " + session.getId());
 		session.invalidate();
 		System.out.println("From removeSession: " + session.getId());
 		System.out.println("Session invalidated.");

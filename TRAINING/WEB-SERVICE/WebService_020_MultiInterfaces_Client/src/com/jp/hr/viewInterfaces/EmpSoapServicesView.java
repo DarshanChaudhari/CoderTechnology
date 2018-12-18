@@ -22,6 +22,4 @@ public interface EmpSoapServicesView {
 	@WebMethod
 	public List<Employee> getEmpList() throws HrException; 
 	
-	/*@WebMethod
-	public boolean joinNewEmployee(Employee emp) throws HrException;*/
 }

@@ -1,5 +1,7 @@
 package com.jp.hr.updateInterfaces;
 
+import java.util.List;
+
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
@@ -13,8 +15,7 @@ import com.jp.hr.exceptions.HrException;
 public interface EmpSoapServicesUpdate {
 	
 	@WebMethod
-	public Employee getEmpDetails(int empId) throws HrException;
-	
+	public List<Employee> getEmpList() throws HrException; 
 	
 	@WebMethod
 	public boolean joinNewEmployee(Employee emp) throws HrException;
