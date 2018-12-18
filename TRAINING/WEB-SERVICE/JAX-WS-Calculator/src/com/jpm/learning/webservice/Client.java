@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class Client {
 
 	public static void main(String args[]) throws Exception {
-		//URL url = new URL("http://localhost:9876/cs?wsdl"); // Client side is referring to wsdl
-		URL url = new URL("http://192.168.1.131:9876/cs?wsdl"); // Other machine 
+		URL url = new URL("http://localhost:9876/cs?wsdl"); // Client side is referring to wsdl
+		//URL url = new URL("http://192.168.1.131:9876/cs?wsdl"); // Other machine 
 		// Qualified name of the service:
 		// 1st arg is the service URI
 		// 2nd is the service name published in the WSDL

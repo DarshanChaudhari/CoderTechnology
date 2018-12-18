@@ -12,8 +12,7 @@ public class PublishEmpServices {
 			EmpSoapServices soapServices = new EmpSoapServiceImpl(); // This is one Interface
 			Endpoint.publish("http://localhost:9898/hr", soapServices);
 			System.out.println("Services Started");
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
+		} catch (Exception e) {			
 			e.printStackTrace();
 		} 
 	}

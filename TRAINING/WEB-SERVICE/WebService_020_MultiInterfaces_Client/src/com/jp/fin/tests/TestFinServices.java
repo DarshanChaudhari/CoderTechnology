@@ -10,7 +10,7 @@ import com.jp.hr.viewInterfaces.EmpSoapServicesView;
 public class TestFinServices {
 
 	public static void main(String[] args) {
-		try {								
+		try {							
 					
 			EmpSoapServicesView viewSoapServices = LocateServices.getEmpServices(); // FinException is coming from this line
 			System.out.println(viewSoapServices.getEmpDetails(1)); // HrException is coming from this line
