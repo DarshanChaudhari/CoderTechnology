@@ -1,11 +1,11 @@
 package com.jp.hr.services;
 
-import java.util.ArrayList;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.jp.hr.daos.DaoEmployee;
 import com.jp.hr.entities.Employee;
@@ -37,6 +37,7 @@ public class ServiceEmployeeImpl implements ServiceEmployee {
 	}
 
 	@Override
+	@Transactional(propagation=Propagation.REQUIRES_NEW,rollbackFor=HrException.class)
 	public boolean joinNewEmployee(Employee emp) throws HrException {
 		return daoEmp.insertNewRecord(emp);
 	}

@@ -31,15 +31,17 @@ public class DaoEmployeeImplJPA implements DaoEmployee {
 	
 	@Override
 	public Employee getEmpDetails(int empId) throws HrException {
-		// TODO Auto-generated method stub
-		return null;
+	
+		Employee emp =entityManager.find(Employee.class, empId);
+		return emp;
 	}
 
 	@Override
 	@Transactional(propagation=Propagation.REQUIRED)
 	public boolean insertNewRecord(Employee emp) throws HrException {
-		// TODO Auto-generated method stub
-		return false;
+		System.out.println(emp);
+		entityManager.persist(emp);
+		return true;
 	}
 
 }

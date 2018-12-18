@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WebService_030_REST_CRUD" path="/WebService_030_REST_CRUD" reloadable="true" source="org.eclipse.jst.jee.server:WebService_030_REST_CRUD"/><Context docBase="D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Spring_300_MVC_JPA_REST_Ng" path="/Spring_300_MVC_JPA_REST_Ng" reloadable="true" source="org.eclipse.jst.jee.server:Spring_300_MVC_JPA_REST_Ng"/></Host>
+      <Context docBase="D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\GladiatorSessionManagement" path="/GSManagement" reloadable="true" source="org.eclipse.jst.jee.server:GladiatorSessionManagement"/></Host>
     </Engine>
   </Service>
 </Server>
