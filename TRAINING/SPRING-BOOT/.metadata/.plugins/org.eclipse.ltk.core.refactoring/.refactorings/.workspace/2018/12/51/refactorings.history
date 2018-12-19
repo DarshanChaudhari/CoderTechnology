@@ -1,3 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;demo&apos;" deleteContents="true" description="Delete resource &apos;demo&apos;" element1="/demo" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1545209238429"/>&#x0A;<refactoring comment="Delete resource &apos;demo&apos;" deleteContents="true" description="Delete resource &apos;demo&apos;" element1="/demo" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1545209479767"/>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;SpringBoot_001_Employee&apos; to &apos;SpringBoot_002_Employee&apos;&#x0D;&#x0A;- Original element: &apos;SpringBoot_001_Employee&apos;&#x0D;&#x0A;- Renamed element: &apos;SpringBoot_001_Employee&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;SpringBoot_001_Employee&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=SpringBoot_001_Employee" name="SpringBoot_002_Employee" references="true" stamp="1545218506320" version="1.0"/>
 </session>
