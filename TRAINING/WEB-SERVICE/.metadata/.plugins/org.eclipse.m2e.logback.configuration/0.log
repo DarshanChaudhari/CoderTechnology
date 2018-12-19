@@ -603,3 +603,32 @@
 2018-12-18 15:20:44,104 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\main\resources
 2018-12-18 15:20:44,104 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-12-18 15:20:44,104 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\test\resources
+2018-12-19 10:57:01,294 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.jp.hr:Spring_300_MVC_JPA_REST_Ng:0.0.1-SNAPSHOT @ D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\pom.xml.
+2018-12-19 10:57:08,438 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 10:57:08,440 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\main\resources
+2018-12-19 10:57:08,443 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 10:57:08,443 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\test\resources
+2018-12-19 12:49:15,255 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 12:49:15,256 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\main\resources
+2018-12-19 12:49:15,258 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 12:49:15,259 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\test\resources
+2018-12-19 12:51:04,730 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 12:51:04,731 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\main\resources
+2018-12-19 12:51:04,732 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 12:51:04,733 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\test\resources
+2018-12-19 12:53:21,027 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 12:53:21,038 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\main\resources
+2018-12-19 12:53:21,049 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 12:53:21,049 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\test\resources
+2018-12-19 12:53:55,973 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 12:53:55,974 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\main\resources
+2018-12-19 12:53:55,977 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 12:53:55,978 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\test\resources
+2018-12-19 12:55:00,292 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 12:55:00,293 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\main\resources
+2018-12-19 12:55:00,294 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 12:55:00,295 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\test\resources
+2018-12-19 14:03:59,328 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 14:03:59,334 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\main\resources
+2018-12-19 14:03:59,339 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-19 14:03:59,339 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\WEB-SERVICE\Spring_300_MVC_JPA_REST_Ng\src\test\resources

@@ -1,6 +1,85 @@
+=======================================================================================================================
+			REVISION OF ANGULAR JS
+=======================================================================================================================
+For Angular 7
+1) Node JS - How to install NodeJs - Site
+2) Angular CLI - npm install @angular/cli -g
+
+3) go to vs code
+4) Create an angular projct using ng CLI commands
+5) ng new myproject
+6) to run the project npm start or ng serve
+==> FOR BOOTSTRAP INSTALLATION
+	npm install bootstrap@3 --save
+AFTER INSTALLATION, COPY THE PATH OF CSS AND PLACE IT IN angular.json file in style:
+"node_modules/bootstrap/dist/css/bootstrap.min.css"
+7) To create an new Component - ng g c component/home
+8) Main component is app-component.ts and main module is app-moduele.ts it is create by default
+8) If you create a service at the decorator it will @Service
+
+
+Steps in Angulars
+1. Remove all app.component.html and remove just keep h1 tag
+2. app.component.ts add value in title just like 'Angular Java Integration' in export class; 
+3. For creating component ng g c components/home, It will create components folder inside that home folder
+   and in home folder there are four files 
+	-> In home.component.ts -> you will see
+
+	@Component({
+	selector: 'app-home',
+	templateUrl: './home.component.html',
+	styleUrls: ['./home.component.css']
+})
+
+Note : In Angular 4 app-routing.module folder create by-default
+
+[4] ==> app-routing.module.ts
+		For Creating Routes -- It is just mapping we have to create array of routes
+			-> In app-routing.module.ts - > we are to create a routes
+				const approutes: Routes =[
+				{path:'home',component:HomeComponent},
+				{path:'empList',component:HomeComponent},
+				{path:'**',component:HomeComponent}
+		
+[5]==> Now create component of Emplist ng g c components/empList - Add in components folder 
+	--> 
+[6] Now to view Emplist html in localhost - app.component.htmls- add the routing module tags to view the  links
+
+[7] - Now you have to create Services to provide http service.
+
+[8]create Models - > To create Employee entity which have no command right create and create models/Employee.ts class
+
+[9] Now in services folder -> empservice.service.ts file you have to use @Injectable 
+	- For using injectable, here we have to use http service for this we have to use injectable in contructor.
+	- Command - like this constructor(private http: HttpClient)
+	- create a method getEmployeeList () {
+	     in that you have to create --> get return this.http.get('http://localhost:8080/Spring_300_MVC_JPA_REST_Ng/hr/emps')
+		}
+
+[10] go back to component now we have to call that method we have put in empservice.servce.ts
+[11] You have put HTTPClientModule in import app.module.ts 
+[12] Now run it you will cors issue.
+[13] Now implement the employee-list-service.component to view html
+
+[14] do the ng build from the root project. Change the index.html <base href="./">
+[15]  Copy the project dist folder and paste it on webcontent , restart the server and put .http://localhost:8080/Spring_300_MVC_JPA_REST_Ng/index.html
+Note: Normally we have to create Module and in that module we have to place all this component, models, service routing folder must be there
+
+
+
+
+
+
+
+
+
+
+
+
+=======================================================================================================================
 ==> For ANGULAR INSTALLATION
 
-	npm  install @angular/cli -g -- you can do it in cmd
+	npm  install @angular/cli -g  you can do it in cmd
 
 ==> CREATING THE ANGULAR PROJECT
 

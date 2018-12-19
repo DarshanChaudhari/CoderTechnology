@@ -1,0 +1,35 @@
+<div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">List of Employees</h3>
+    </div>
+    <div class="panel-body">
+      <table class="table-hover" style="width:600px;">
+        <thead>
+          <tr>
+  
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th></th>
+            <th></th>
+            <th></th>
+  
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let e of emps;">
+  
+            <td >{{e.empId}}</td>
+            <td>{{e.firstName }}</td>
+            <td>{{e.lastName }}</td>
+            <!-- <td style="width:50px"><button type="button" name="button" class="btn btn-info btn-xs" (click)='showEditform(p)' [disabled]='toggleForm'>Edit</button></td>
+            <td style="width:50px"><button type="button" name="button" class="btn btn-danger btn-xs" (click)='deleteEmployeem(p.id)'>Delete</button></td>
+            <td style="width:50px"><button type="button" name="button" class="btn btn-xs" (click)='showAddForm()'>Cancel</button></td> -->
+          </tr>
+          <tr *ngIf="!emps || emps.length==0">
+            <td colspan="3">No Records to display</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

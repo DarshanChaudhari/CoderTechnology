@@ -1,3 +1,14 @@
+
+IMPORTANT
+==========================================================================================
+@Component 
+	-> @Service -> For Service Layer
+	-> @Repository -> DAO Layer
+	-> @Controller -> Controller Layer
+	-> @RestController-> For REST Controller
+==========================================================================================
+
+
 ==> Dependency Injection
 ==> Constructor Injection -->	Priority 2
 ==> Setter Injection      -->	Priority 1

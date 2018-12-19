@@ -1,0 +1,27 @@
+<div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}!     
+    </h1>
+  
+    <!-- This is used for Angular 4 for Employee - Typesscript-->
+    <!-- <app-employee></app-employee> -->
+    <!-- <app-contact-us></app-contact-us> -->
+    
+  
+    <!-- This is used for Angular 4 for Employee Info BootStrap-->
+    <!-- <app-employee-info></app-employee-info> -->
+  
+  
+    <!-- Routing Module -->
+  </div>
+  <div style="padding:5px"></div>
+  <ul class="nav nav-tabs">
+    <li routerLinkActive="active">
+      <a routerLink ="home">Home</a>    
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="employeeslist">Employees List</a>
+    </li>        
+  </ul>
+  
+  <router-outlet></router-outlet>

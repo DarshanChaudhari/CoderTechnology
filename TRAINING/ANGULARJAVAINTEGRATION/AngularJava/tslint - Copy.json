@@ -1,0 +1,7 @@
+{
+  "Spring_300_MVC_JPA_REST_Ng/hr/emps": {
+    "target": "http://localhost:8080",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
