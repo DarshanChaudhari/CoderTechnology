@@ -4014,3 +4014,29 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2018-12-19 17:26:05,043 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-12-19 17:26:05,045 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-12-19 17:26:05,045 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot_002_Employee\src\test\resources
+2018-12-20 11:03:47,366 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.jp.springboot:SpringBoot_001_Hello:0.0.1-SNAPSHOT @ D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot_001_Hello\pom.xml.
+2018-12-20 11:03:47,450 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.jp.springboot:SpringBoot_001_Hello:0.0.1-SNAPSHOT @ D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot_001_Hello\pom.xml.
+2018-12-20 11:03:50,428 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 11:03:50,449 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-12-20 11:03:50,552 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-12-20 11:03:50,571 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 11:03:50,571 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot_001_Hello\src\test\resources
+2018-12-20 11:03:51,927 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.jp.springboot:SpringBoot_001_Hello:0.0.1-SNAPSHOT @ D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot_001_Hello\pom.xml.
+2018-12-20 11:03:52,064 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.jp.springboot:SpringBoot_002_Employee:0.0.1-SNAPSHOT @ D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot_002_Employee\pom.xml.
+2018-12-20 11:03:52,482 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 11:03:52,483 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-12-20 11:03:52,484 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-12-20 11:03:52,487 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 11:03:52,487 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot_002_Employee\src\test\resources
+2018-12-20 11:03:54,283 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.jp.springboot:SpringBoot_001_Hello:0.0.1-SNAPSHOT @ D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot_001_Hello\pom.xml.
+2018-12-20 11:03:54,939 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.jp.springboot:SpringBoot_002_Employee:0.0.1-SNAPSHOT @ D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot_002_Employee\pom.xml.
+2018-12-20 11:03:56,272 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 11:03:56,274 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-12-20 11:03:56,274 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-12-20 11:03:56,277 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 11:03:56,277 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot_001_Hello\src\test\resources
+2018-12-20 11:03:56,549 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 11:03:56,549 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-12-20 11:03:56,550 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-12-20 11:03:56,560 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 11:03:56,560 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot_002_Employee\src\test\resources

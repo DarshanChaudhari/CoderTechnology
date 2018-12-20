@@ -1,7 +1,0 @@
-package com.jp.hr.interfaces;
-
-public interface DaoProduct {
-	
-	
-
-}

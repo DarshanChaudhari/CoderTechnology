@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Employee } from '../models/Employee';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,11 @@ export class EmpserviceService {
   }
 
   getEmployeeList() {
-    return this.http.get('http://localhost:8080/Spring_300_MVC_JPA_REST_Ng/hr/emps');
+    return this.http.get("/Spring_300_MVC_JPA_REST_Ng/hr/emps");
+    
   }
 
+  addEmployee(emp:Employee) {
+    return this.http.post("/Spring_300_MVC_JPA_REST_Ng/hr/emps/create",emp);
+  }
 }
