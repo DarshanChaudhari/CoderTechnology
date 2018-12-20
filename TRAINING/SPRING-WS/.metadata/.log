@@ -6804,3 +6804,16 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-20 12:53:30.578
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2018-12-20 15:53:48.984
+!MESSAGE Publishing failed with multiple errors
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2018-12-20 15:53:48.984
+!MESSAGE Could not delete D:/GITHUB/CoderTechnology/TRAINING/SPRING-WS/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/OnlineCompaintPortal_Darshan/WEB-INF/lib. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2018-12-20 15:53:48.984
+!MESSAGE Could not delete D:/GITHUB/CoderTechnology/TRAINING/SPRING-WS/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/OnlineCompaintPortal_Darshan/WEB-INF. May be locked by another process.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-20 15:55:16.970
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-20 15:55:16.973
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

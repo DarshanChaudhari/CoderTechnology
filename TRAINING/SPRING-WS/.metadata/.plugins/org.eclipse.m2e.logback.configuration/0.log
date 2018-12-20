@@ -14450,3 +14450,7 @@ org.eclipse.core.runtime.CoreException: Launch configuration TestEmpCrud referen
 2018-12-20 12:53:30,577 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
 2018-12-20 12:53:30,578 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-12-20 12:53:30,580 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 15:55:16,970 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 15:55:16,971 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 15:55:16,973 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 15:55:16,974 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources

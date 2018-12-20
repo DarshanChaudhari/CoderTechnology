@@ -8,6 +8,24 @@ IMPORTANT
 	-> @RestController-> For REST Controller
 ==========================================================================================
 
+IMPORTANT
+==========================================================================================
+ApplicationContext -> ?
+context -> ?
+If you have to inject a reference one is @Autowired , @Resource, @Inject
+@Autowired - IT will searched the type of bean , if it found it will inject the reference.
+So better go by name not by type , by Name as @Qualifier
+
+
+Ther are five configuration to explore a Spring
+1. Xml configuration
+2. Annotation Configuration
+3. JAVA Configurations
+4. Creating Bean through JAVA Code.
+
+
+@persistanceContext - It is only work for entityManager.It is JPA Configuration not Spring configuration. Spring has given a support.
+==========================================================================================
 
 ==> Dependency Injection
 ==> Constructor Injection -->	Priority 2

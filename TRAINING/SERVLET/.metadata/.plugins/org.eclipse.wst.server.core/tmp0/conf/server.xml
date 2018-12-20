@@ -151,7 +151,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\GITHUB\CoderTechnology\TRAINING\SERVLET\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\GITHUB\CoderTechnology\TRAINING\SERVLET\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JPM_131_Online_Shopping" path="/JPM_131_Online_Shopping" reloadable="true" source="org.eclipse.jst.jee.server:JPM_131_Online_Shopping"/></Host>
+      <Context docBase="D:\GITHUB\CoderTechnology\TRAINING\SERVLET\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\GITHUB\CoderTechnology\TRAINING\SERVLET\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JPM_131_Online_Shopping" path="/JPM_131_Online_Shopping" reloadable="true" source="org.eclipse.jst.jee.server:JPM_131_Online_Shopping"/><Context docBase="D:\GITHUB\CoderTechnology\TRAINING\SERVLET\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Revision_Servlet" path="/Revision_Servlet" reloadable="true" source="org.eclipse.jst.jee.server:Revision_Servlet"/><Context docBase="D:\GITHUB\CoderTechnology\TRAINING\SERVLET\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JPM_020_Dispatching" path="/JPM_020_Dispatching" reloadable="true" source="org.eclipse.jst.jee.server:JPM_020_Dispatching"/></Host>
     </Engine>
   </Service>
 </Server>
