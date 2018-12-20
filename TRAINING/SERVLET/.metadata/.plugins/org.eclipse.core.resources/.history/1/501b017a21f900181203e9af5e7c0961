@@ -1,5 +1,0 @@
-package com.jp.inheritance.tpc.entities;
-
-public class SalesManager {
-
-}

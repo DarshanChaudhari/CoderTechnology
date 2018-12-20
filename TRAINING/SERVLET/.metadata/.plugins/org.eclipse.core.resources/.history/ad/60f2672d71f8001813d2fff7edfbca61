@@ -1,8 +1,0 @@
-package com.jp.mtm.entity;
-
-@Entity
-@Table(name="PRODUCT_MTM")
-public class Product {
-
-	
-}

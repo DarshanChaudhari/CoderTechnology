@@ -1,8 +1,6 @@
 package com.jp.hr.entities;
 
 import java.util.List;
-import java.util.Set;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -39,7 +37,7 @@ public class Project {
 
 	@ManyToMany
 	@JoinTable(name="EMP_PROJECT",joinColumns=@JoinColumn(name="PROJECTID"),
-			inverseJoinColumns= @JoinColumn(name="empno"))
+			inverseJoinColumns= @JoinColumn(name="EMPNO"))
 	public List<Emp> getEmps() {
 		return emps;
 	}
@@ -53,6 +51,4 @@ public class Project {
 		return "Project [projectId=" + projectId + ", title=" + title + "]";
 	}
 	
-
-
 }

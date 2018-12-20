@@ -2,6 +2,8 @@ package com.jp.hr.exceptions;
 
 public class HrException extends Exception {
 
+	private static final long serialVersionUID = 1L;
+
 	public HrException(String message, Throwable cause) {
 		super(message, cause);
 	}

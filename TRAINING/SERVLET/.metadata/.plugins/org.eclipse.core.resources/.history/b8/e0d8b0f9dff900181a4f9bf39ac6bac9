@@ -1,7 +1,0 @@
-package com.jp.collections;
-
-import java.util.Comparator;
-
-public class SortByEmpName implements Comparator<T> {
-
-}
