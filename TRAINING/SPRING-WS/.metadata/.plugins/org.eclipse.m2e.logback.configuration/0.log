@@ -14454,3 +14454,92 @@ org.eclipse.core.runtime.CoreException: Launch configuration TestEmpCrud referen
 2018-12-20 15:55:16,971 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
 2018-12-20 15:55:16,973 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-12-20 15:55:16,974 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:42:48,736 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.jp.hr:Spring130_MVC_JPA_ManyToMany:0.0.1-SNAPSHOT @ D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\pom.xml.
+2018-12-20 18:42:51,515 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:42:51,525 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:42:51,528 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:42:51,533 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:43:09,554 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:43:09,555 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:43:09,557 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:43:09,557 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:45:36,997 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:45:37,000 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:45:37,022 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:45:37,022 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:46:01,940 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:46:01,941 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:46:01,943 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:46:01,943 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:46:04,188 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:46:04,189 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:46:04,190 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:46:04,191 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:48:51,970 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:48:51,984 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:48:51,985 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:48:51,986 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:49:13,072 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:49:13,073 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:49:13,075 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:49:13,076 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:49:15,140 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:49:15,141 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:49:15,145 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:49:15,145 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:49:27,861 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:49:27,862 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:49:27,867 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:49:27,867 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:49:48,404 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:49:48,411 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:49:48,413 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:49:48,414 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:50:51,932 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:50:51,933 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:50:51,936 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:50:51,936 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:52:41,141 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:52:41,143 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:52:41,145 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:52:41,146 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:52:59,143 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:52:59,146 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:52:59,154 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:52:59,155 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:53:16,370 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:53:16,371 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:53:16,372 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:53:16,373 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:53:19,539 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:53:19,542 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:53:19,544 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:53:19,545 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:55:09,316 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:55:09,317 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:55:09,340 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:55:09,346 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:56:56,515 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:56:56,516 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:56:56,518 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:56:56,519 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:58:05,850 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:58:05,851 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:58:05,853 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:58:05,854 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:58:08,124 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:58:08,129 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:58:08,146 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:58:08,149 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 18:58:21,916 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:58:21,917 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 18:58:21,918 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 18:58:21,919 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 19:05:19,570 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 19:05:19,571 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 19:05:19,572 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 19:05:19,572 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
+2018-12-20 19:06:02,140 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 19:06:02,142 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\main\resources
+2018-12-20 19:06:02,143 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 19:06:02,144 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GITHUB\CoderTechnology\TRAINING\SPRING-WS\Spring130_MVC_JPA_ManyToMany\src\test\resources
