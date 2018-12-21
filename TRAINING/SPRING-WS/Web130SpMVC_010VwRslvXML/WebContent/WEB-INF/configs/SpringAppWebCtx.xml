@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<!-- Register bean with ControllerClassNameHandler -->
+	<bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping" />
+	<bean class="controllers.WelcomeController" />
+	
+	<!-- Register the bean with BeanNameUrlHandler
+	<bean name="/welcome" class="controllers.WelcomeController" />
+	-->
+	
+	<bean class="org.springframework.web.servlet.view.XmlViewResolver">
+		<property name="location">
+			<value>/WEB-INF/configs/SpringViews.xml</value>
+		</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<!-- Register bean with ControllerClassNameHandler -->
+	<bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping" />
+	<bean class="controllers.Welcome1Controller" />
+	<bean class="controllers.Welcome2Controller" />
+	<bean class="controllers.Welcome3Controller" />
+	
+	<!-- WelcomePage1 -->
+	<bean class="org.springframework.web.servlet.view.XmlViewResolver">
+		<property name="location">
+			<value>/WEB-INF/configs/SpringViews.xml</value>
+		</property>
+		<property name="order" value="1"></property>
+	</bean>
+	
+	<!-- WelcomePage2 -->
+	<bean class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+		<property name="basename">
+			<value>SpringViews</value>
+		</property>
+		<property name="order" value="2"></property>
+	</bean>
+	
+	<!-- WelcomePage1 -->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+		<property name="prefix" value="/WEB-INF/pages3/" />
+		<property name="suffix" value=".jsp"/> 
+		<property name="order" value="3"></property>
+	</bean>
+</beans>

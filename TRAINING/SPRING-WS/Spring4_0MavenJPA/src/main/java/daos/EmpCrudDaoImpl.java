@@ -25,30 +25,26 @@ public class EmpCrudDaoImpl implements EmpCrudDao {
 	@PersistenceContext
 	private EntityManager entityManager;
 	
-	@Override
-	public List<Emp> getAllEmps() {
+	// Get a list of all emps.
+		@Override
+		public List<Emp> getAllEmps() {
 			String sql = "SELECT e FROM empRec e";
 			Query qry = entityManager.createQuery(sql);
 			
 			List<Emp> empList = qry.getResultList();
 			return empList;
 		}
-	
-	
-	// Get a list of all emps.
 		
-	
-		
-	
+	/*
 	// Get a record on given EmpId.- MapResultSet
-	/*public Emp getEmpOnId(int empId){
+	public Emp getEmpOnId(int empId){
 		String sql = "SELECT empNo, eName, sal FROM emp WHERE empNo=?";
 		Object[] params = new Object[]{empId};
 		MyRowMapper mapper = new MyRowMapper(ctx);
 		
 		Emp emp = jdbcTemplate.queryForObject(sql, params, mapper);
 		return emp;
-	}*/
+	}
 	
 	// Insert a record.
 	
@@ -59,7 +55,7 @@ public class EmpCrudDaoImpl implements EmpCrudDao {
 	// Queries with Joins
 }
 
-/*class MyRowMapper implements ParameterizedRowMapper<Emp> {
+class MyRowMapper implements ParameterizedRowMapper<Emp> {
 	private ConfigurableApplicationContext ctx;
 	
 	public MyRowMapper(ConfigurableApplicationContext ctx){
@@ -75,6 +71,5 @@ public class EmpCrudDaoImpl implements EmpCrudDao {
 		emp.setEmpSal(rs.getFloat("sal"));
 		
 		return emp;
-	}
-
-}*/
+	}*/
+}

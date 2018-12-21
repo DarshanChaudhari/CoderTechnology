@@ -1,0 +1,15 @@
+127.0.0.1 - - [21/Dec/2018:13:55:32 +0530] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [21/Dec/2018:13:55:48 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:13:55:49 +0530] "GET /Spring100_MVCbasics/ HTTP/1.1" 200 711
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:13:55:49 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:13:55:52 +0530] "GET /Spring100_MVCbasics/getEmpList.hr HTTP/1.1" 200 887
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:13:58:41 +0530] "GET /Spring100_MVCbasics/homePage.hr HTTP/1.1" 200 711
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:13:58:43 +0530] "GET /Spring100_MVCbasics/registrationForm.hr HTTP/1.1" 500 9271
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:14:00:05 +0530] "GET /Spring100_MVCbasics/homePage.hr HTTP/1.1" 200 711
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:14:00:08 +0530] "GET /Spring100_MVCbasics/getEmpList.hr HTTP/1.1" 200 887
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:14:00:11 +0530] "GET /Spring100_MVCbasics/homePage.hr HTTP/1.1" 200 711
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:14:01:27 +0530] "GET /Spring100_MVCbasics/getEmpList.hr HTTP/1.1" 200 887
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:14:17:26 +0530] "GET /Spring100_MVCbasics/getEmpList.hr HTTP/1.1" 200 1148
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:14:17:29 +0530] "GET /Spring100_MVCbasics/getEmpList.hr HTTP/1.1" 200 1148
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:14:17:31 +0530] "GET /Spring100_MVCbasics/homePage.hr HTTP/1.1" 200 972
+0:0:0:0:0:0:0:1 - - [21/Dec/2018:14:17:43 +0530] "GET /Spring100_MVCbasics/homePage.hr HTTP/1.1" 200 972

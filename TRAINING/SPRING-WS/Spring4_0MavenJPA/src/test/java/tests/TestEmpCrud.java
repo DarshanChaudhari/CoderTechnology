@@ -14,12 +14,14 @@ public class TestEmpCrud {
 		ConfigurableApplicationContext springCtx1 = new ClassPathXmlApplicationContext("classpath:/springConfig.xml");
 
 		EmpCrudServices services = (EmpCrudServices) springCtx1.getBean("empServices");
-				
+		
+		
 		List<Emp> empList = services.getEmpList();
 		
 		for(Emp emp : services.getEmpList()){
 			System.out.println(emp);
 		}
+		
 		springCtx1.close();
 	}
 }
