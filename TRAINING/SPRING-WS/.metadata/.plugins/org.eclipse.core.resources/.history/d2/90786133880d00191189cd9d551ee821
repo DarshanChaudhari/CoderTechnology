@@ -1,0 +1,6 @@
+package com.jp.insurance.controllers;
+
+@Controller
+public class CustomerController {
+
+}

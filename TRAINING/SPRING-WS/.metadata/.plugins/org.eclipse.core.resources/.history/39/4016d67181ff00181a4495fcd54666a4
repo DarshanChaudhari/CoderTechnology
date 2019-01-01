@@ -1,3 +1,0 @@
-<%@page session ="false" %>
-<i><h1 align="center">Customer Complaint Request Form</h1></i>
-

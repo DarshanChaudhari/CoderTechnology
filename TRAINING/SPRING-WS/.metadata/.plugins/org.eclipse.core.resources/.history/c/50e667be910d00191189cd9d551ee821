@@ -1,0 +1,28 @@
+package com.jp.insurance.controllers;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@Controller
+public class CustomerController {
+	
+	@Autowired
+    private HttpSession session;
+	
+	@RequestMapping("homePage.hr")
+	public String homePage() {
+		/*Role role = new Role();*/
+		String role = "CUSTOMER";
+		String emailId = "darshan.chaudhari10@gmail.com";
+		model.addAttribute("role",role);
+		model.addAttribute("username",emailId);
+		System.out.println("In Home Page");
+		return "customer/Menubar";
+	}
+	
+}

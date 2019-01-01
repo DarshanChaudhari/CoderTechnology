@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_y_vlsAzDEem-TvHize3IKA" name="entities">
+  <elementImport xmi:id="_zCFvEAzDEem-TvHize3IKA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_zCFvEQzDEem-TvHize3IKA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+  </elementImport>
+  <elementImport xmi:id="_zCFvEgzDEem-TvHize3IKA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+  </elementImport>
+  <elementImport xmi:id="_zCGWIAzDEem-TvHize3IKA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+  </elementImport>
+  <elementImport xmi:id="_zCGWIQzDEem-TvHize3IKA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+  </elementImport>
+  <elementImport xmi:id="_zCGWIgzDEem-TvHize3IKA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_zCGWIwzDEem-TvHize3IKA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <elementImport xmi:id="_zCGWJAzDEem-TvHize3IKA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+  </elementImport>
+  <elementImport xmi:id="_zCGWJQzDEem-TvHize3IKA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_zCGWJgzDEem-TvHize3IKA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_zCGWJwzDEem-TvHize3IKA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_zCGWKAzDEem-TvHize3IKA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <packageImport xmi:id="_zB_BYAzDEem-TvHize3IKA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_zCBdoAzDEem-TvHize3IKA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_zCG9MAzDEem-TvHize3IKA" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_zCG9MQzDEem-TvHize3IKA" name="jp">
+      <packagedElement xmi:type="uml:Package" xmi:id="_zCHkQAzDEem-TvHize3IKA" name="insurance">
+        <packagedElement xmi:type="uml:Package" xmi:id="_zCHkQQzDEem-TvHize3IKA" name="entities">
+          <packagedElement xmi:type="uml:Class" xmi:id="_zCTKcAzDEem-TvHize3IKA" name="Query" visibility="public">
+            <elementImport xmi:id="_zCn6kwzDEem-TvHize3IKA" importedElement="_zCn6kgzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zCpIsAzDEem-TvHize3IKA" importedElement="_zCohogzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zCpvwQzDEem-TvHize3IKA" importedElement="_zCpvwAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zCqW0AzDEem-TvHize3IKA" importedElement="_zCpvwgzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zCq94QzDEem-TvHize3IKA" importedElement="_zCq94AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zCrk8QzDEem-TvHize3IKA" importedElement="_zCrk8AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zCsMAAzDEem-TvHize3IKA" importedElement="_zCrk8gzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zCsMAgzDEem-TvHize3IKA" importedElement="_zCsMAQzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zCvPUQzDEem-TvHize3IKA" importedElement="_zCvPUAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zCv2YQzDEem-TvHize3IKA" importedElement="_zCv2YAzDEem-TvHize3IKA" visibility="private"/>
+            <ownedAttribute xmi:id="_zC0u4QzDEem-TvHize3IKA" name="queryId" visibility="private" type="_zC0u4AzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zC19AAzDEem-TvHize3IKA" name="name" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zC2kEAzDEem-TvHize3IKA" name="emailId" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zC3LIAzDEem-TvHize3IKA" name="queryType" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zC3yMAzDEem-TvHize3IKA" name="queryDescription" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zC4ZQAzDEem-TvHize3IKA" name="queryResponse" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zC61gAzDEem-TvHize3IKA" name="creationDate" visibility="private" type="_zCn6kgzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zC7ckAzDEem-TvHize3IKA" name="assignedTo" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zC8DoAzDEem-TvHize3IKA" name="status" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_zDnZEAzDEem-TvHize3IKA" name="getQueryId" visibility="public">
+              <ownedParameter xmi:id="_zDoAIAzDEem-TvHize3IKA" type="_zC0u4AzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zD00cAzDEem-TvHize3IKA" name="setQueryId" visibility="public">
+              <ownedParameter xmi:id="_zD00cQzDEem-TvHize3IKA" name="queryId" type="_zC0u4AzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zD8wQAzDEem-TvHize3IKA" name="getName" visibility="public">
+              <ownedParameter xmi:id="_zD8wQQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zEF6MAzDEem-TvHize3IKA" name="setName" visibility="public">
+              <ownedParameter xmi:id="_zEF6MQzDEem-TvHize3IKA" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zENO8AzDEem-TvHize3IKA" name="getEmailId" visibility="public">
+              <ownedParameter xmi:id="_zENO8QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zEWY4AzDEem-TvHize3IKA" name="setEmailId" visibility="public">
+              <ownedParameter xmi:id="_zEWY4QzDEem-TvHize3IKA" name="emailId">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zEdGkAzDEem-TvHize3IKA" name="getQueryType" visibility="public">
+              <ownedParameter xmi:id="_zEdGkQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zElCYAzDEem-TvHize3IKA" name="setQueryType" visibility="public">
+              <ownedParameter xmi:id="_zElCYQzDEem-TvHize3IKA" name="queryType">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zErJAAzDEem-TvHize3IKA" name="getQueryDescription" visibility="public">
+              <ownedParameter xmi:id="_zErJAQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zEydwAzDEem-TvHize3IKA" name="setQueryDescription" visibility="public">
+              <ownedParameter xmi:id="_zEydwQzDEem-TvHize3IKA" name="queryDescription">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zE39UAzDEem-TvHize3IKA" name="getQueryResponse" visibility="public">
+              <ownedParameter xmi:id="_zE4kYAzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zE_5IAzDEem-TvHize3IKA" name="setQueryResponse" visibility="public">
+              <ownedParameter xmi:id="_zE_5IQzDEem-TvHize3IKA" name="queryResponse">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zFGm0AzDEem-TvHize3IKA" name="getCreationDate" visibility="public">
+              <ownedParameter xmi:id="_zFGm0QzDEem-TvHize3IKA" type="_zCn6kgzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zFUpQAzDEem-TvHize3IKA" name="setCreationDate" visibility="public">
+              <ownedParameter xmi:id="_zFUpQQzDEem-TvHize3IKA" name="creationDate" type="_zCn6kgzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zFbW8AzDEem-TvHize3IKA" name="getAssignedTo" visibility="public">
+              <ownedParameter xmi:id="_zFbW8QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zFiEoAzDEem-TvHize3IKA" name="setAssignedTo" visibility="public">
+              <ownedParameter xmi:id="_zFiEoQzDEem-TvHize3IKA" name="assignedTo">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zFqAcAzDEem-TvHize3IKA" name="getStatus" visibility="public">
+              <ownedParameter xmi:id="_zFqAcQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zFx8QAzDEem-TvHize3IKA" name="setStatus" visibility="public">
+              <ownedParameter xmi:id="_zFx8QQzDEem-TvHize3IKA" name="status">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zGIhkAzDEem-TvHize3IKA" name="toString" visibility="public">
+              <ownedParameter xmi:id="_zGIhkQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zCUYkAzDEem-TvHize3IKA" name="Customer" visibility="public">
+            <elementImport xmi:id="_zGML8AzDEem-TvHize3IKA" importedElement="_zCn6kgzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zGMzAAzDEem-TvHize3IKA" importedElement="_zCohogzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zGMzAQzDEem-TvHize3IKA" importedElement="_zCpvwAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zGNaEAzDEem-TvHize3IKA" importedElement="_zCpvwgzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zGNaEQzDEem-TvHize3IKA" importedElement="_zCq94AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zGNaEgzDEem-TvHize3IKA" importedElement="_zCrk8AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zGOBIAzDEem-TvHize3IKA" importedElement="_zCrk8gzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zGOBIQzDEem-TvHize3IKA" importedElement="_zCsMAQzDEem-TvHize3IKA" visibility="private"/>
+            <ownedAttribute xmi:id="_zGP2UAzDEem-TvHize3IKA" name="customerId" visibility="private" type="_zC0u4AzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zGQdYAzDEem-TvHize3IKA" name="firstName" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zGREcAzDEem-TvHize3IKA" name="lastName" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zGRrgAzDEem-TvHize3IKA" name="emailId" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zGSSkAzDEem-TvHize3IKA" name="mobileNo" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zGS5oAzDEem-TvHize3IKA" name="address1" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zGTgsAzDEem-TvHize3IKA" name="address2" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zGUHwAzDEem-TvHize3IKA" name="address3" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zGUu0AzDEem-TvHize3IKA" name="gender" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zGVV4AzDEem-TvHize3IKA" name="pincode" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zGV88AzDEem-TvHize3IKA" name="state" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zGXLEAzDEem-TvHize3IKA" name="city" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zGYZMAzDEem-TvHize3IKA" name="DOB" visibility="private" type="_zCn6kgzDEem-TvHize3IKA"/>
+            <ownedOperation xmi:id="_zGef0AzDEem-TvHize3IKA" name="getCustomerId" visibility="public">
+              <ownedParameter xmi:id="_zGef0QzDEem-TvHize3IKA" type="_zC0u4AzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zGmboAzDEem-TvHize3IKA" name="setCustomerId" visibility="public">
+              <ownedParameter xmi:id="_zGmboQzDEem-TvHize3IKA" name="customerId" type="_zC0u4AzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zGrUIAzDEem-TvHize3IKA" name="getFirstName" visibility="public">
+              <ownedParameter xmi:id="_zGrUIQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zGwzsAzDEem-TvHize3IKA" name="setFirstName" visibility="public">
+              <ownedParameter xmi:id="_zGwzsQzDEem-TvHize3IKA" name="firstName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zG0eEAzDEem-TvHize3IKA" name="getLastName" visibility="public">
+              <ownedParameter xmi:id="_zG1FIAzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zG6ksAzDEem-TvHize3IKA" name="setLastName" visibility="public">
+              <ownedParameter xmi:id="_zG6ksQzDEem-TvHize3IKA" name="lastName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zG-2IAzDEem-TvHize3IKA" name="getEmailId" visibility="public">
+              <ownedParameter xmi:id="_zG-2IQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zHEVsAzDEem-TvHize3IKA" name="setEmailId" visibility="public">
+              <ownedParameter xmi:id="_zHEVsQzDEem-TvHize3IKA" name="emailId">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zHIAEAzDEem-TvHize3IKA" name="getMobileNo" visibility="public">
+              <ownedParameter xmi:id="_zHIAEQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zHNfoAzDEem-TvHize3IKA" name="setMobileNo" visibility="public">
+              <ownedParameter xmi:id="_zHNfoQzDEem-TvHize3IKA" name="mobileNo">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zHRxEAzDEem-TvHize3IKA" name="getAddress1" visibility="public">
+              <ownedParameter xmi:id="_zHRxEQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zHXQoAzDEem-TvHize3IKA" name="setAddress1" visibility="public">
+              <ownedParameter xmi:id="_zHXQoQzDEem-TvHize3IKA" name="address1">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zHbiEAzDEem-TvHize3IKA" name="getAddress2" visibility="public">
+              <ownedParameter xmi:id="_zHbiEQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zHgakAzDEem-TvHize3IKA" name="setAddress2" visibility="public">
+              <ownedParameter xmi:id="_zHgakQzDEem-TvHize3IKA" name="address2">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zHkE8AzDEem-TvHize3IKA" name="getAddress3" visibility="public">
+              <ownedParameter xmi:id="_zHkE8QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zHpkgAzDEem-TvHize3IKA" name="setAddress3" visibility="public">
+              <ownedParameter xmi:id="_zHpkgQzDEem-TvHize3IKA" name="address3">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zHtO4AzDEem-TvHize3IKA" name="getGender" visibility="public">
+              <ownedParameter xmi:id="_zHtO4QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zHyHYAzDEem-TvHize3IKA" name="setGender" visibility="public">
+              <ownedParameter xmi:id="_zHyHYQzDEem-TvHize3IKA" name="gender">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zH2_4AzDEem-TvHize3IKA" name="getPincode" visibility="public">
+              <ownedParameter xmi:id="_zH2_4QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zH74YAzDEem-TvHize3IKA" name="setPincode" visibility="public">
+              <ownedParameter xmi:id="_zH74YQzDEem-TvHize3IKA" name="pincode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zIAw4AzDEem-TvHize3IKA" name="getState" visibility="public">
+              <ownedParameter xmi:id="_zIAw4QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zIGQcAzDEem-TvHize3IKA" name="setState" visibility="public">
+              <ownedParameter xmi:id="_zIGQcQzDEem-TvHize3IKA" name="state">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zIJ60AzDEem-TvHize3IKA" name="getCity" visibility="public">
+              <ownedParameter xmi:id="_zIJ60QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zIPaYAzDEem-TvHize3IKA" name="setCity" visibility="public">
+              <ownedParameter xmi:id="_zIPaYQzDEem-TvHize3IKA" name="city">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zIUS4AzDEem-TvHize3IKA" name="getDOB" visibility="public">
+              <ownedParameter xmi:id="_zIUS4QzDEem-TvHize3IKA" type="_zCn6kgzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zIeD4AzDEem-TvHize3IKA" name="setDOB" visibility="public">
+              <ownedParameter xmi:id="_zIeD4QzDEem-TvHize3IKA" name="dOB" type="_zCn6kgzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zIkKgAzDEem-TvHize3IKA" name="toString" visibility="public">
+              <ownedParameter xmi:id="_zIkKgQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zCUYkQzDEem-TvHize3IKA" name="Role" visibility="public">
+            <elementImport xmi:id="_zInN0AzDEem-TvHize3IKA" importedElement="_zCohogzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zInN0QzDEem-TvHize3IKA" importedElement="_zCpvwAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zIn04AzDEem-TvHize3IKA" importedElement="_zCrk8AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zIn04QzDEem-TvHize3IKA" importedElement="_zCsMAQzDEem-TvHize3IKA" visibility="private"/>
+            <ownedAttribute xmi:id="_zIob8AzDEem-TvHize3IKA" name="roleId" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zIpDAAzDEem-TvHize3IKA" name="name" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zIpDAQzDEem-TvHize3IKA" name="description" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_zIt7gAzDEem-TvHize3IKA" name="getRoleId" visibility="public">
+              <ownedParameter xmi:id="_zIt7gQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zIyM8AzDEem-TvHize3IKA" name="setRoleId" visibility="public">
+              <ownedParameter xmi:id="_zIyM8QzDEem-TvHize3IKA" name="roleId">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zI3FcAzDEem-TvHize3IKA" name="getName" visibility="public">
+              <ownedParameter xmi:id="_zI3FcQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zI798AzDEem-TvHize3IKA" name="setName" visibility="public">
+              <ownedParameter xmi:id="_zI798QzDEem-TvHize3IKA" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zI_BQAzDEem-TvHize3IKA" name="getDescription" visibility="public">
+              <ownedParameter xmi:id="_zI_BQQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zJD5wAzDEem-TvHize3IKA" name="setDescription" visibility="public">
+              <ownedParameter xmi:id="_zJD5wQzDEem-TvHize3IKA" name="description">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zJG9EAzDEem-TvHize3IKA" name="toString" visibility="public">
+              <ownedParameter xmi:id="_zJG9EQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zCVmsAzDEem-TvHize3IKA" name="User" visibility="public">
+            <elementImport xmi:id="_zJKAYAzDEem-TvHize3IKA" importedElement="_zCn6kgzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zJKAYQzDEem-TvHize3IKA" importedElement="_zCohogzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zJKncAzDEem-TvHize3IKA" importedElement="_zCpvwAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zJKncQzDEem-TvHize3IKA" importedElement="_zCrk8AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zJKncgzDEem-TvHize3IKA" importedElement="_zCsMAQzDEem-TvHize3IKA" visibility="private"/>
+            <ownedAttribute xmi:id="_zJL1kAzDEem-TvHize3IKA" name="userId" visibility="private" type="_zC0u4AzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zJNDsAzDEem-TvHize3IKA" name="username" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zJNqwAzDEem-TvHize3IKA" name="password" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zJNqwQzDEem-TvHize3IKA" name="roleId" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zJOR0AzDEem-TvHize3IKA" name="questionId" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zJO44AzDEem-TvHize3IKA" name="securityAnswer" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zJPf8AzDEem-TvHize3IKA" name="failedLoginAttempt" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zJPf8QzDEem-TvHize3IKA" name="accountLocked" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zJRVIAzDEem-TvHize3IKA" name="creationDate" visibility="private" type="_zCn6kgzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zJSjQAzDEem-TvHize3IKA" name="lastModifiedDate" visibility="private" type="_zCn6kgzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zJTxYAzDEem-TvHize3IKA" name="lastSuccessfulLoginDate" visibility="private" type="_zCn6kgzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zJUYcAzDEem-TvHize3IKA" name="modifiedBy" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_zJXbwAzDEem-TvHize3IKA" name="getUserId" visibility="public">
+              <ownedParameter xmi:id="_zJXbwQzDEem-TvHize3IKA" type="_zC0u4AzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zJeJcAzDEem-TvHize3IKA" name="setUserId" visibility="public">
+              <ownedParameter xmi:id="_zJeJcQzDEem-TvHize3IKA" name="userId" type="_zC0u4AzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zJhz0AzDEem-TvHize3IKA" name="getUsername" visibility="public">
+              <ownedParameter xmi:id="_zJhz0QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zJmFQAzDEem-TvHize3IKA" name="setUsername" visibility="public">
+              <ownedParameter xmi:id="_zJmFQQzDEem-TvHize3IKA" name="username">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zJpvoAzDEem-TvHize3IKA" name="getPassword" visibility="public">
+              <ownedParameter xmi:id="_zJpvoQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zJuoIAzDEem-TvHize3IKA" name="setPassword" visibility="public">
+              <ownedParameter xmi:id="_zJvPMAzDEem-TvHize3IKA" name="password">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zJy5kAzDEem-TvHize3IKA" name="getRoleId" visibility="public">
+              <ownedParameter xmi:id="_zJy5kQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zJ6OUAzDEem-TvHize3IKA" name="setRoleId" visibility="public">
+              <ownedParameter xmi:id="_zJ6OUQzDEem-TvHize3IKA" name="roleId">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zJ94sAzDEem-TvHize3IKA" name="getQuestionId" visibility="public">
+              <ownedParameter xmi:id="_zJ-fwAzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zKDYQAzDEem-TvHize3IKA" name="setQuestionId" visibility="public">
+              <ownedParameter xmi:id="_zKDYQQzDEem-TvHize3IKA" name="questionId">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zKHCoAzDEem-TvHize3IKA" name="getSecurityAnswer" visibility="public">
+              <ownedParameter xmi:id="_zKHCoQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zKO-cAzDEem-TvHize3IKA" name="setSecurityAnswer" visibility="public">
+              <ownedParameter xmi:id="_zKO-cQzDEem-TvHize3IKA" name="securityAnswer">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zKSo0AzDEem-TvHize3IKA" name="getFailedLoginAttempt" visibility="public">
+              <ownedParameter xmi:id="_zKSo0QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zKW6QAzDEem-TvHize3IKA" name="setFailedLoginAttempt" visibility="public">
+              <ownedParameter xmi:id="_zKW6QQzDEem-TvHize3IKA" name="failedLoginAttempt">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zKZ9kAzDEem-TvHize3IKA" name="getAccountLocked" visibility="public">
+              <ownedParameter xmi:id="_zKZ9kQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zKePAAzDEem-TvHize3IKA" name="setAccountLocked" visibility="public">
+              <ownedParameter xmi:id="_zKePAQzDEem-TvHize3IKA" name="accountLocked">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zKigcAzDEem-TvHize3IKA" name="getCreationDate" visibility="public">
+              <ownedParameter xmi:id="_zKigcQzDEem-TvHize3IKA" type="_zCn6kgzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zKoAAAzDEem-TvHize3IKA" name="setCreationDate" visibility="public">
+              <ownedParameter xmi:id="_zKoAAQzDEem-TvHize3IKA" name="creationDate" type="_zCn6kgzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zKsRcAzDEem-TvHize3IKA" name="getLastModifiedDate" visibility="public">
+              <ownedParameter xmi:id="_zKsRcQzDEem-TvHize3IKA" type="_zCn6kgzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zKxxAAzDEem-TvHize3IKA" name="setLastModifiedDate" visibility="public">
+              <ownedParameter xmi:id="_zKxxAQzDEem-TvHize3IKA" name="lastModifiedDate" type="_zCn6kgzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zK2CcAzDEem-TvHize3IKA" name="getLastSuccessfulLoginDate" visibility="public">
+              <ownedParameter xmi:id="_zK2CcQzDEem-TvHize3IKA" type="_zCn6kgzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zLI9YAzDEem-TvHize3IKA" name="setLastSuccessfulLoginDate" visibility="public">
+              <ownedParameter xmi:id="_zLI9YQzDEem-TvHize3IKA" name="lastSuccessfulLoginDate" type="_zCn6kgzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zLMnwAzDEem-TvHize3IKA" name="getModifiedBy" visibility="public">
+              <ownedParameter xmi:id="_zLMnwQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zLRgQAzDEem-TvHize3IKA" name="setModifiedBy" visibility="public">
+              <ownedParameter xmi:id="_zLRgQQzDEem-TvHize3IKA" name="modifiedBy">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zLT8gAzDEem-TvHize3IKA" name="toString" visibility="public">
+              <ownedParameter xmi:id="_zLT8gQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zCWNwAzDEem-TvHize3IKA" name="CustomerVehicle" visibility="public">
+            <elementImport xmi:id="_zLWYwAzDEem-TvHize3IKA" importedElement="_zCn6kgzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zLWYwQzDEem-TvHize3IKA" importedElement="_zCohogzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zLWYwgzDEem-TvHize3IKA" importedElement="_zCpvwAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zLWYwwzDEem-TvHize3IKA" importedElement="_zCpvwgzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zLWYxAzDEem-TvHize3IKA" importedElement="_zCq94AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zLWYxQzDEem-TvHize3IKA" importedElement="_zCrk8AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zLW_0AzDEem-TvHize3IKA" importedElement="_zCrk8gzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zLW_0QzDEem-TvHize3IKA" importedElement="_zCsMAQzDEem-TvHize3IKA" visibility="private"/>
+            <ownedAttribute xmi:id="_zLYN8AzDEem-TvHize3IKA" name="vehicleId" visibility="private" type="_zC0u4AzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zLZcEAzDEem-TvHize3IKA" name="customerId" visibility="private" type="_zC0u4AzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zLaDIAzDEem-TvHize3IKA" name="VehicleRegNo" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zLaDIQzDEem-TvHize3IKA" name="make" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zLaqMAzDEem-TvHize3IKA" name="model" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zLaqMQzDEem-TvHize3IKA" name="subModel" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zLbRQAzDEem-TvHize3IKA" name="engineNo" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zLb4UAzDEem-TvHize3IKA" name="chasisNo" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zLb4UQzDEem-TvHize3IKA" name="cc" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zLcfYAzDEem-TvHize3IKA" name="fuelType" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zLdGcAzDEem-TvHize3IKA" name="manufacturingYear" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zLeUkAzDEem-TvHize3IKA" name="registrationDate" visibility="private" type="_zCn6kgzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zLe7oAzDEem-TvHize3IKA" name="vehicleRegCity" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_zLhX4AzDEem-TvHize3IKA" name="getVehicleId" visibility="public">
+              <ownedParameter xmi:id="_zLhX4QzDEem-TvHize3IKA" type="_zC0u4AzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zLnegAzDEem-TvHize3IKA" name="setVehicleId" visibility="public">
+              <ownedParameter xmi:id="_zLnegQzDEem-TvHize3IKA" name="vehicleId" type="_zC0u4AzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zLrv8AzDEem-TvHize3IKA" name="getCustomerId" visibility="public">
+              <ownedParameter xmi:id="_zLrv8QzDEem-TvHize3IKA" type="_zC0u4AzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zLx2kAzDEem-TvHize3IKA" name="setCustomerId" visibility="public">
+              <ownedParameter xmi:id="_zLx2kQzDEem-TvHize3IKA" name="customerId" type="_zC0u4AzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zL054AzDEem-TvHize3IKA" name="getVehicleRegNo" visibility="public">
+              <ownedParameter xmi:id="_zL054QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zL5yYAzDEem-TvHize3IKA" name="setVehicleRegNo" visibility="public">
+              <ownedParameter xmi:id="_zL5yYQzDEem-TvHize3IKA" name="vehicleRegNo">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zL81sAzDEem-TvHize3IKA" name="getMake" visibility="public">
+              <ownedParameter xmi:id="_zL81sQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zL_5AAzDEem-TvHize3IKA" name="setMake" visibility="public">
+              <ownedParameter xmi:id="_zMAgEAzDEem-TvHize3IKA" name="make">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zMDjYAzDEem-TvHize3IKA" name="getModel" visibility="public">
+              <ownedParameter xmi:id="_zMDjYQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zMH00AzDEem-TvHize3IKA" name="setModel" visibility="public">
+              <ownedParameter xmi:id="_zMH00QzDEem-TvHize3IKA" name="model">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zMLfMAzDEem-TvHize3IKA" name="getSubModel" visibility="public">
+              <ownedParameter xmi:id="_zMLfMQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zMPwoAzDEem-TvHize3IKA" name="setSubModel" visibility="public">
+              <ownedParameter xmi:id="_zMPwoQzDEem-TvHize3IKA" name="subModel">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zMTbAAzDEem-TvHize3IKA" name="getEngineNo" visibility="public">
+              <ownedParameter xmi:id="_zMTbAQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zMaIsAzDEem-TvHize3IKA" name="setEngineNo" visibility="public">
+              <ownedParameter xmi:id="_zMaIsQzDEem-TvHize3IKA" name="engineNo">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zMdzEAzDEem-TvHize3IKA" name="getChasisNo" visibility="public">
+              <ownedParameter xmi:id="_zMdzEQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zMirkAzDEem-TvHize3IKA" name="setChasisNo" visibility="public">
+              <ownedParameter xmi:id="_zMirkQzDEem-TvHize3IKA" name="chasisNo">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zMm9AAzDEem-TvHize3IKA" name="getCc" visibility="public">
+              <ownedParameter xmi:id="_zMm9AQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zMr1gAzDEem-TvHize3IKA" name="setCc" visibility="public">
+              <ownedParameter xmi:id="_zMr1gQzDEem-TvHize3IKA" name="cc">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zMvf4AzDEem-TvHize3IKA" name="getFuelType" visibility="public">
+              <ownedParameter xmi:id="_zMvf4QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zM0YYAzDEem-TvHize3IKA" name="setFuelType" visibility="public">
+              <ownedParameter xmi:id="_zM0YYQzDEem-TvHize3IKA" name="fuelType">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zM5Q4AzDEem-TvHize3IKA" name="getManufacturingYear" visibility="public">
+              <ownedParameter xmi:id="_zM5Q4QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zM9iUAzDEem-TvHize3IKA" name="setManufacturingYear" visibility="public">
+              <ownedParameter xmi:id="_zM9iUQzDEem-TvHize3IKA" name="manufacturingYear">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zNBMsAzDEem-TvHize3IKA" name="getRegistrationDate" visibility="public">
+              <ownedParameter xmi:id="_zNBMsQzDEem-TvHize3IKA" type="_zCn6kgzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zNHTUAzDEem-TvHize3IKA" name="setRegistrationDate" visibility="public">
+              <ownedParameter xmi:id="_zNHTUQzDEem-TvHize3IKA" name="registrationDate" type="_zCn6kgzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zNKWoAzDEem-TvHize3IKA" name="getVehicleRegCity" visibility="public">
+              <ownedParameter xmi:id="_zNKWoQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zNPPIAzDEem-TvHize3IKA" name="setVehicleRegCity" visibility="public">
+              <ownedParameter xmi:id="_zNPPIQzDEem-TvHize3IKA" name="vehicleRegCity">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zNS5gAzDEem-TvHize3IKA" name="toString" visibility="public">
+              <ownedParameter xmi:id="_zNS5gQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zCXb4AzDEem-TvHize3IKA" name="Policy" visibility="public">
+            <elementImport xmi:id="_zNVVwAzDEem-TvHize3IKA" importedElement="_zCn6kgzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zNVVwQzDEem-TvHize3IKA" importedElement="_zCohogzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zNVVwgzDEem-TvHize3IKA" importedElement="_zCpvwAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zNVVwwzDEem-TvHize3IKA" importedElement="_zCpvwgzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zNV80AzDEem-TvHize3IKA" importedElement="_zCq94AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zNV80QzDEem-TvHize3IKA" importedElement="_zCrk8AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zNV80gzDEem-TvHize3IKA" importedElement="_zCrk8gzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zNV80wzDEem-TvHize3IKA" importedElement="_zCsMAQzDEem-TvHize3IKA" visibility="private"/>
+            <ownedAttribute xmi:id="_zNXK8AzDEem-TvHize3IKA" name="policyId" visibility="private" type="_zC0u4AzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zNYZEAzDEem-TvHize3IKA" name="customerId" visibility="private" type="_zC0u4AzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zNZnMAzDEem-TvHize3IKA" name="vehicleId" visibility="private" type="_zC0u4AzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zNaOQAzDEem-TvHize3IKA" name="policyStartDate" visibility="private" type="_zCn6kgzDEem-TvHize3IKA">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_zN0d8AzDEem-TvHize3IKA" name="" type="_zCn6kgzDEem-TvHize3IKA" value="LocalDateAttributeConverter.class)&#xD;&#xA;&#x9;private Date policyStartDate"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zN1sEAzDEem-TvHize3IKA" name="policyEndDate" visibility="private" type="_zCn6kgzDEem-TvHize3IKA">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_zN1sEQzDEem-TvHize3IKA" name="" type="_zCn6kgzDEem-TvHize3IKA" value="LocalDateAttributeConverter.class)&#xD;&#xA;&#x9;private Date policyEndDate"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_zN4IUAzDEem-TvHize3IKA" name="getPolicyId" visibility="public">
+              <ownedParameter xmi:id="_zN4IUQzDEem-TvHize3IKA" type="_zC0u4AzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zN9n4AzDEem-TvHize3IKA" name="setPolicyId" visibility="public">
+              <ownedParameter xmi:id="_zN9n4QzDEem-TvHize3IKA" name="policyId" type="_zC0u4AzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zOBSQAzDEem-TvHize3IKA" name="getCustomerId" visibility="public">
+              <ownedParameter xmi:id="_zOBSQQzDEem-TvHize3IKA" type="_zC0u4AzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zOGx0AzDEem-TvHize3IKA" name="setCustomerId" visibility="public">
+              <ownedParameter xmi:id="_zOGx0QzDEem-TvHize3IKA" name="customerId" type="_zC0u4AzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zOKcMAzDEem-TvHize3IKA" name="getVehicleId" visibility="public">
+              <ownedParameter xmi:id="_zOKcMQzDEem-TvHize3IKA" type="_zC0u4AzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zOQi0AzDEem-TvHize3IKA" name="setVehicleId" visibility="public">
+              <ownedParameter xmi:id="_zOQi0QzDEem-TvHize3IKA" name="vehicleId" type="_zC0u4AzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zOUNMAzDEem-TvHize3IKA" name="getPolicyStartDate" visibility="public">
+              <ownedParameter xmi:id="_zOU0QAzDEem-TvHize3IKA" type="_zCn6kgzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zOaT0AzDEem-TvHize3IKA" name="setPolicyStartDate" visibility="public">
+              <ownedParameter xmi:id="_zOaT0QzDEem-TvHize3IKA" name="policyStartDate" type="_zCn6kgzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zOd-MAzDEem-TvHize3IKA" name="getPolicyEndDate" visibility="public">
+              <ownedParameter xmi:id="_zOd-MQzDEem-TvHize3IKA" type="_zCn6kgzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zOjdwAzDEem-TvHize3IKA" name="setPolicyEndDate" visibility="public">
+              <ownedParameter xmi:id="_zOjdwQzDEem-TvHize3IKA" name="policyEndDate" type="_zCn6kgzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zOmhEAzDEem-TvHize3IKA" name="toString" visibility="public">
+              <ownedParameter xmi:id="_zOmhEQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zCYC8AzDEem-TvHize3IKA" name="Cities" visibility="public">
+            <elementImport xmi:id="_zOpkYAzDEem-TvHize3IKA" importedElement="_zCohogzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zOpkYQzDEem-TvHize3IKA" importedElement="_zCpvwAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zOpkYgzDEem-TvHize3IKA" importedElement="_zCrk8AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zOpkZAzDEem-TvHize3IKA" importedElement="_zOpkYwzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zOqLcQzDEem-TvHize3IKA" importedElement="_zOqLcAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zOqLcgzDEem-TvHize3IKA" importedElement="_zCsMAQzDEem-TvHize3IKA" visibility="private"/>
+            <ownedAttribute xmi:id="_zOqygAzDEem-TvHize3IKA" name="id" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zOqygQzDEem-TvHize3IKA" name="name" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zOsnsAzDEem-TvHize3IKA" name="state" visibility="private" type="_zCYC8QzDEem-TvHize3IKA" association="_zR8wAAzDEem-TvHize3IKA"/>
+            <ownedOperation xmi:id="_zOwSEAzDEem-TvHize3IKA" name="getId" visibility="public">
+              <ownedParameter xmi:id="_zOwSEQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zO1KkAzDEem-TvHize3IKA" name="setId" visibility="public">
+              <ownedParameter xmi:id="_zO1KkQzDEem-TvHize3IKA" name="id">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zO7RMAzDEem-TvHize3IKA" name="getName" visibility="public">
+              <ownedParameter xmi:id="_zO7RMQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zPD0EAzDEem-TvHize3IKA" name="setName" visibility="public">
+              <ownedParameter xmi:id="_zPD0EQzDEem-TvHize3IKA" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zPIskAzDEem-TvHize3IKA" name="getState" visibility="public">
+              <ownedParameter xmi:id="_zPIskQzDEem-TvHize3IKA" type="_zCYC8QzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zPOzMAzDEem-TvHize3IKA" name="setState" visibility="public">
+              <ownedParameter xmi:id="_zPOzMQzDEem-TvHize3IKA" name="state" type="_zCYC8QzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zPTEoAzDEem-TvHize3IKA" name="toString" visibility="public">
+              <ownedParameter xmi:id="_zPTEoQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zCYC8QzDEem-TvHize3IKA" name="States" visibility="public">
+            <elementImport xmi:id="_zPWvAQzDEem-TvHize3IKA" importedElement="_zPWvAAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zPWvAgzDEem-TvHize3IKA" importedElement="_zCohogzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zPXWEAzDEem-TvHize3IKA" importedElement="_zCpvwAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zPXWEgzDEem-TvHize3IKA" importedElement="_zPXWEQzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zPXWEwzDEem-TvHize3IKA" importedElement="_zCrk8AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zPX9IAzDEem-TvHize3IKA" importedElement="_zPXWFAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zPX9IQzDEem-TvHize3IKA" importedElement="_zCsMAQzDEem-TvHize3IKA" visibility="private"/>
+            <ownedAttribute xmi:id="_zPX9IgzDEem-TvHize3IKA" name="id" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zPYkMAzDEem-TvHize3IKA" name="name" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zPaZYAzDEem-TvHize3IKA" name="cityList" type="_zCYC8AzDEem-TvHize3IKA" isOrdered="true" isUnique="false" association="_zR8wAAzDEem-TvHize3IKA">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zPbAcAzDEem-TvHize3IKA" value="*"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_zPdcsAzDEem-TvHize3IKA" name="getId" visibility="public">
+              <ownedParameter xmi:id="_zPdcsQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zPiVMAzDEem-TvHize3IKA" name="setId" visibility="public">
+              <ownedParameter xmi:id="_zPiVMQzDEem-TvHize3IKA" name="id">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zPl_kAzDEem-TvHize3IKA" name="getName" visibility="public">
+              <ownedParameter xmi:id="_zPl_kQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zPrfIAzDEem-TvHize3IKA" name="setName" visibility="public">
+              <ownedParameter xmi:id="_zPrfIQzDEem-TvHize3IKA" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zP1QIAzDEem-TvHize3IKA" name="getCityList" visibility="public">
+              <ownedParameter xmi:id="_zP1QIQzDEem-TvHize3IKA" type="_zPWvAAzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zP7WwAzDEem-TvHize3IKA" name="setCityList" visibility="public">
+              <ownedParameter xmi:id="_zP7WwQzDEem-TvHize3IKA" name="cityList" type="_zPWvAAzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zP_BIAzDEem-TvHize3IKA" name="toString" visibility="public">
+              <ownedParameter xmi:id="_zP_BIQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zCYqAAzDEem-TvHize3IKA" name="VehicleMaster" visibility="public">
+            <elementImport xmi:id="_zQCEcAzDEem-TvHize3IKA" importedElement="_zCohogzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zQCEcQzDEem-TvHize3IKA" importedElement="_zCpvwAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zQCEcgzDEem-TvHize3IKA" importedElement="_zCrk8AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zQCEcwzDEem-TvHize3IKA" importedElement="_zCsMAQzDEem-TvHize3IKA" visibility="private"/>
+            <ownedAttribute xmi:id="_zQDSkAzDEem-TvHize3IKA" name="vehicleId" visibility="private" type="_zC0u4AzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zQDSkQzDEem-TvHize3IKA" name="make" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zQD5oAzDEem-TvHize3IKA" name="model" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zQD5oQzDEem-TvHize3IKA" name="submodel" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zQEgsAzDEem-TvHize3IKA" name="cc" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zQGV4QzDEem-TvHize3IKA" name="price" visibility="private" type="_zQGV4AzDEem-TvHize3IKA"/>
+            <ownedOperation xmi:id="_zQIyIAzDEem-TvHize3IKA" name="getVehicleId" visibility="public">
+              <ownedParameter xmi:id="_zQIyIQzDEem-TvHize3IKA" type="_zC0u4AzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQNDkAzDEem-TvHize3IKA" name="setVehicleId" visibility="public">
+              <ownedParameter xmi:id="_zQNDkQzDEem-TvHize3IKA" name="vehicleId" type="_zC0u4AzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQPf0AzDEem-TvHize3IKA" name="getMake" visibility="public">
+              <ownedParameter xmi:id="_zQPf0QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQTKMAzDEem-TvHize3IKA" name="setMake" visibility="public">
+              <ownedParameter xmi:id="_zQTKMQzDEem-TvHize3IKA" name="make">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQVmcAzDEem-TvHize3IKA" name="getModel" visibility="public">
+              <ownedParameter xmi:id="_zQVmcQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQYpwAzDEem-TvHize3IKA" name="setModel" visibility="public">
+              <ownedParameter xmi:id="_zQYpwQzDEem-TvHize3IKA" name="model">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQbGAAzDEem-TvHize3IKA" name="getSubmodel" visibility="public">
+              <ownedParameter xmi:id="_zQbGAQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQewYAzDEem-TvHize3IKA" name="setSubmodel" visibility="public">
+              <ownedParameter xmi:id="_zQewYQzDEem-TvHize3IKA" name="submodel">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQhMoAzDEem-TvHize3IKA" name="getCc" visibility="public">
+              <ownedParameter xmi:id="_zQhMoQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQkP8AzDEem-TvHize3IKA" name="setCc" visibility="public">
+              <ownedParameter xmi:id="_zQkP8QzDEem-TvHize3IKA" name="cc">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQn6UAzDEem-TvHize3IKA" name="getPrice" visibility="public">
+              <ownedParameter xmi:id="_zQn6UQzDEem-TvHize3IKA" type="_zQGV4AzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQsLwAzDEem-TvHize3IKA" name="setPrice" visibility="public">
+              <ownedParameter xmi:id="_zQsLwQzDEem-TvHize3IKA" name="price" type="_zQGV4AzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQuoAAzDEem-TvHize3IKA" name="toString" visibility="public">
+              <ownedParameter xmi:id="_zQuoAQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zCZREAzDEem-TvHize3IKA" name="SecurityQuestion" visibility="public">
+            <elementImport xmi:id="_zQwdMAzDEem-TvHize3IKA" importedElement="_zCohogzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zQwdMQzDEem-TvHize3IKA" importedElement="_zCpvwAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zQxEQAzDEem-TvHize3IKA" importedElement="_zCrk8AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zQxEQQzDEem-TvHize3IKA" importedElement="_zCsMAQzDEem-TvHize3IKA" visibility="private"/>
+            <ownedAttribute xmi:id="_zQxEQgzDEem-TvHize3IKA" name="questionId" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zQxrUAzDEem-TvHize3IKA" name="question" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_zQy5cAzDEem-TvHize3IKA" name="getQuestionId" visibility="public">
+              <ownedParameter xmi:id="_zQy5cQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQ18wAzDEem-TvHize3IKA" name="setQuestionId" visibility="public">
+              <ownedParameter xmi:id="_zQ18wQzDEem-TvHize3IKA" name="questionId">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQ4ZAAzDEem-TvHize3IKA" name="getQuestion" visibility="public">
+              <ownedParameter xmi:id="_zQ4ZAQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQ7cUAzDEem-TvHize3IKA" name="setQuestion" visibility="public">
+              <ownedParameter xmi:id="_zQ7cUQzDEem-TvHize3IKA" name="question">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zQ9RgAzDEem-TvHize3IKA" name="toString" visibility="public">
+              <ownedParameter xmi:id="_zQ9RgQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zCZ4IAzDEem-TvHize3IKA" name="Payment" visibility="public">
+            <elementImport xmi:id="_zQ_GsAzDEem-TvHize3IKA" importedElement="_zCn6kgzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zQ_GsQzDEem-TvHize3IKA" importedElement="_zCohogzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zQ_twAzDEem-TvHize3IKA" importedElement="_zCpvwAzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zQ_twQzDEem-TvHize3IKA" importedElement="_zCpvwgzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zQ_twgzDEem-TvHize3IKA" importedElement="_zCq94AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zQ_twwzDEem-TvHize3IKA" importedElement="_zCrk8AzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zQ_txAzDEem-TvHize3IKA" importedElement="_zCrk8gzDEem-TvHize3IKA" visibility="private"/>
+            <elementImport xmi:id="_zQ_txQzDEem-TvHize3IKA" importedElement="_zCsMAQzDEem-TvHize3IKA" visibility="private"/>
+            <ownedAttribute xmi:id="_zRA74AzDEem-TvHize3IKA" name="paymentId" visibility="private" type="_zC0u4AzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zRCKAAzDEem-TvHize3IKA" name="policyId" visibility="private" type="_zC0u4AzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zRCKAQzDEem-TvHize3IKA" name="nameOnCard" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zRCxEAzDEem-TvHize3IKA" name="cardNo" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zRCxEQzDEem-TvHize3IKA" name="cardExpirtDate" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zRD_MAzDEem-TvHize3IKA" name="policyAmount" visibility="private" type="_zQGV4AzDEem-TvHize3IKA"/>
+            <ownedAttribute xmi:id="_zRFNUAzDEem-TvHize3IKA" name="paymentDate" visibility="private" type="_zCn6kgzDEem-TvHize3IKA"/>
+            <ownedOperation xmi:id="_zRHpkAzDEem-TvHize3IKA" name="getPaymentId" visibility="public">
+              <ownedParameter xmi:id="_zRHpkQzDEem-TvHize3IKA" type="_zC0u4AzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zRNJIAzDEem-TvHize3IKA" name="setPaymentId" visibility="public">
+              <ownedParameter xmi:id="_zRNJIQzDEem-TvHize3IKA" name="paymentId" type="_zC0u4AzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zRQMcAzDEem-TvHize3IKA" name="getPolicyId" visibility="public">
+              <ownedParameter xmi:id="_zRQMcQzDEem-TvHize3IKA" type="_zC0u4AzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zRUd4AzDEem-TvHize3IKA" name="setPolicyId" visibility="public">
+              <ownedParameter xmi:id="_zRUd4QzDEem-TvHize3IKA" name="policyId" type="_zC0u4AzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zRW6IAzDEem-TvHize3IKA" name="getNameOnCard" visibility="public">
+              <ownedParameter xmi:id="_zRW6IQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zRZWYAzDEem-TvHize3IKA" name="setNameOnCard" visibility="public">
+              <ownedParameter xmi:id="_zRZWYQzDEem-TvHize3IKA" name="nameOnCard">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zRbyoAzDEem-TvHize3IKA" name="getCardNo" visibility="public">
+              <ownedParameter xmi:id="_zRbyoQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zReO4AzDEem-TvHize3IKA" name="setCardNo" visibility="public">
+              <ownedParameter xmi:id="_zReO4QzDEem-TvHize3IKA" name="cardNo">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zRgrIAzDEem-TvHize3IKA" name="getCardExpirtDate" visibility="public">
+              <ownedParameter xmi:id="_zRgrIQzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zRjucAzDEem-TvHize3IKA" name="setCardExpirtDate" visibility="public">
+              <ownedParameter xmi:id="_zRjucQzDEem-TvHize3IKA" name="cardExpirtDate">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zRnY0AzDEem-TvHize3IKA" name="getPolicyAmount" visibility="public">
+              <ownedParameter xmi:id="_zRnY0QzDEem-TvHize3IKA" type="_zQGV4AzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zRrDMAzDEem-TvHize3IKA" name="setPolicyAmount" visibility="public">
+              <ownedParameter xmi:id="_zRrDMQzDEem-TvHize3IKA" name="policyAmount" type="_zQGV4AzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zRtfcAzDEem-TvHize3IKA" name="getPaymentDate" visibility="public">
+              <ownedParameter xmi:id="_zRtfcQzDEem-TvHize3IKA" type="_zCn6kgzDEem-TvHize3IKA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zR33gAzDEem-TvHize3IKA" name="setPaymentDate" visibility="public">
+              <ownedParameter xmi:id="_zR33gQzDEem-TvHize3IKA" name="paymentDate" type="_zCn6kgzDEem-TvHize3IKA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_zR660AzDEem-TvHize3IKA" name="toString" visibility="public">
+              <ownedParameter xmi:id="_zR660QzDEem-TvHize3IKA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_zR8wAAzDEem-TvHize3IKA" name="state_cityList" memberEnd="_zOsnsAzDEem-TvHize3IKA _zPaZYAzDEem-TvHize3IKA"/>
+          <packagedElement xmi:type="uml:Usage" xmi:id="_zR-lMAzDEem-TvHize3IKA" name="entities_util" client="_zCHkQQzDEem-TvHize3IKA" supplier="_zCn6kQzDEem-TvHize3IKA"/>
+          <packagedElement xmi:type="uml:Usage" xmi:id="_zR_MQAzDEem-TvHize3IKA" name="entities_persistence" client="_zCHkQQzDEem-TvHize3IKA" supplier="_zCohoQzDEem-TvHize3IKA"/>
+          <packagedElement xmi:type="uml:Usage" xmi:id="_zR_MQQzDEem-TvHize3IKA" name="entities_constraints" client="_zCHkQQzDEem-TvHize3IKA" supplier="_zCszEQzDEem-TvHize3IKA"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_zCn6kAzDEem-TvHize3IKA" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_zCn6kQzDEem-TvHize3IKA" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zCn6kgzDEem-TvHize3IKA" name="Date"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zPWvAAzDEem-TvHize3IKA" name="List"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_zC0H0AzDEem-TvHize3IKA" name="lang">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zC0u4AzDEem-TvHize3IKA" name="Long"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zQGV4AzDEem-TvHize3IKA" name="Float"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_zCohoAzDEem-TvHize3IKA" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_zCohoQzDEem-TvHize3IKA" name="persistence">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zCohogzDEem-TvHize3IKA" name="Column"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zCpvwAzDEem-TvHize3IKA" name="Entity"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zCpvwgzDEem-TvHize3IKA" name="GeneratedValue"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zCq94AzDEem-TvHize3IKA" name="GenerationType"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zCrk8AzDEem-TvHize3IKA" name="Id"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zCrk8gzDEem-TvHize3IKA" name="SequenceGenerator"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zCsMAQzDEem-TvHize3IKA" name="Table"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zOpkYwzDEem-TvHize3IKA" name="JoinColumn"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zOqLcAzDEem-TvHize3IKA" name="OneToOne"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zPXWEQzDEem-TvHize3IKA" name="FetchType"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zPXWFAzDEem-TvHize3IKA" name="OneToMany"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_zCszEAzDEem-TvHize3IKA" name="validation">
+      <packagedElement xmi:type="uml:Package" xmi:id="_zCszEQzDEem-TvHize3IKA" name="constraints">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_zCvPUAzDEem-TvHize3IKA" name="NotNull"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_zCv2YAzDEem-TvHize3IKA" name="Pattern"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

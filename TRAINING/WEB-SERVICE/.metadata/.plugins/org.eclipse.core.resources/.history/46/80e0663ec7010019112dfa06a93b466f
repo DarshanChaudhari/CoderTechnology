@@ -1,8 +1,0 @@
-package com.jp.hr.interfaces;
-
-import com.jp.hr.exceptions.HrException;
-
-public interface EmpSoapServices {
-	
-	public int getTestInteger(int x) throws HrException;
-}

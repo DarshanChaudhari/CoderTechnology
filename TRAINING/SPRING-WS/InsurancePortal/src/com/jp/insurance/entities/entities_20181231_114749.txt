@@ -1,0 +1,9 @@
+WARNING - 11:47:49: First conversion pass
+WARNING - 11:47:51: Second pass : generating package usages
+WARNING - 11:47:51: Saving uml file /resource/InsurancePortal/src/com/jp/insurance/entities/entities.uml
+WARNING - 11:47:51: Uml file /resource/InsurancePortal/src/com/jp/insurance/entities/entities.uml saved
+WARNING - 11:48:13: Convert com.jp.insurance.entities
+WARNING - 11:48:13: First conversion pass
+WARNING - 11:48:14: Second pass : generating package usages
+WARNING - 11:48:14: Saving uml file /resource/InsurancePortal/src/com/jp/insurance/entities/entities.uml
+WARNING - 11:48:14: Uml file /resource/InsurancePortal/src/com/jp/insurance/entities/entities.uml saved

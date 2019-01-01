@@ -1,6 +1,0 @@
-package com.jp.hr.interfaces;
-
-public class Snippet {
-	public int getTestInteger(int x) throws HrException;
-}
-

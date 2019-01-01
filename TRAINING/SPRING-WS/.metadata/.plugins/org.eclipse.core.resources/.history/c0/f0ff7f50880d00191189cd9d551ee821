@@ -1,0 +1,16 @@
+package com.jp.insurance.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+
+import com.jp.insurance.services.IQueryService;
+
+@Controller
+public class CustomerController {
+	
+
+	@Autowired
+	@Qualifier("queryService")
+	private IQueryService queryService;
+}

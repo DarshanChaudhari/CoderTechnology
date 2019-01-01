@@ -1,0 +1,12 @@
+127.0.0.1 - - [31/Dec/2018:10:36:44 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [31/Dec/2018:10:36:45 +0530] "GET /InsurancePortal/ HTTP/1.1" 404 1094
+0:0:0:0:0:0:0:1 - - [31/Dec/2018:10:37:11 +0530] "GET /InsurancePortal/policy/homePage.hr HTTP/1.1" 404 1127
+0:0:0:0:0:0:0:1 - - [31/Dec/2018:10:37:27 +0530] "GET /InsurancePortal/policy/homePage.po HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [31/Dec/2018:10:37:39 +0530] "GET /InsurancePortal/policy/homePage.po HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [31/Dec/2018:10:37:53 +0530] "GET /InsurancePortal/policy/homePage.po HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [31/Dec/2018:10:37:54 +0530] "GET /InsurancePortal/policy/homePage.po HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [31/Dec/2018:10:37:54 +0530] "GET /InsurancePortal/policy/homePage.hr HTTP/1.1" 404 1127
+0:0:0:0:0:0:0:1 - - [31/Dec/2018:10:38:06 +0530] "GET /InsurancePortal/policy/homePage.po HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [31/Dec/2018:10:41:11 +0530] "GET /InsurancePortal/policy/homePage.hr HTTP/1.1" 200 2074
+0:0:0:0:0:0:0:1 - - [31/Dec/2018:10:41:17 +0530] "GET /InsurancePortal/policy/queryForm.qry HTTP/1.1" 200 1945
+0:0:0:0:0:0:0:1 - - [31/Dec/2018:10:41:26 +0530] "GET /InsurancePortal/policy/showQueryStatus.qry HTTP/1.1" 200 904
