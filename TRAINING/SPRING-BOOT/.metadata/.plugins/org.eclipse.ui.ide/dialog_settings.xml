@@ -112,4 +112,25 @@
 		<item value="430" key="DIALOG_X_ORIGIN"/>
 		<item value="97" key="DIALOG_Y_ORIGIN"/>
 	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot030_JDBCProject"/>
+			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot010_MavenProject"/>
+			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot020_WebProject"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="378" key="DIALOG_X_ORIGIN"/>
+		<item value="185" key="DIALOG_Y_ORIGIN"/>
+	</section>
 </section>

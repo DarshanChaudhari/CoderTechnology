@@ -11,7 +11,7 @@
 		http://www.springframework.org/schema/tx
 	 	http://www.springframework.org/schema/tx/spring-tx.xsd">
    
-   
+   <!-- Giving a path of beans -->
    <context:component-scan base-package="com.jp.hr.services, com.jp.hr.daos"/>
    
    <bean id="ds"
@@ -22,7 +22,8 @@
     <property name="password" value="hr"/>
     </bean>
     
-    <!-- This is for Entity Manager Factory -->
+    <!-- This is for Entity Manager Factory to create jpa-->
+    <!-- Giving a path of entity over here -->
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="packagesToScan" value="com.jp.hr.entities" />
 		<property name="dataSource" ref="ds" />
