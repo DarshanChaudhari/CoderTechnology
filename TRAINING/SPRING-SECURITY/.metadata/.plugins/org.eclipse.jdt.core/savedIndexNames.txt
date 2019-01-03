@@ -1,0 +1,7 @@
+INDEX VERSION 1.129+D:\GITHUB\CoderTechnology\TRAINING\SPRING-SECURITY\.metadata\.plugins\org.eclipse.jdt.core
+1902342839.index
+3186984689.index
+3590355303.index
+3966129674.index
+1912205052.index
+633223174.index

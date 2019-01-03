@@ -1,0 +1,18 @@
+package com.jp.hr.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class HrController {
+	
+	public ModelAndView getInnerPage() {
+		ModelAndView mAndV = new ModelAndView();
+		
+		
+		
+		mAndV.addObject("","");
+		
+		return mAndV;
+	}
+}

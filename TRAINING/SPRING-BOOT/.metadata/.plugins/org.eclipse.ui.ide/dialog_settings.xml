@@ -107,7 +107,7 @@
 	</list>
 	<section name="CleanDialogSettings">
 		<item value="500" key="DIALOG_WIDTH"/>
-		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="true" key="TOGGLE_SELECTED"/>
 		<item value="401" key="DIALOG_HEIGHT"/>
 		<item value="430" key="DIALOG_X_ORIGIN"/>
 		<item value="97" key="DIALOG_Y_ORIGIN"/>
@@ -117,6 +117,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT"/>
 			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot035_MvcTodolist"/>
 			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot030_JDBCProject"/>
 			<item value="D:\GITHUB\CoderTechnology\TRAINING\SPRING-BOOT\SpringBoot010_MavenProject"/>

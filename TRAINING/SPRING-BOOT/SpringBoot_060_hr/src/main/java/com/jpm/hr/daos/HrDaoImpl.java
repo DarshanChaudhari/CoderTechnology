@@ -11,6 +11,7 @@ public class HrDaoImpl implements IHrDao {
 
 	private static final long serialVersionUID = 1L;
 
+	
 	@Override
 	public Employee getEmpDetails(int empNo) throws HrException{
 		Employee emp = new Employee(1,"aaaa",80000.0f);
