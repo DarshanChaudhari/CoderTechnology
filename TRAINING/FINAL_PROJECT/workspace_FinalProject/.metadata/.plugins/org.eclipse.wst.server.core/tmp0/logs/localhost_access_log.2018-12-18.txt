@@ -1,0 +1,12 @@
+127.0.0.1 - - [18/Dec/2018:17:50:01 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:17:50:02 +0530] "GET /OnlineBanking/ HTTP/1.1" 404 1092
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:17:50:14 +0530] "GET /OnlineBanking/CustomerRegistration.in HTTP/1.1" 404 1115
+127.0.0.1 - - [18/Dec/2018:20:33:30 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:20:33:30 +0530] "GET /OnlineBanking/ HTTP/1.1" 404 1092
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:20:34:55 +0530] "GET /OnlineBanking/ HTTP/1.1" 404 1092
+127.0.0.1 - - [18/Dec/2018:20:35:15 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:20:35:15 +0530] "GET /OnlineBanking/ HTTP/1.1" 404 1092
+127.0.0.1 - - [18/Dec/2018:20:36:04 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:20:36:05 +0530] "GET /OnlineBanking/ HTTP/1.1" 200 339
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:20:36:18 +0530] "GET /OnlineBanking/CustomerRegistration.in HTTP/1.1" 200 339
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:20:42:24 +0530] "GET /OnlineBanking/CustomerRegistration.in HTTP/1.1" 500 11945
