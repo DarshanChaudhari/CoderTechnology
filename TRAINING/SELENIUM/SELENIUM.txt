@@ -16,7 +16,11 @@
 - LOCATORS
 	- id
 	- class
-	- Xpath
+	- xPath
+	- name
+	- Linktext
+	- partialLinkText	
+	- cSS selector
 	
 - Reporting Tool	
 	- Test Ng
