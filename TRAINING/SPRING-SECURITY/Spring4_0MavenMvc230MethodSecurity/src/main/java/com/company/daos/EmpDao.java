@@ -28,7 +28,7 @@ public class EmpDao {
 		this.dataSource = dataSource;
 	}
 	
-	@Secured("ROLE_USER") //IS_AUTHENTICATED_ANONYMOUSLY, ROLE_USER, ROLE_TELLER
+	@Secured("ROLE_TELLER") //IS_AUTHENTICATED_ANONYMOUSLY, ROLE_USER, ROLE_TELLER 
 	//@PreAuthorize("hasAuthority('ROLE_TELLER')") // @PreAuthorize("isAnonymous()")
 	public List<Emp> getAllEmps() {
 		// Report details

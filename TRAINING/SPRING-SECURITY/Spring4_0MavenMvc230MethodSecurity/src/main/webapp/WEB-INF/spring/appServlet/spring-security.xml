@@ -20,7 +20,8 @@
 	<authentication-manager>
 	  <authentication-provider>
 	    <user-service>
-			<user name="chandra" password="123" authorities="ROLE_USER" />
+			<user name="chandra" password="123" authorities="ROLE_USER" />  <!--This is for accesss, this is mapped with EmpDao, authorities doesnot matched then 403 page will appear  -->
+			<user name="aa" password="aa" authorities="ROLE_TELLER" />  
 	    </user-service>
 	  </authentication-provider>
 	</authentication-manager>

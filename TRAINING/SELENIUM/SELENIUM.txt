@@ -1,0 +1,25 @@
+
+- Tool Suite
+	-> Selenium IDE [Firefox] --> Record and Play
+	-> Selenium RC [deprecated]
+	-> Selenium WebDriver 
+	-> Selenum Grid
+
+
+- HOW  to configure in Eclipse
+	==>  Load and Run
+		- Chrome
+		- Opera 
+		- Edge
+		- Firefox
+
+- LOCATORS
+	- id
+	- class
+	- Xpath
+	
+- Reporting Tool	
+	- Test Ng
+		- Basic
+		- Annotation
+		- Selenium with TestNg

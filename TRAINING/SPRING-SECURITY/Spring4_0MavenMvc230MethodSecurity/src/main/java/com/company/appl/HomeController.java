@@ -17,7 +17,7 @@ import com.company.daos.EmpDao;
 
 /**
  * Handles requests for the application home page.
- * url: http://localhost:8081/Spring4_0MavenMvc230MethodSecurity/admin
+ * url: http://localhost:8080/Spring4_0MavenMvc230MethodSecurity/admin
  */
 @Controller
 public class HomeController {
@@ -53,7 +53,7 @@ public class HomeController {
 		return model;
 	}
 	
-	@RequestMapping(value = "/innerpage**", method = RequestMethod.GET)
+/*	@RequestMapping(value = "/innerpage**", method = RequestMethod.GET)
 	public ModelAndView innerPage() {
 		ModelAndView model = new ModelAndView();
 		model.addObject("title", "Spring Security Spring Authentication");
@@ -62,6 +62,22 @@ public class HomeController {
 		model.setViewName("Innerpage");
  
 		return model;
-	}
+	}*/
 	
+	@RequestMapping(value = "/admin/innerPage**", method = RequestMethod.GET)
+	public String innerPage(Locale locale, Model model) {
+		
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		model.addAttribute("empList", empDao.getAllEmps());
+		
+		return "home";
+	
+	}
 }
